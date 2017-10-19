@@ -1,6 +1,16 @@
 # flexicon_orbit
 FlexICoN project on ORBIT testbed
 
+## Prerequisites
+### UHD
+
+### Sub20
+
+### Eigen
+We use the Eigen `C++` library for basic albegra in channel estimation and digital self-interference cancellation. The Eigen releases can be found on the official Eigen [website](http://eigen.tuxfamily.org/index.php?title=Main_Page). We used the latest stable release `Eigen 3.3.4` through our testings and experiments.
+
+On Linux, download and unzip `Eigen 3.3.4` and copy the main librararies to the desired path by running `scp -r /eigen/Eigen/ /usr/include/`
+
 ## A Simple Full-Duplex Transceiver Example
 ### Description
 The example in located in `./fd_transceiver_simple` with two sub-directories:
