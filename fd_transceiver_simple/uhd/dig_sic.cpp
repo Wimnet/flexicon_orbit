@@ -24,12 +24,13 @@ Eigen::MatrixXf sig_toeplitz(Eigen::VectorXf &sig, int l, int k, int dim)
 }
 
 /* Returns the estimate self-interfence (SI) channel
- * @param
+ * @param tx_sig: known TX signal
+ * @param rx_sig: received RX signal
  */
 Eigen::VectorXf si_chnl_est(Eigen::VectorXf &tx_sig, Eigen::VectorXf &rx_sig, int l, int k)
 {
     if (tx_sig.size() != rx_sig.size()) {
-        std::cout << "Unmatched TX/RX preamble lengths" << std::endl;
+        std::cout << "Unmatched TX and RX signal lengths!" << std::endl;
         exit(0);
     }
     // matrix w/ dimenstion l * 2k
