@@ -27,21 +27,4 @@ scp -r /eigen/Eigen/ /usr/include/
 ```
 
 ## A Simple Full-Duplex (FD) Transceiver Example
-### Directories
-The directory `./fd_transceiver_simple` contains The source code for the simple FD transceiver example. It has two sub-directories:
-* `./fd_transceiver_simple/uhd/`: The UHD source code modified based on Ettus Research's UHD-based `txrx_loopback_to_file.cpp` example (see [here](https://github.com/EttusResearch/uhd/tree/maint/host/examples)).
-* `./fd_transceiver_simple/sub20/`: The source code for controling and configuration the hardware via the SUB-20 device.
-
-### Run the Example
-To build the example, run
-```
-cd ./fd_transceiver_simple/uhd/
-mkdir build
-cd build
-cmake ../
-make
-```
-Then, you can run the simple transeiver example by
-```
-./fd_transceiver_simple --args="serial=USRP-SERIAL-NUMBER" --tx-freq TX-FREQ --rx-freq RX-FREQ --tx-rate TX-RATE --rx-rate RX-RATE --wave-type SINE --wave-freq WAVE-FREQ --tx-gain TX-GAIN --rx-gain RX-GAIN
-```
+Please see detailed instructions under directory `./fd_transceiver_simple`.
