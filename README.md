@@ -21,7 +21,10 @@ The instructions of UHD can be found on the Ettus Resesarch UHD repository at [h
 #### The `Eigen C++` Library
 The `Eigen C++` library is used for basic albegra in channel estimation and digital self-interference cancellation. The `Eigen` releases can be found on the [Eigen website](http://eigen.tuxfamily.org/index.php?title=Main_Page). We used the latest stable release `Eigen 3.3.4` through our testings and experiments.
 
-On Linux, download and unzip `Eigen 3.3.4` and copy the main librararies to the desired path by running `scp -r /eigen/Eigen/ /usr/include/`
+On Linux, download and unzip `Eigen 3.3.4` and copy the main librararies to the desired path by running
+```
+scp -r /eigen/Eigen/ /usr/include/
+```
 
 ## A Simple Full-Duplex (FD) Transceiver Example
 ### Directories
