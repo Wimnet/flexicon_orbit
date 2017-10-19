@@ -15,4 +15,8 @@ mkdir build
 cd build
 cmake ../
 make
-'''
+```
+Then, you can run the simple transeiver example by
+```
+./fd_transceiver_simple --args="serial=USRP-SERIAL-NUMBER" --tx-freq TX-FREQ --rx-freq RX-FREQ --tx-rate TX-RATE --rx-rate RX-RATE --wave-type SINE --wave-freq WAVE-FREQ --tx-gain TX-GAIN --rx-gain RX-GAIN
+```
