@@ -6,17 +6,14 @@ Eigen::MatrixXf sig_toeplitz(Eigen::VectorXf &sig, int l, int k, int dim);
 
 Eigen::VectorXf si_chnl_est(Eigen::VectorXf &tpilot, Eigen::VectorXf &rpilot, int len);
 
-Eigen::VectorXf dig_sic(
-    Eigen::VectorXf &tx_data, Eigen::VectorXf &rx_data,
-    Eigen::VectorXf &SI_chnl, int l, int k);
-
+Eigen::VectorXf dig_sic(Eigen::VectorXf &tx_data, Eigen::VectorXf &rx_data, Eigen::VectorXf &SI_chnl, int l, int k);
 
 /* Returns the Toeplitz matrix of signal
- * @param l: considered signal length
- * @param k: est. channel length is 2*k
- * @param dim: non-linear dimension is dim
- * @return A: the constructed Toeplitz matrix is with size l * (2*k*dim)
- */
+* @param l: considered signal length
+* @param k: est. channel length is 2*k
+* @param dim: non-linear dimension is dim
+* @return A: the constructed Toeplitz matrix is with size l * (2*k*dim)
+*/
 Eigen::MatrixXf sig_toeplitz(Eigen::VectorXf &sig, int l, int k, int dim)
 {
     Eigen::MatrixXf A(l, (2*k+1)*dim);
@@ -30,19 +27,20 @@ Eigen::MatrixXf sig_toeplitz(Eigen::VectorXf &sig, int l, int k, int dim)
     return A;
 }
 
-/* Returns the estimate SI channel
- * @param
- */
+/* Returns the estimate self-interfence (SI) channel
+* @param tx_sig: known TX signal
+* @param rx_sig: received RX signal
+*/
 Eigen::VectorXf si_chnl_est(Eigen::VectorXf &tx_sig, Eigen::VectorXf &rx_sig, int l, int k)
 {
     if (tx_sig.size() != rx_sig.size()) {
-        std::cout << "Unmatched TX/RX preamble lengths" << std::endl;
+        std::cout << "Unmatched TX and RX signal lengths!" << std::endl;
         exit(0);
     }
     // matrix w/ dimenstion l * 2k
     Eigen::MatrixXf A = sig_toeplitz(tx_sig, l, k, 1);
-	Eigen::BDCSVD <Eigen::MatrixXf> svd(A, Eigen::ComputeThinU | Eigen::ComputeThinV);
-	Eigen::VectorXf h = svd.solve(rx_sig.segment(k,l));
+    Eigen::BDCSVD <Eigen::MatrixXf> svd(A, Eigen::ComputeThinU | Eigen::ComputeThinV);
+    Eigen::VectorXf h = svd.solve(rx_sig.segment(k,l));
 
     return h;
 }
