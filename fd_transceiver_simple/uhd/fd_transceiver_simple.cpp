@@ -97,9 +97,6 @@ void transmit_worker(
     size_t index,
     int num_channels
 ){
-    //outfiles
-    std::ofstream outfile_tx_samps("gv_tbuff.dat", ios::out | ios::binary | ios::trunc);
-
     std::vector<std::complex<float> *> buffs(num_channels, &buff.front());
 
     float tx_start_step = 0.0;
@@ -115,60 +112,37 @@ void transmit_worker(
 
         tx_start_step = (rand() % 2) * 0.5;
 
-        //fill the buffer with the waveform
-        /*
-        for (int n = 0; n < tx_buff_size/10; n++){
-        buff[n].real() = tx_start_step;
-        buff[n].imag() = tx_start_step;
+        for (size_t n = 0; n < buff.size(); n++){
+            buff[n] = wave_table(index += step);
+            mtx.lock();
+            gv_tbuff[n] = buff[n];
+            gv_tbuff_re[n] = real(buff[n]);
+            gv_tbuff_im[n] = imag(buff[n]);
+            mtx.unlock();
+        }
+
         mtx.lock();
-        // std::cout << gv_tbuff_idx << ", " << tx_buff_size << ", " << gv_tbuff_idx*tx_buff_size + n << std::endl;
-        gv_tbuff[n] = buff[n];
-        gv_tbuff_re[n] = real(buff[n]);
-        gv_tbuff_im[n] = imag(buff[n]);
+        gv_tbuff_idx = gv_tbuff_idx + 1;
+        if (gv_tbuff_idx >= gv_tbuff_len) {
+            gv_tbuff_idx = 0;
+        }
         mtx.unlock();
-    }
-    */
-    for (size_t n = 0; n < buff.size(); n++){
-        buff[n] = wave_table(index += step);
-        mtx.lock();
-        gv_tbuff[n] = buff[n];
-        gv_tbuff_re[n] = real(buff[n]);
-        gv_tbuff_im[n] = imag(buff[n]);
-        mtx.unlock();
-    }
 
-    mtx.lock();
-    gv_tbuff_idx = gv_tbuff_idx + 1;
-    if (gv_tbuff_idx >= gv_tbuff_len) {
-        gv_tbuff_idx = 0;
-    }
-    mtx.unlock();
+        tx_start_step += 0.05;
+        if (tx_start_step >= 0.25) {
+            tx_start_step = 0.25;
+        }
 
-    tx_start_step += 0.05;
-    if (tx_start_step >= 0.25) {
-        tx_start_step = 0.25;
+        //send the entire contents of the buffer
+        tx_streamer->send(buffs, buff.size(), metadata);
+
+        metadata.start_of_burst = false;
+        metadata.has_time_spec = false;
     }
 
-    //send the entire contents of the buffer
-    tx_streamer->send(buffs, buff.size(), metadata);
-
-    metadata.start_of_burst = false;
-    metadata.has_time_spec = false;
-
-    // write Eigen vector to file
-    /*
-    mtx.lock();
-    // outfile_tx_samps.write((char*) gv_tbuff.data(), buff.size()*sizeof(float)*2 );  // *2 b/c of complex value
-    std::ofstream outfile_tx_samps_single("gv_tbuff_single.dat", ios::out | ios::binary | ios::trunc);
-    outfile_tx_samps_single.write((char*) gv_tbuff.data(), buff.size()*sizeof(float)*2 );  // *2 b/c of complex value
-    outfile_tx_samps_single.close();
-    mtx.unlock();
-    */
-}
-
-//send a mini EOB packet
-metadata.end_of_burst = true;
-tx_streamer->send("", 0, metadata);
+    //send a mini EOB packet
+    metadata.end_of_burst = true;
+    tx_streamer->send("", 0, metadata);
 }
 
 
@@ -288,14 +262,6 @@ Eigen::VectorXd sig_power(Eigen::VectorXf &sig, double fs) 	// fs: sampling rate
         std::ofstream outfile_rx_spec_single("rx_spec_single.dat", ios::out | ios::binary | ios::trunc);
         outfile_rx_spec_single.write((char*) sig_spec.data(), N_fft*sizeof(double) );
         outfile_rx_spec_single.close();
-
-        std::ofstream outfile_rx_fft_real("rx_fft_real_single.dat", ios::out | ios::binary | ios::trunc);
-        outfile_rx_fft_real.write((char*) sig_fft_real.data(), N_fft*sizeof(double) );
-        outfile_rx_fft_real.close();
-
-        std::ofstream outfile_rx_fft_imag("rx_fft_imag_single.dat", ios::out | ios::binary | ios::trunc);
-        outfile_rx_fft_imag.write((char*) sig_fft_imag.data(), N_fft*sizeof(double) );
-        outfile_rx_fft_imag.close();
     }
     else {
         std::ofstream outfile_res_spec_single("res_spec_single.dat", ios::out | ios::binary | ios::trunc);
