@@ -69,44 +69,19 @@ Eigen::VectorXf gv_tbuff_im = Eigen::VectorXf::Zero(20440);
 Eigen::VectorXf gv_rbuff_re = Eigen::VectorXf::Zero(20440);
 Eigen::VectorXf gv_rbuff_im = Eigen::VectorXf::Zero(20440);
 
-Eigen::VectorXf gv_rbuff_res_re = Eigen::VectorXf::Zero(20440);
-
-double gv_rx_peak_dBm = 0.0;
-double gv_res_peak_dBm = 0.0;
-
-Eigen::VectorXd gv_rx_sig_spec = Eigen::VectorXd::Zero(32768);
-Eigen::VectorXd gv_res_sig_spec = Eigen::VectorXd::Zero(32768);
-
+// mutex used to lock/unlock global variables
 boost::mutex mtx;
 
 /***********************************************************************
 * Signal handlers
 **********************************************************************/
+// signal handler for transmit, receive, and digital sic workers
 static bool stop_signal_called = false;
 void sig_int_handler(int){stop_signal_called = true;}
 
-
+// signal handler for main thread
 volatile sig_atomic_t main_stop_signal;
-void my_handler(int signum) {main_stop_signal = 1;}
-/***********************************************************************
-* Utilities
-**********************************************************************/
-//! Change to filename, e.g. from usrp_samples.dat to usrp_samples.00.dat,
-//  but only if multiple names are to be generated.
-std::string generate_out_filename(const std::string &base_fn, size_t n_names, size_t this_name)
-{
-    if (n_names == 1) {
-        return base_fn;
-    }
-
-    boost::filesystem::path base_fn_fp(base_fn);
-    base_fn_fp.replace_extension(
-        boost::filesystem::path(
-            str(boost::format("%02d%s") % this_name % base_fn_fp.extension().string())
-        )
-    );
-    return base_fn_fp.string();
-}
+void my_handler(int signum){main_stop_signal = 1;}
 
 
 /***********************************************************************
@@ -331,23 +306,20 @@ Eigen::VectorXd sig_power(Eigen::VectorXf &sig, double fs) 	// fs: sampling rate
     return sig_spec;
 }
 
-/* Digital SIC worker
+/* Digital self-interference cancellation (SIC) worker
  * @param sine_freq: sine wave frequency
  * @param fs: sampling rate in Sa/s
  * @param fr: refreash rate msec
  */
-void dig_SIC_worker(double sine_freq, double fs, int fr)
+void dig_sic_worker(double sine_freq, double fs, int fr)
 {
     int cur_l = DIG_CANC_PREA_LEN;
     int cur_k = DIG_CANC_CHNL_LEN;
 
-    Eigen::VectorXf cur_tx_preamble, cur_rx_preamble;
-    Eigen::VectorXf cur_si_chnl_est;
-    Eigen::VectorXf cur_tx_data, cur_rx_data;
-    Eigen::VectorXf cur_res_data;
+    Eigen::VectorXf cur_tx_preamble, cur_rx_preamble, cur_si_chnl_est;
+    Eigen::VectorXf cur_tx_data, cur_rx_data, cur_res_data;
 
-    Eigen::VectorXd cur_rx_sig_spec;
-    Eigen::VectorXd cur_res_sig_spec;
+    Eigen::VectorXd cur_rx_sig_spec, cur_res_sig_spec;
 
     int cur_sig_peak_idx = 0;
 
@@ -368,10 +340,10 @@ void dig_SIC_worker(double sine_freq, double fs, int fr)
         std::cout << boost::format("RX Signal Power: %f dBm (N_FFt = %d)")
             % cur_rx_sig_spec_peak % (int) cur_rx_data.size() << std::endl;
 
-        // perfrom SI channel estimation
+        // perfrom self-interference channel estimation
         cur_si_chnl_est = si_chnl_est(cur_tx_preamble, cur_rx_preamble, cur_l, cur_k);  // 200, 20
 
-        // reconstruct SI signal from RX signal
+        // reconstruct self-interference signal from RX signal
         Eigen::MatrixXf A = sig_toeplitz(cur_tx_data, DIG_CANC_DATA_LEN, cur_k, 1); // 1024, 20
         cur_res_data = cur_rx_data.segment(DIG_CANC_CHNL_LEN, DIG_CANC_DATA_LEN) - A*cur_si_chnl_est;  // 1024
         // compute RX residual signal power after digital SIC
@@ -435,6 +407,9 @@ int UHD_SAFE_MAIN(int argc, char *argv[]){
     double rx_rate, rx_freq, rx_gain, rx_bw;
     float settling;
 
+    //variables to make TX/RX rate/freq to be consistent
+    double rate, freq;
+
     //setup the program options
     po::options_description desc("Allowed options");
     desc.add_options()
@@ -446,10 +421,8 @@ int UHD_SAFE_MAIN(int argc, char *argv[]){
     ("nsamps", po::value<size_t>(&total_num_samps)->default_value(0), "total number of samples to receive")
     ("settling", po::value<float>(&settling)->default_value(float(0.2)), "settling time (seconds) before receiving")
     ("spb", po::value<size_t>(&spb)->default_value(0), "samples per buffer, 0 for default")
-    ("tx-rate", po::value<double>(&tx_rate), "rate of transmit outgoing samples")
-    ("rx-rate", po::value<double>(&rx_rate), "rate of receive incoming samples")
-    ("tx-freq", po::value<double>(&tx_freq), "transmit RF center frequency in Hz")
-    ("rx-freq", po::value<double>(&rx_freq), "receive RF center frequency in Hz")
+    ("rate", po::value<double>(&rate), "transmit and receive sampling rate")
+    ("freq", po::value<double>(&freq), "transmit and receive RF center frequency in Hz")
     ("ampl", po::value<float>(&ampl)->default_value(float(0.3)), "amplitude of the waveform [0 to 0.7]")
     ("tx-gain", po::value<double>(&tx_gain), "gain for the transmit RF chain")
     ("rx-gain", po::value<double>(&rx_gain), "gain for the receive RF chain")
@@ -459,8 +432,8 @@ int UHD_SAFE_MAIN(int argc, char *argv[]){
     ("rx-subdev", po::value<std::string>(&rx_subdev), "receive subdevice specification")
     ("tx-bw", po::value<double>(&tx_bw), "analog transmit filter bandwidth in Hz")
     ("rx-bw", po::value<double>(&rx_bw), "analog receive filter bandwidth in Hz")
-    ("wave-type", po::value<std::string>(&wave_type)->default_value("CONST"), "waveform type (CONST, SQUARE, RAMP, SINE)")
-    ("wave-freq", po::value<double>(&wave_freq)->default_value(0), "waveform frequency in Hz")
+    ("wave-type", po::value<std::string>(&wave_type)->default_value("SINE"), "waveform type (CONST, SQUARE, RAMP, SINE)")
+    ("wave-freq", po::value<double>(&wave_freq)->default_value(100e3), "waveform frequency in Hz")
     ("ref", po::value<std::string>(&ref)->default_value("internal"), "clock reference (internal, external, mimo)")
     ("otw", po::value<std::string>(&otw)->default_value("sc16"), "specify the over-the-wire sample mode")
     ("tx-channels", po::value<std::string>(&tx_channels)->default_value("0"), "which TX channel(s) to use (specify \"0\", \"1\", \"0,1\", etc)")
@@ -472,12 +445,19 @@ int UHD_SAFE_MAIN(int argc, char *argv[]){
     po::store(po::parse_command_line(argc, argv, desc), vm);
     po::notify(vm);
 
-    //print the help message
+    // print the help message
     if (vm.count("help")){
         std::cout << std::endl;
         std::cout << boost::format("UHD Full-Duplex Simple Transceiver %s") % desc << std::endl;
         return ~0;
     }
+
+    // set TX/RX sampling rate and RF frequency to the same
+    // this is very important for full-duplex operation since
+    // - TX/RX need to be synced
+    // - TX/RX must be operating at the same frequency
+    tx_rate = rate; rx_rate = rate;
+    tx_freq = freq; rx_freq = freq;
 
     //create a usrp device
     std::cout << std::endl;
@@ -521,8 +501,8 @@ int UHD_SAFE_MAIN(int argc, char *argv[]){
     std::cout << boost::format("Using RX Device: %s") % rx_usrp->get_pp_string() << std::endl;
 
     //set the transmit sample rate
-    if (not vm.count("tx-rate")){
-        std::cerr << "Please specify the transmit sample rate with --tx-rate" << std::endl;
+    if (not vm.count("rate")){
+        std::cerr << "Please specify the transmit sample rate with --rate" << std::endl;
         return ~0;
     }
     std::cout << boost::format("Setting TX Rate: %f Msps...") % (tx_rate/1e6) << std::endl;
@@ -530,8 +510,8 @@ int UHD_SAFE_MAIN(int argc, char *argv[]){
     std::cout << boost::format("Actual TX Rate: %f Msps...") % (tx_usrp->get_tx_rate()/1e6) << std::endl << std::endl;
 
     //set the receive sample rate
-    if (not vm.count("rx-rate")){
-        std::cerr << "Please specify the sample rate with --rx-rate" << std::endl;
+    if (not vm.count("rate")){
+        std::cerr << "Please specify the sample rate with --rate" << std::endl;
         return ~0;
     }
     std::cout << boost::format("Setting RX Rate: %f Msps...") % (rx_rate/1e6) << std::endl;
@@ -539,8 +519,8 @@ int UHD_SAFE_MAIN(int argc, char *argv[]){
     std::cout << boost::format("Actual RX Rate: %f Msps...") % (rx_usrp->get_rx_rate()/1e6) << std::endl << std::endl;
 
     //set the transmit center frequency
-    if (not vm.count("tx-freq")){
-        std::cerr << "Please specify the transmit center frequency with --tx-freq" << std::endl;
+    if (not vm.count("freq")){
+        std::cerr << "Please specify the transmit center frequency with --freq" << std::endl;
         return ~0;
     }
 
@@ -580,8 +560,8 @@ int UHD_SAFE_MAIN(int argc, char *argv[]){
         }
 
         //set the receive center frequency
-        if (not vm.count("rx-freq")){
-            std::cerr << "Please specify the center frequency with --rx-freq" << std::endl;
+        if (not vm.count("freq")){
+            std::cerr << "Please specify the center frequency with --freq" << std::endl;
             return ~0;
         }
         std::cout << boost::format("Setting RX Freq: %f MHz...") % (rx_freq/1e6) << std::endl;
@@ -643,20 +623,22 @@ int UHD_SAFE_MAIN(int argc, char *argv[]){
     gv_tbuff = Eigen::VectorXcf::Zero(spb);
     gv_rbuff = Eigen::VectorXcf::Zero(spb);
 
-    //reset usrp time to prepare for transmit/receive
+    // reset usrp time to prepare for transmit/receive
     std::cout << boost::format("Setting device timestamp to 0...") << std::endl;
     tx_usrp->set_time_now(uhd::time_spec_t(0.0));
 
+    // set TX stream start time, give 0.1 seconds to fill the tx buffer
     const uhd::time_spec_t start_tx_stream_time = tx_usrp->get_time_now() + uhd::time_spec_t(0.1);
 
-    //setup the metadata flags
+    // setup the metadata flags
     uhd::tx_metadata_t md;
     md.start_of_burst = true;
     md.end_of_burst   = false;
     md.has_time_spec  = true;
-    md.time_spec = start_tx_stream_time; // uhd::time_spec_t(0.1); //give us 0.1 seconds to fill the tx buffers
+    // default is md.time_spec = uhd::time_spec_t(0.1); //give us 0.1 seconds to fill the tx buffers
+    md.time_spec = start_tx_stream_time;
 
-    //Check Ref and LO Lock detect
+    // Check Ref and LO Lock detect
     std::vector<std::string> tx_sensor_names, rx_sensor_names;
     tx_sensor_names = tx_usrp->get_tx_sensor_names(0);
     if (std::find(tx_sensor_names.begin(), tx_sensor_names.end(), "lo_locked") != tx_sensor_names.end()) {
@@ -697,42 +679,39 @@ int UHD_SAFE_MAIN(int argc, char *argv[]){
 
     if (total_num_samps == 0){
         std::signal(SIGINT, &sig_int_handler);
+        std::cout << std::endl;
         std::cout << "Press Ctrl + C to stop streaming..." << std::endl;
     }
 
-    //reset usrp time to prepare for transmit/receive
+    // reset usrp time to prepare for transmit/receive
     // std::cout << boost::format("Setting device timestamp to 0...") << std::endl;
     // tx_usrp->set_time_now(uhd::time_spec_t(0.0));
 
-    //start transmit worker thread
+    // start the main thread
     boost::thread_group main_thread;
     main_thread.create_thread(boost::bind(&transmit_worker, buff, wave_table, tx_stream, md, step, index, num_channels));
-
     main_thread.create_thread(boost::bind(&receive_worker, rx_usrp, stream_args, spb, total_num_samps, settling, rx_channel_nums, start_tx_stream_time));
+    main_thread.create_thread(boost::bind(&dig_sic_worker, (double) wave_freq, (double) tx_usrp->get_tx_rate(), 1));
 
-    main_thread.create_thread(boost::bind(&dig_SIC_worker, (double) wave_freq, (double) tx_usrp->get_tx_rate(), 1));
-
+    std::cout << std::endl;
     std::cout << boost::format(
         "TX Stream time was: %u full secs, %f frac secs"
     ) % start_tx_stream_time.get_full_secs() % start_tx_stream_time.get_frac_secs() << std::endl;
+    std::cout << std::endl;
 
+    // init main stop signal handler
     signal(SIGINT, my_handler);
 
     // catch exit signal from keyboard using Ctrl + c
     while(!main_stop_signal) {
-        // mtx.lock();
-        // std::cout << boost::format("TX buff idx: %d, RX buff idx: %d") % gv_tbuff_idx % gv_rbuff_idx << std::endl;
-        // std::cout << boost::format("RX tone peak power %f dBm") % gv_rx_sig_spec.maxCoeff() << std::endl;
-        // std::cout << boost::format("Res. tone peak power %f dBm") % gv_res_sig_spec.maxCoeff() << std::endl << std::endl;
-        // mtx.unlock();
-        // sleep(1);
+        // wait for the main stop signal
     }
 
-//clean up all threads
-stop_signal_called = true;
-main_thread.join_all();
+    // clean up all threads
+    stop_signal_called = true;
+    main_thread.join_all();
 
-//finished
-std::cout << std::endl << "Done!" << std::endl << std::endl;
-return EXIT_SUCCESS;
+    // finished
+    std::cout << std::endl << "Done!" << std::endl << std::endl;
+    return EXIT_SUCCESS;
 }
