@@ -51,6 +51,11 @@ int main(int argc, char *argv[])
         exit(1);
     }
 
+    // default antenna tuner param
+    int spi_write_val_CAP1 = 16;
+    int spi_write_val_CAP2 = 16;
+    int spi_write_val_CAP3 = 16;
+
     int spi_write_val_DAC = atoi(argv[1]);
     int spi_write_val_ATT = atoi(argv[2]);
     if (spi_write_val_DAC < 0 || spi_write_val_DAC > 255
@@ -60,6 +65,7 @@ int main(int argc, char *argv[])
         }
 
     // allocate buffer for the SPI write
+    char out_buff_CAP1, out_buff_CAP2, out_buff_CAP3;
     char out_buff_DAC[2];
     char out_buff_ATT[2];
     char* spi_write_buff_char = malloc(2 * sizeof(char));
@@ -81,5 +87,13 @@ int main(int argc, char *argv[])
     spi_write_buff_char = &out_buff_ATT[0];
     rc = sub_spi_transfer( my_sub20, spi_write_buff_char, 0, 2, SS_CONF(1,SS_LO) );
     printf("...Finished programming ATT with value %d!\n", spi_write_val_ATT);
+
+    // CAP1 at slave 2 (SS2)
+    // write MSB first at the rising edge of CLK
+    sub_spi_config( my_sub20, SPI_ENABLE|SPI_CPOL_RISE|SPI_SMPL_SETUP|SPI_MSB_FIRST|SPI_CLK_8MHZ, 0 );
+    out_buff_CAP1 = (char) (spi_write_val_CAP1);
+    spi_write_buff_char = &out_buff_CAP1;
+    rc = sub_spi_transfer( my_sub20, spi_write_buff_char, 0, 1, SS_CONF(2,SS_HI) );
+    printf("...Finished programming CAP1 with value %d!\n", spi_write_val_CAP1);
 
 }
