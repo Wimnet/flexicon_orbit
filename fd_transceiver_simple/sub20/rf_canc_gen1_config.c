@@ -52,9 +52,9 @@ int main(int argc, char *argv[])
     }
 
     // default antenna tuner param
-    int spi_write_val_CAP1 = 4;
-    int spi_write_val_CAP2 = 8;
-    int spi_write_val_CAP3 = 16;
+    int spi_write_val_CAP1 = 6;
+    int spi_write_val_CAP2 = 17;
+    int spi_write_val_CAP3 = 10;
 
     int spi_write_val_DAC = atoi(argv[1]);
     int spi_write_val_ATT = atoi(argv[2]);
@@ -92,34 +92,35 @@ int main(int argc, char *argv[])
         printf("...Finished programming ATT with value %d!\n", spi_write_val_ATT);
     }
 
+    char* spi_write_buff_char_one_byte = malloc(sizeof(char));
     // CAP1 at slave 2 (SS2)
     // write MSB first at the rising edge of CLK
-    sub_spi_config( my_sub20, SPI_ENABLE|SPI_CPOL_RISE|SPI_SMPL_SETUP|SPI_MSB_FIRST|SPI_CLK_8MHZ, 0 );
+    sub_spi_config( my_sub20, SPI_ENABLE|SPI_CPOL_RISE|SPI_SMPL_SETUP|SPI_MSB_FIRST|SPI_CLK_1MHZ, 0 );
     out_buff_CAP1 = (char) (spi_write_val_CAP1);
-    spi_write_buff_char = &out_buff_CAP1;
-    rc = sub_spi_transfer( my_sub20, spi_write_buff_char, 0, 1, SS_CONF(2,SS_HI) );
+    spi_write_buff_char_one_byte = &out_buff_CAP1;
+    rc = sub_spi_transfer( my_sub20, spi_write_buff_char_one_byte, 0, 1, SS_CONF(2,SS_HI) );
     if (!rc) {
         printf("...Finished programming CAP1 with value %d!\n", spi_write_val_CAP1);
     }
 
-    // CAP1 at slave 3 (SS3)
+    // CAP2 at slave 3 (SS3)
     // write MSB first at the rising edge of CLK
-    sub_spi_config( my_sub20, SPI_ENABLE|SPI_CPOL_RISE|SPI_SMPL_SETUP|SPI_MSB_FIRST|SPI_CLK_8MHZ, 0 );
+    // sub_spi_config( my_sub20, SPI_ENABLE|SPI_CPOL_RISE|SPI_SMPL_SETUP|SPI_MSB_FIRST|SPI_CLK_8MHZ, 0 );
     out_buff_CAP2 = (char) (spi_write_val_CAP2);
-    spi_write_buff_char = &out_buff_CAP2;
-    rc = sub_spi_transfer( my_sub20, spi_write_buff_char, 0, 1, SS_CONF(3,SS_HI) );
+    spi_write_buff_char_one_byte = &out_buff_CAP2;
+    rc = sub_spi_transfer( my_sub20, spi_write_buff_char_one_byte, 0, 1, SS_CONF(3,SS_HI) );
     if (!rc) {
-        printf("...Finished programming CAP1 with value %d!\n", spi_write_val_CAP2);
+        printf("...Finished programming CAP2 with value %d!\n", spi_write_val_CAP2);
     }
 
-    // CAP1 at slave 4 (SS4)
+    // CAP3 at slave 4 (SS4)
     // write MSB first at the rising edge of CLK
-    sub_spi_config( my_sub20, SPI_ENABLE|SPI_CPOL_RISE|SPI_SMPL_SETUP|SPI_MSB_FIRST|SPI_CLK_8MHZ, 0 );
+    // sub_spi_config( my_sub20, SPI_ENABLE|SPI_CPOL_RISE|SPI_SMPL_SETUP|SPI_MSB_FIRST|SPI_CLK_8MHZ, 0 );
     out_buff_CAP3 = (char) (spi_write_val_CAP3);
-    spi_write_buff_char = &out_buff_CAP3;
-    rc = sub_spi_transfer( my_sub20, spi_write_buff_char, 0, 1, SS_CONF(4,SS_HI) );
+    spi_write_buff_char_one_byte = &out_buff_CAP3;
+    rc = sub_spi_transfer( my_sub20, spi_write_buff_char_one_byte, 0, 1, SS_CONF(4,SS_HI) );
     if (!rc) {
-        printf("...Finished programming CAP1 with value %d!\n", spi_write_val_CAP3);
+        printf("...Finished programming CAP3 with value %d!\n", spi_write_val_CAP3);
     }
 
 }
