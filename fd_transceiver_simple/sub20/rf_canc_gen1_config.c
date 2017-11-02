@@ -45,35 +45,41 @@ int main(int argc, char *argv[])
     printf("Device Opened!\n");
 
     // prepare data to write
-    if (argc != 3) {
+    if (argc != 6) {
         printf("Input arguments invalid...\n");
-        printf("Please specify the input values of DAC ([0, 255]), ATT ([0, 127]): \n");
+        printf("Please use DAC ([0, 255]), ATT ([0, 127]), CAP1 ([0 31]), CAP2 ([0 31]), CAP3 ([0 31]): \n");
         exit(1);
     }
 
-    // default antenna tuner param
-    int spi_write_val_CAP1 = 6;
-    int spi_write_val_CAP2 = 17;
-    int spi_write_val_CAP3 = 10;
-
     int spi_write_val_DAC = atoi(argv[1]);
     int spi_write_val_ATT = atoi(argv[2]);
+    int spi_write_val_CAP1 = atoi(argv[3]);
+    int spi_write_val_CAP2 = atoi(argv[4]);
+    int spi_write_val_CAP3 = atoi(argv[5]);
 
     // check input
     if (spi_write_val_DAC < 0 || spi_write_val_DAC > 255
         || spi_write_val_ATT < 0 || spi_write_val_ATT > 127) {
-            printf("Input arguments out of range: DAC [0, 255], ATT [0, 127]\n");
+            printf("Input arguments out of range: DAC [0, 255], ATT [0, 127].\n");
+            exit(1);
+        }
+    if (spi_write_val_CAP1 < 0 || spi_write_val_CAP1 > 31
+        || spi_write_val_CAP2 < 0 || spi_write_val_CAP2 > 31
+        || spi_write_val_CAP3 < 0 || spi_write_val_CAP3 > 31) {
+            printf("Input arguments out of range: CAP1 [0, 31], CAP2 [0, 31], CAP3 [0, 31].\n");
             exit(1);
         }
 
     // allocate buffer for the SPI write
-    char out_buff_CAP1, out_buff_CAP2, out_buff_CAP3;
     char out_buff_DAC[2];
     char out_buff_ATT[2];
+    char out_buff_CAP1, out_buff_CAP2, out_buff_CAP3;
+    // 2-byte buffer for writing DAC and ATT
     char* spi_write_buff_char = malloc(2 * sizeof(char));
+    // 1-byte buffer for writing CAP1, CAP2, and CAP3
+    char* spi_write_buff_char_one_byte = malloc(sizeof(char));
 
-    // DAC at slave 0 (SS0)
-    // write MSB first at the falling edge of CLK
+    // DAC @slave 0 (SS0), write MSB first at the falling edge of CLK
     sub_spi_config( my_sub20, SPI_ENABLE|SPI_CPOL_RISE|SPI_SETUP_SMPL|SPI_MSB_FIRST|SPI_CLK_8MHZ, 0 );
     out_buff_DAC[0] = (char) (spi_write_val_DAC >> 4);
     out_buff_DAC[1] = (char) (spi_write_val_DAC << 4);
@@ -83,8 +89,7 @@ int main(int argc, char *argv[])
         printf("...Finished programming DAC with value %d!\n", spi_write_val_DAC);
     }
 
-    // ATT at slave 1 (SS1)
-    // write LSB first at the rising edge of CLK
+    // ATT @slave 1 (SS1), write LSB first at the rising edge of CLK
     sub_spi_config( my_sub20, SPI_ENABLE|SPI_CPOL_RISE|SPI_SMPL_SETUP|SPI_LSB_FIRST|SPI_CLK_8MHZ, 0 );
     out_buff_ATT[0] = (char) (spi_write_val_ATT);
     out_buff_ATT[1] = (char) (0);
@@ -94,9 +99,7 @@ int main(int argc, char *argv[])
         printf("...Finished programming ATT with value %d!\n", spi_write_val_ATT);
     }
 
-    char* spi_write_buff_char_one_byte = malloc(sizeof(char));
-    // CAP1 at slave 2 (SS2)
-    // write MSB first at the rising edge of CLK
+    // CAP1 @slave 2 (SS2), write MSB first at the rising edge of CLK
     sub_spi_config( my_sub20, SPI_ENABLE|SPI_CPOL_RISE|SPI_SMPL_SETUP|SPI_MSB_FIRST|SPI_CLK_1MHZ, 0 );
     out_buff_CAP1 = (char) (spi_write_val_CAP1);
     spi_write_buff_char_one_byte = &out_buff_CAP1;
@@ -105,8 +108,7 @@ int main(int argc, char *argv[])
         printf("...Finished programming CAP1 with value %d!\n", spi_write_val_CAP1);
     }
 
-    // CAP2 at slave 3 (SS3)
-    // write MSB first at the rising edge of CLK
+    // CAP2 @slave 3 (SS3), write MSB first at the rising edge of CLK
     // sub_spi_config( my_sub20, SPI_ENABLE|SPI_CPOL_RISE|SPI_SMPL_SETUP|SPI_MSB_FIRST|SPI_CLK_8MHZ, 0 );
     out_buff_CAP2 = (char) (spi_write_val_CAP2);
     spi_write_buff_char_one_byte = &out_buff_CAP2;
@@ -115,8 +117,7 @@ int main(int argc, char *argv[])
         printf("...Finished programming CAP2 with value %d!\n", spi_write_val_CAP2);
     }
 
-    // CAP3 at slave 4 (SS4)
-    // write MSB first at the rising edge of CLK
+    // CAP3 @slave 4 (SS4), write MSB first at the rising edge of CLK
     // sub_spi_config( my_sub20, SPI_ENABLE|SPI_CPOL_RISE|SPI_SMPL_SETUP|SPI_MSB_FIRST|SPI_CLK_8MHZ, 0 );
     out_buff_CAP3 = (char) (spi_write_val_CAP3);
     spi_write_buff_char_one_byte = &out_buff_CAP3;
