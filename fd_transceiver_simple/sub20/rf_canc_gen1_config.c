@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
     // prepare data to write
     if (argc != 3) {
         printf("Input arguments invalid...\n");
-        printf("Please specify the input values of DAC ([0, 255]), ATT ([0, 255]): \n");
+        printf("Please specify the input values of DAC ([0, 255]), ATT ([0, 127]): \n");
         exit(1);
     }
 
