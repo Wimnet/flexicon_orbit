@@ -58,9 +58,11 @@ int main(int argc, char *argv[])
 
     int spi_write_val_DAC = atoi(argv[1]);
     int spi_write_val_ATT = atoi(argv[2]);
+
+    // check input
     if (spi_write_val_DAC < 0 || spi_write_val_DAC > 255
-        || spi_write_val_ATT < 0 || spi_write_val_ATT > 255) {
-            printf("Input arguments out of range [0, 255]...\n");
+        || spi_write_val_ATT < 0 || spi_write_val_ATT > 127) {
+            printf("Input arguments out of range: DAC [0, 255], ATT [0, 127]\n");
             exit(1);
         }
 
