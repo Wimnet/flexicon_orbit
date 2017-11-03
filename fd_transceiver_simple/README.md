@@ -4,7 +4,7 @@
 The source code for the simple FD transceiver example. It has two sub-directories:
 1. `./uhd/`: The UHD source code for the example
 2. `./sub20/`: The source code for controling and configuration the hardware via the SUB-20 device
-3. `./scripts`: The `MATLAB` scripts for analying the experiment data in an offline manner
+3. `./scripts/`: The `MATLAB` scripts for analying the experiment data in an offline manner
 
 ## Build the Example
 ### Build the UHD Code
@@ -31,8 +31,8 @@ Run the example with desired parameters (e.g., carrier frequency, sampling rate,
 ./fd_transceiver_simple --args="serial=USRP-SERIAL-NUMBER" --freq FREQ --rate RATE --tx-gain TX-GAIN --rx-gain RX-GAIN --wave-type WAVE-TYPE --wave-freq WAVE-FREQ --ampl AMPL
 ```
 The default settings are:
-1. The wave type is Sine: `WAVE-TYPE = SINE`
-2. The Sine wave is with frequency `WAVE-FREQ = 100e3 Hz`
+1. The wave type is `SINE`: `WAVE-TYPE = SINE`
+2. The default sine wave is with frequency `WAVE-FREQ = 100e3 Hz`
 3. The baseband amplitude of the Sine wave is `AMPL = 0.3`
 4. The TX/RX gain is `TX-GAIN = RX-GAIN = 0`
 
@@ -40,16 +40,19 @@ Once the example is running, you can observe the real-time signal power (in `dBm
 
 From our measurements using the [B205mini-i](https://www.ettus.com/product/details/USRP-B205mini-i) with the default setting: 1. The TX output power is around `-78 dBm`
 2. The RX input saturation point is around `0 dBm`
-In addition, the TX/RX gain increases almost linearly with respect to the input value. Therefore, when running the example, please make sure to set `TX-GAIN` and `RX-GAIN` properly so that the USRP receiver is not saturated.
+In addition, the TX/RX gain increases almost linearly with respect to the input value. Therefore, when running the example, please make sure to set `TX-GAIN` and `RX-GAIN` properly so that the USRP receiver is not saturated
 
 ### Run the SUB20 Configuration Code
 Configure the FlexICoN Gen1 RF Canceller by running
 ```
-./rf_canc_gen1_config DAC-CODE ATT-CODE
+./rf_canc_gen1_config DAC-CODE ATT-CODE CAP1-CODE CAP2-CODE CAP3-CODE
 ```
 In particular:
 1. The DAC takes input of `DAC-CODE = 0, 1, ..., 255`
-1. The attenuator (ATT) takes input of `ATT-CODE = 0, 1, ..., 255`, `ATT-code = 0` is the MIN attenuation and `ATT-CODE = 255` is the MAX attenuation
+2. The attenuator (ATT) takes input of `ATT-CODE = 0, 1, ..., 127`, `ATT-code = 0` is the MIN attenuation and `ATT-CODE = 127` is the MAX attenuation
+3. The antenna tuner contains three tunable capacitors `CAPi (i = 1, 2, 3)` that take input of `CAPi-CODE = 0, 1, ..., 31` where `i = 1, 2, 3`.
+
+From our antenna matching measurements at ORBIT onsite, we recommend to use `CAP1-CODE = 16, CAP2-CODE = 6, CAP3-CODE = 6`, which provides about `-25 dB` matching.
 
 
 ## Post-Analyze the Results
