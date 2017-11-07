@@ -20,7 +20,9 @@ ssh $1@console.grid.orbit-lab.org << 'END_CONSOLE_SSH'
     # Flash baseline-sdr.ndz to desired node
     # NOTE: we set the flashing timeout to 1000s, as suggested by Ivan Seskar
     echo "Flashing OS image in all nodes, please wait..."
-    omf load -i baseline-sdr.ndz -t node$NODEX-$NODEY -o 300
+    # omf load -i baseline-sdr.ndz -t node$NODEX-$NODEY -o 300
+    omf load -i tingjunchen-node-node11-10.grid.orbit-lab.org-2017-11-07-12-33-57.ndz
+ -t node$NODEX-$NODEY -o 300
 
     # Sleep for 60s for safety purposes (default was 120s)
     echo "Finished loading image, sleeping for 60s seconds..."
