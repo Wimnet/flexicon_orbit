@@ -59,6 +59,9 @@ int DIG_CANC_DATA_LEN = 1024;
 
 int DIG_CANC_CHNL_LEN = 17;
 
+// RX calibration of the USRP RX BB
+int RX_BB_POWER_OFFSET = 27;
+
 // global buffers
 int gv_tbuff_len = 10; int gv_rbuff_len = 10;
 int gv_tbuff_idx = 0;  int gv_rbuff_idx = 0;
@@ -304,7 +307,7 @@ void dig_sic_worker(double sine_freq, double fs, int fr)
         double cur_rx_sig_spec_peak = cur_rx_sig_spec.segment(cur_sig_peak_idx-5, 10).maxCoeff();
         // log RX signal power
         std::cout << boost::format("RX Signal Power: %f dBm (N_FFt = %d)")
-            % cur_rx_sig_spec_peak % (int) cur_rx_data.size() << std::endl;
+            % (cur_rx_sig_spec_peak - RX_BB_POWER_OFFSET) % (int) cur_rx_data.size() << std::endl;
 
         // perfrom self-interference channel estimation
         cur_si_chnl_est = si_chnl_est(cur_tx_preamble, cur_rx_preamble, cur_l, cur_k);  // 200, 20
@@ -319,7 +322,7 @@ void dig_sic_worker(double sine_freq, double fs, int fr)
         double cur_res_sig_spec_peak = cur_res_sig_spec.segment(cur_sig_peak_idx-5, 10).maxCoeff();
         // log residual signal power
         std::cout << boost::format("RX Res Signal Power: %f dBm (N_fft = %d)")
-            % cur_res_sig_spec_peak % (int) cur_res_data.size() << std::endl;
+            % (cur_res_sig_spec_peak - RX_BB_POWER_OFFSET) % (int) cur_res_data.size() << std::endl;
 
         std::cout << boost::format("Amount of Digital SIC: %f dB")
             % (cur_rx_sig_spec_peak - cur_res_sig_spec_peak) << std::endl << std::endl;
