@@ -1,6 +1,6 @@
-# Columbia FlexICoN project on the ORBIT testbed
+# Columbia FlexICoN project in the Open-Access ORBIT testbed
+This it the GitHub page for the [Columbia Full-Duplex Wireless: From Integrated Circuits (IC) to Networks (FlexICoN) project](http://flexicon.ee.columbia.edu/).
 
-## Introduction
 ### Paper
 Our Gen-1 RF Canceller is install with `node11-10` in the ORBIT main grid. This node is equipped with a USRP N210 SDR. For more information, please read
 
