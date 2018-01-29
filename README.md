@@ -1,7 +1,9 @@
 # Open-Access Full-Duplex Wireless in the ORBIT testbed
-This page contains the source code and build instructions of the [ORBIT](http://www.orbit-lab.org) tutorial: [Full-duplex Wireless using USRP N210](http://www.orbit-lab.org/wiki/Tutorials/k0SDR/Tutorial25).
+This GitHub webpage contains the build instructions and source code of the [ORBIT](http://www.orbit-lab.org) wireless testbed tutorial: [Full-duplex Wireless using USRP N210](http://www.orbit-lab.org/wiki/Tutorials/k0SDR/Tutorial25).
 
-The tutorial constains a simple full-duplex (FD) transceiver. The detailed instructions can be found in the above link. More full-duplex examples are currently under development.
+This tutorial constains a simple full-duplex (FD) transceiver using the USRP N210 SDR and a customized RF canceller developed within the [Columbia FlexICoN project](http://flexicon.ee.columbia.edu/). The detailed instructions can be found in the tutorial at [here](http://www.orbit-lab.org/wiki/Tutorials/k0SDR/Tutorial25).
+
+More full-duplex examples are currently under development and will be released once ready.
 
 ### Paper
 Our Gen-1 RF Canceller is install with `node11-10` in the ORBIT main grid. This node is equipped with a USRP N210 SDR. For more information, please read
