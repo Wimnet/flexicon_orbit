@@ -1,5 +1,7 @@
-# Columbia FlexICoN project in the Open-Access ORBIT testbed
-This it the GitHub page for the [Columbia Full-Duplex Wireless: From Integrated Circuits (IC) to Networks (FlexICoN) project](http://flexicon.ee.columbia.edu/).
+# Open-Access Full-Duplex Wireless in the ORBIT testbed
+This page contains the source code and build instructions of the [ORBIT](http://www.orbit-lab.org) tutorial: [Full-duplex Wireless using USRP N210](http://www.orbit-lab.org/wiki/Tutorials/k0SDR/Tutorial25).
+
+The tutorial constains a simple full-duplex (FD) transceiver. The detailed instructions can be found in the above link. More full-duplex examples are currently under development.
 
 ### Paper
 Our Gen-1 RF Canceller is install with `node11-10` in the ORBIT main grid. This node is equipped with a USRP N210 SDR. For more information, please read
@@ -37,6 +39,3 @@ On Linux, download and unzip `Eigen 3.3.4` and copy the main librararies to the 
 ```
 scp -r /eigen/Eigen/ /usr/include/
 ```
-
-## A Simple Full-Duplex (FD) Transceiver Example
-Please see detailed instructions at [http://www.orbit-lab.org/wiki/Tutorials/k0SDR/Tutorial25#Full-DuplexWirelessusingUSRPN210](http://www.orbit-lab.org/wiki/Tutorials/k0SDR/Tutorial25#Full-DuplexWirelessusingUSRPN210) and under directory `./fd_transceiver_simple`.
