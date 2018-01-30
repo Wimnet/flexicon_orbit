@@ -18,16 +18,19 @@ Please cite the above report if you use the hardware. Please email Tingjun Chen 
 * Full-duplex tutorial at ORBIT: [http://www.orbit-lab.org/wiki/Tutorials/k0SDR/Tutorial25#Full-DuplexWirelessusingUSRPN210](http://www.orbit-lab.org/wiki/Tutorials/k0SDR/Tutorial25#Full-DuplexWirelessusingUSRPN210)
 
 ## Software (SW)
+### A full-duplex transcevier example
+The source code is under ```./fd_transceviver_simple``` with the following sub-directories:
+* ```/uhd``` contains the UHD code for the full-duplex transceiver
+* ```/sub20``` contains the code for configuring the RF canceller using a SUB-20 controller
+* ```/scripts``` contains the ```MATLAB``` code for post-processing the experimental data
+
 ### UHD
 The instructions of UHD can be found on the Ettus Resesarch UHD repository at [here](https://github.com/EttusResearch/uhd).
 
 ### The `Eigen C++` Library
 The `Eigen C++` library is used for basic albegra in channel estimation and digital self-interference cancellation. The `Eigen` releases can be found on the [Eigen website](http://eigen.tuxfamily.org/index.php?title=Main_Page). We used the latest stable release `Eigen 3.3.4` through our testings and experiments.
 
-On Linux, download and unzip `Eigen 3.3.4` and copy the main librararies to the desired path by running
-```
-scp -r /eigen/Eigen/ /usr/include/
-```
+On Linux, download and unzip `Eigen 3.3.4` and copy the main librararies to the desired path by running ```scp -r /eigen/Eigen/ /usr/include/```.
 
 ## Hardware (HW)
 ### Columbia FlexICoN's Gen-1 Frequency-Flat Amplitude- and Phase-based RF Canceller
