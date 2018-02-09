@@ -1,3 +1,13 @@
+#######################################################################################################
+# Authors:
+# - Guy Farkash,    email: gf2373@columbia.edu
+# - Tingjun Chen,   email: tc2668@columbia.edu
+#
+# Date: Feb. 8, 2018
+#
+# For more details, please refer to the Columbia FlexICoN project
+########################################################################################################
+
 import gen_data_psk as gen
 import usrp_txrx_psk as txrx
 import dig_sic_off_psk as sic
