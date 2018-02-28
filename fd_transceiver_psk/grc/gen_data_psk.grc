@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?grc format='1' created='3.7.11'?>
+<?grc format='1' created='3.7.10'?>
 <flow_graph>
   <timestamp>Fri Nov  3 13:25:25 2017</timestamp>
   <block>
@@ -147,6 +147,33 @@
     </param>
     <param>
       <key>_coordinate</key>
+      <value>(872, 12)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>ex_bw</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>0.1</value>
+    </param>
+  </block>
+  <block>
+    <key>variable</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
       <value>(1088, 245)</value>
     </param>
     <param>
@@ -240,7 +267,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>4</value>
+      <value>2</value>
     </param>
   </block>
   <block>
@@ -344,7 +371,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -513,7 +540,7 @@
     </param>
     <param>
       <key>file</key>
-      <value>file_usrp_in</value>
+      <value>./usrp_in</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -721,7 +748,7 @@
     </param>
     <param>
       <key>excess_bw</key>
-      <value>0.35</value>
+      <value>ex_bw</value>
     </param>
     <param>
       <key>freq_bw</key>
@@ -800,7 +827,7 @@
     </param>
     <param>
       <key>excess_bw</key>
-      <value>0.35</value>
+      <value>ex_bw</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -914,7 +941,7 @@ class print_fd_message(gr.sync_block):
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -948,7 +975,7 @@ os.chdir(script_path)</value>
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
