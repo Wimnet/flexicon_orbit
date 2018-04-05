@@ -147,6 +147,33 @@
     </param>
     <param>
       <key>_coordinate</key>
+      <value>(1112, 236)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>file_usrp_in</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>"usrp_in"</value>
+    </param>
+  </block>
+  <block>
+    <key>variable</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
       <value>(240, 13)</value>
     </param>
     <param>
@@ -486,7 +513,7 @@
     </param>
     <param>
       <key>file</key>
-      <value>./usrp_in</value>
+      <value>file_usrp_in</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -824,87 +851,6 @@
     </param>
     <param>
       <key>_io_cache</key>
-      <value>('FD Message', 'tx_fd_message', [('message', "'tx_message'")], [], [('0', 'byte', 1)], '', ['message'])</value>
-    </param>
-    <param>
-      <key>_source_code</key>
-      <value>"""
-Embedded Python Blocks:
-
-Each this file is saved, GRC will instantiate the first class it finds to get
-ports and parameters of your block. The arguments to __init__  will be the
-parameters. All of them are required to have default values!
-"""
-import numpy as np
-from gnuradio import gr
-
-
-class tx_fd_message(gr.sync_block):
-    def __init__(self, message="tx_message"):  # only default arguments here
-        gr.sync_block.__init__(
-            self,
-            name='FD Message',
-            in_sig=[],
-            out_sig=[np.uint8]
-        )
-
-        self.message = message
-        self.message_size = len(self.message + ' (000000000)\n')
-
-        self.count = 1
-        self.message_count = 0
-
-    def work(self, input_items, output_items):
-
-        out_size = len(output_items[0])
-        zeros_num = out_size % self.message_size
-        char_num = out_size - zeros_num
-        messages_num = char_num / self.message_size
-
-        for i in range(0, messages_num):
-            zeros = '0' * (9 - len(str(self.count)))
-            m = self.message + ' (' + zeros + str(self.count) + ')\n'
-            output_items[0][self.message_size * i:self.message_size * (i + 1)] = bytearray(m)
-            self.count += 1
-
-        output_items[0][self.message_size * (i + 1):] = np.zeros(zeros_num)
-
-        return len(output_items[0])
-</value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(8, 172)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>func_fd_msg</value>
-    </param>
-    <param>
-      <key>message</key>
-      <value>tx_message</value>
-    </param>
-  </block>
-  <block>
-    <key>epy_block</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_io_cache</key>
       <value>('Print FD Message', 'print_fd_message', [('display', '0')], [('0', 'byte', 1)], [], '', [])</value>
     </param>
     <param>
@@ -981,6 +927,121 @@ class print_fd_message(gr.sync_block):
     <param>
       <key>id</key>
       <value>func_print_msg</value>
+    </param>
+  </block>
+  <block>
+    <key>epy_module</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>source_code</key>
+      <value>import os
+
+script_path = os.path.dirname(os.path.realpath(__file__))
+os.chdir(script_path)</value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(1112, 308)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>func_relative_path</value>
+    </param>
+  </block>
+  <block>
+    <key>epy_block</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_io_cache</key>
+      <value>('FD Message', 'tx_fd_message', [('message', "'tx_message'")], [], [('0', 'byte', 1)], '', ['message'])</value>
+    </param>
+    <param>
+      <key>_source_code</key>
+      <value>"""
+Embedded Python Blocks:
+
+Each this file is saved, GRC will instantiate the first class it finds to get
+ports and parameters of your block. The arguments to __init__  will be the
+parameters. All of them are required to have default values!
+"""
+import numpy as np
+from gnuradio import gr
+
+
+class tx_fd_message(gr.sync_block):
+    def __init__(self, message="tx_message"):  # only default arguments here
+        gr.sync_block.__init__(
+            self,
+            name='FD Message',
+            in_sig=[],
+            out_sig=[np.uint8]
+        )
+
+        self.message = message
+        self.message_size = len(self.message + ' (000000000)\n')
+
+        self.count = 1
+        self.message_count = 0
+
+    def work(self, input_items, output_items):
+
+        out_size = len(output_items[0])
+        zeros_num = out_size % self.message_size
+        char_num = out_size - zeros_num
+        messages_num = char_num / self.message_size
+
+        for i in range(0, messages_num):
+            zeros = '0' * (9 - len(str(self.count)))
+            m = self.message + ' (' + zeros + str(self.count) + ')\n'
+            output_items[0][self.message_size * i:self.message_size * (i + 1)] = bytearray(m)
+            self.count += 1
+
+        output_items[0][self.message_size * (i + 1):] = np.zeros(zeros_num)
+
+        return len(output_items[0])
+</value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(8, 172)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>func_self_msg</value>
+    </param>
+    <param>
+      <key>message</key>
+      <value>tx_message</value>
     </param>
   </block>
   <block>
@@ -2024,7 +2085,7 @@ class print_fd_message(gr.sync_block):
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(8, 88)</value>
+      <value>(8, 70)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -2196,7 +2257,7 @@ class print_fd_message(gr.sync_block):
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>func_fd_msg</source_block_id>
+    <source_block_id>func_self_msg</source_block_id>
     <sink_block_id>blocks_throttle_0_0_0_0_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
