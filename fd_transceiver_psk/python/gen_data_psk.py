@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Gen Data Psk
-# Generated: Thu Apr  5 10:37:21 2018
+# Generated: Thu Apr  5 12:40:35 2018
 ##################################################
 
 if __name__ == '__main__':
@@ -26,8 +26,9 @@ from gnuradio.eng_option import eng_option
 from gnuradio.filter import firdes
 from grc_gnuradio import blks2 as grc_blks2
 from optparse import OptionParser
-import func_fd_msg
 import func_print_msg
+import func_relative_path  # embedded python module
+import func_self_msg
 import sip
 import sys
 from gnuradio import qtgui
@@ -68,6 +69,7 @@ class gen_data_psk(gr.top_block, Qt.QWidget):
         self.sps = sps = 2
         self.signal_scope = signal_scope = 200
         self.samp_rate = samp_rate = 10e6
+        self.file_usrp_in = file_usrp_in = "usrp_in"
         self.constellation = constellation = 4
         self.bits_scope = bits_scope = 200
 
@@ -231,8 +233,8 @@ class gen_data_psk(gr.top_block, Qt.QWidget):
 
         self._qtgui_freq_sink_x_0_win = sip.wrapinstance(self.qtgui_freq_sink_x_0.pyqwidget(), Qt.QWidget)
         self.tab_layout_2.addWidget(self._qtgui_freq_sink_x_0_win)
+        self.func_self_msg = func_self_msg.tx_fd_message(message=tx_message)
         self.func_print_msg = func_print_msg.print_fd_message(display=1)
-        self.func_fd_msg = func_fd_msg.tx_fd_message(message=tx_message)
         self.digital_psk_mod_0 = digital.psk.psk_mod(
           constellation_points=constellation,
           mod_code="gray",
@@ -256,7 +258,7 @@ class gen_data_psk(gr.top_block, Qt.QWidget):
         self.digital_correlate_access_code_tag_bb_0_0_0 = digital.correlate_access_code_tag_bb(tx_access_code, 0, 'usrp_input')
         self.blocks_throttle_0_0_0_0_0 = blocks.throttle(gr.sizeof_char*1, samp_rate,True)
         self.blocks_multiply_const_vxx_1 = blocks.multiply_const_vcc((0.3, ))
-        self.blocks_file_sink_0 = blocks.file_sink(gr.sizeof_gr_complex*1, './usrp_in', False)
+        self.blocks_file_sink_0 = blocks.file_sink(gr.sizeof_gr_complex*1, file_usrp_in, False)
         self.blocks_file_sink_0.set_unbuffered(False)
         self.blocks_char_to_float_0 = blocks.char_to_float(1, 1)
         self.blks2_packet_encoder_0_0 = grc_blks2.packet_mod_b(grc_blks2.packet_encoder(
@@ -290,7 +292,7 @@ class gen_data_psk(gr.top_block, Qt.QWidget):
         self.connect((self.digital_psk_demod_0_0, 0), (self.blks2_packet_decoder_0, 0))
         self.connect((self.digital_psk_demod_0_0, 0), (self.digital_correlate_access_code_tag_bb_0_0_0, 0))
         self.connect((self.digital_psk_mod_0, 0), (self.blocks_multiply_const_vxx_1, 0))
-        self.connect((self.func_fd_msg, 0), (self.blocks_throttle_0_0_0_0_0, 0))
+        self.connect((self.func_self_msg, 0), (self.blocks_throttle_0_0_0_0_0, 0))
 
     def closeEvent(self, event):
         self.settings = Qt.QSettings("GNU Radio", "gen_data_psk")
@@ -303,7 +305,7 @@ class gen_data_psk(gr.top_block, Qt.QWidget):
     def set_tx_message(self, tx_message):
         self.tx_message = tx_message
         self.set_tx_pay_len(len(self.tx_message) + len(' (000000000)\n') )
-        self.func_fd_msg.message = self.tx_message
+        self.func_self_msg.message = self.tx_message
 
     def get_tx_pay_len(self):
         return self.tx_pay_len
@@ -339,6 +341,13 @@ class gen_data_psk(gr.top_block, Qt.QWidget):
         self.qtgui_time_sink_x_0.set_trigger_mode(qtgui.TRIG_MODE_TAG, qtgui.TRIG_SLOPE_POS, 0.0, 0.2 * self.bits_scope/ self.samp_rate, 0, 'usrp_input')
         self.qtgui_freq_sink_x_0.set_frequency_range(0, self.samp_rate)
         self.blocks_throttle_0_0_0_0_0.set_sample_rate(self.samp_rate)
+
+    def get_file_usrp_in(self):
+        return self.file_usrp_in
+
+    def set_file_usrp_in(self, file_usrp_in):
+        self.file_usrp_in = file_usrp_in
+        self.blocks_file_sink_0.open(self.file_usrp_in)
 
     def get_constellation(self):
         return self.constellation

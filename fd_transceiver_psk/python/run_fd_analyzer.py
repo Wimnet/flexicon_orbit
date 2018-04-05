@@ -19,7 +19,7 @@
 # - Guy Farkash,	email: gf2373@columbia.edu
 # - Tingjun Chen, 	email: tc2668@columbia.edu
 #
-# Date: Mar. 1, 2018
+# Date: Apr. 15, 2018
 #
 # For more details, please refer to the Columbia FlexICoN project
 ########################################################################################################
@@ -65,9 +65,10 @@ def main():
 
 	# Plot signals in time domain, show the constellation, FFT and h weights vector
 	plot(res_buffs, usr_sett)
-
 	save_frame2files(res_buffs, usr_sett, 'usrp_in_frame', 'usrp_out_frame', 'sic_out_frame')
 
+	# padd = 0.3
+	# plt.subplots_adjust(hspace=padd, wspace=padd)
 	plt.show()
 
 
@@ -89,9 +90,9 @@ class user_settings:
 		self.remote_delay = 0
 		self.sample_rate = 10e6
 		self.center_freq = 900e6
-		self.samples_per_symbol = 4
-		self.tx_gain = 0
-		self.rx_gain = 0
+		self.samples_per_symbol = 2
+		self.tx_gain = 10
+		self.rx_gain = 25
 		self.rx_gain_cal = 3  # -30 to simulate a circulator
 
 		# plot settings
@@ -188,6 +189,7 @@ class user_settings:
 				self.plot_usrp_in = get(self.plot_usrp_in, 'Plot TX signals, 1/0')
 				self.plot_im = get(self.plot_im, 'Plot RX signals (imag), 1/0')
 				self.plot_only_fft = get(self.plot_only_fft, 'Plot only FFT, 1/0')
+
 
 		elif user_input == 'def' or user_input == 'DEF':
 			self.__init__()

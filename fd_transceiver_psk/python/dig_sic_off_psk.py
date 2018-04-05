@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Dig Sic Off Psk
-# Generated: Thu Feb  8 17:58:41 2018
+# Generated: Thu Apr  5 13:35:20 2018
 ##################################################
 
 if __name__ == '__main__':
@@ -24,9 +24,11 @@ from gnuradio import gr
 from gnuradio import qtgui
 from gnuradio.eng_option import eng_option
 from gnuradio.filter import firdes
+from gnuradio.qtgui import Range, RangeWidget
 from grc_gnuradio import blks2 as grc_blks2
 from optparse import OptionParser
 import func_desired_msg
+import func_print_desired_msg
 import func_print_msg
 import func_relative_path  # embedded python module
 import sip
@@ -65,19 +67,24 @@ class dig_sic_off_psk(gr.top_block, Qt.QWidget):
         ##################################################
         self.rx_message = rx_message = "This is a message from the remote radio"
         self.usrp_delay = usrp_delay = 29
-        self.sps = sps = 4
+        self.throttle = throttle = 50e3
+        self.sps = sps = 2
         self.samp_rate = samp_rate = 10e6
         self.rx_pay_len = rx_pay_len = len(rx_message) + len(' (000000000)\n')
-        self.rem_signal = rem_signal = -60
+        self.rem_strength = rem_strength = 0
+        self.rem_signal = rem_signal = -55
         self.file_usrp_out = file_usrp_out = "usrp_out"
         self.file_usrp_in = file_usrp_in = "usrp_in"
-        self.fd_message_display = fd_message_display = 1
         self.constellation = constellation = 4
-        self.access_code = access_code = "0011110011100011000001111111"
+        self.access_code_tx = access_code_tx = "0011110011100011000001111111"
+        self.access_code_rx = access_code_rx = "0011110011100011000001111111"
 
         ##################################################
         # Blocks
         ##################################################
+        self._rem_strength_range = Range(0, 5, 0.02, 0, 200)
+        self._rem_strength_win = RangeWidget(self._rem_strength_range, self.set_rem_strength, 'Remote Signal Power', "counter", float)
+        self.top_layout.addWidget(self._rem_strength_win)
         self.qtgui_freq_sink_x_0 = qtgui.freq_sink_c(
         	1024, #size
         	firdes.WIN_BLACKMAN_hARRIS, #wintype
@@ -102,7 +109,7 @@ class dig_sic_off_psk(gr.top_block, Qt.QWidget):
         if "complex" == "float" or "complex" == "msg_float":
           self.qtgui_freq_sink_x_0.set_plot_pos_half(not True)
 
-        labels = ['Out', 'SIC Out', '', '', '',
+        labels = ['RX', 'SIC Out', '', '', '',
                   '', '', '', '', '']
         widths = [1, 1, 1, 1, 1,
                   1, 1, 1, 1, 1]
@@ -121,7 +128,8 @@ class dig_sic_off_psk(gr.top_block, Qt.QWidget):
 
         self._qtgui_freq_sink_x_0_win = sip.wrapinstance(self.qtgui_freq_sink_x_0.pyqwidget(), Qt.QWidget)
         self.top_layout.addWidget(self._qtgui_freq_sink_x_0_win)
-        self.func_print_msg = func_print_msg.print_fd_message(display=fd_message_display)
+        self.func_print_msg = func_print_msg.print_fd_message(display=1)
+        self.func_print_desired_msg = func_print_desired_msg.print_fd_message(display=1)
         self.func_desired_msg = func_desired_msg.rx_fd_message(message=rx_message)
         self.digital_psk_mod_0_0 = digital.psk.psk_mod(
           constellation_points=4,
@@ -129,6 +137,17 @@ class dig_sic_off_psk(gr.top_block, Qt.QWidget):
           differential=True,
           samples_per_symbol=sps,
           excess_bw=0.35,
+          verbose=False,
+          log=False,
+          )
+        self.digital_psk_demod_0_0 = digital.psk.psk_demod(
+          constellation_points=constellation,
+          differential=True,
+          samples_per_symbol=sps,
+          excess_bw=0.35,
+          phase_bw=6.28/100.0,
+          timing_bw=6.28/100.0,
+          mod_code="gray",
           verbose=False,
           log=False,
           )
@@ -143,23 +162,30 @@ class dig_sic_off_psk(gr.top_block, Qt.QWidget):
           verbose=False,
           log=False,
           )
-        self.blocks_multiply_const_vxx_1 = blocks.multiply_const_vcc((10 ** ((rem_signal + 35 )* 50e-3), ))
+        self.blocks_throttle_0_0 = blocks.throttle(gr.sizeof_gr_complex*1, throttle,True)
+        self.blocks_throttle_0 = blocks.throttle(gr.sizeof_gr_complex*1, throttle,True)
+        self.blocks_multiply_const_vxx_1 = blocks.multiply_const_vcc((10 ** ((rem_signal + 35 )* 50e-3) * rem_strength, ))
         self.blocks_file_source_0_0 = blocks.file_source(gr.sizeof_gr_complex*1, file_usrp_out, False)
         self.blocks_file_source_0 = blocks.file_source(gr.sizeof_gr_complex*1, file_usrp_in, True)
         self.blocks_delay_0_0_0_0_0_0 = blocks.delay(gr.sizeof_gr_complex*1, usrp_delay)
-        self.blocks_delay_0 = blocks.delay(gr.sizeof_gr_complex*1, 0)
         self.blocks_add_xx_0 = blocks.add_vcc(1)
         self.blks2_packet_encoder_0_0_0 = grc_blks2.packet_mod_b(grc_blks2.packet_encoder(
         		samples_per_symbol=1,
         		bits_per_symbol=1,
         		preamble='',
-        		access_code=access_code,
+        		access_code=access_code_tx,
         		pad_for_usrp=False,
         	),
         	payload_length=rx_pay_len,
         )
+        self.blks2_packet_decoder_0_0 = grc_blks2.packet_demod_b(grc_blks2.packet_decoder(
+        		access_code=access_code_tx,
+        		threshold=0,
+        		callback=lambda ok, payload: self.blks2_packet_decoder_0_0.recv_pkt(ok, payload),
+        	),
+        )
         self.blks2_packet_decoder_0 = grc_blks2.packet_demod_b(grc_blks2.packet_decoder(
-        		access_code=access_code,
+        		access_code=access_code_tx,
         		threshold=0,
         		callback=lambda ok, payload: self.blks2_packet_decoder_0.recv_pkt(ok, payload),
         	),
@@ -168,17 +194,20 @@ class dig_sic_off_psk(gr.top_block, Qt.QWidget):
         ##################################################
         # Connections
         ##################################################
-        self.connect((self.blks2_packet_decoder_0, 0), (self.func_print_msg, 0))
+        self.connect((self.blks2_packet_decoder_0, 0), (self.func_print_desired_msg, 0))
+        self.connect((self.blks2_packet_decoder_0_0, 0), (self.func_print_msg, 0))
         self.connect((self.blks2_packet_encoder_0_0_0, 0), (self.digital_psk_mod_0_0, 0))
         self.connect((self.blocks_add_xx_0, 0), (self.digital_psk_demod_0, 0))
         self.connect((self.blocks_add_xx_0, 0), (self.qtgui_freq_sink_x_0, 0))
-        self.connect((self.blocks_delay_0, 0), (self.blocks_multiply_const_vxx_1, 0))
-        self.connect((self.blocks_delay_0_0_0_0_0_0, 0), (self.blocks_add_xx_0, 2))
-        self.connect((self.blocks_file_source_0, 0), (self.blocks_delay_0_0_0_0_0_0, 0))
+        self.connect((self.blocks_delay_0_0_0_0_0_0, 0), (self.digital_psk_demod_0_0, 0))
+        self.connect((self.blocks_file_source_0, 0), (self.blocks_throttle_0, 0))
         self.connect((self.blocks_file_source_0_0, 0), (self.blocks_add_xx_0, 1))
-        self.connect((self.blocks_multiply_const_vxx_1, 0), (self.blocks_add_xx_0, 0))
+        self.connect((self.blocks_multiply_const_vxx_1, 0), (self.blocks_throttle_0_0, 0))
+        self.connect((self.blocks_throttle_0, 0), (self.blocks_delay_0_0_0_0_0_0, 0))
+        self.connect((self.blocks_throttle_0_0, 0), (self.blocks_add_xx_0, 0))
         self.connect((self.digital_psk_demod_0, 0), (self.blks2_packet_decoder_0, 0))
-        self.connect((self.digital_psk_mod_0_0, 0), (self.blocks_delay_0, 0))
+        self.connect((self.digital_psk_demod_0_0, 0), (self.blks2_packet_decoder_0_0, 0))
+        self.connect((self.digital_psk_mod_0_0, 0), (self.blocks_multiply_const_vxx_1, 0))
         self.connect((self.func_desired_msg, 0), (self.blks2_packet_encoder_0_0_0, 0))
 
     def closeEvent(self, event):
@@ -201,6 +230,14 @@ class dig_sic_off_psk(gr.top_block, Qt.QWidget):
         self.usrp_delay = usrp_delay
         self.blocks_delay_0_0_0_0_0_0.set_dly(self.usrp_delay)
 
+    def get_throttle(self):
+        return self.throttle
+
+    def set_throttle(self, throttle):
+        self.throttle = throttle
+        self.blocks_throttle_0_0.set_sample_rate(self.throttle)
+        self.blocks_throttle_0.set_sample_rate(self.throttle)
+
     def get_sps(self):
         return self.sps
 
@@ -220,12 +257,19 @@ class dig_sic_off_psk(gr.top_block, Qt.QWidget):
     def set_rx_pay_len(self, rx_pay_len):
         self.rx_pay_len = rx_pay_len
 
+    def get_rem_strength(self):
+        return self.rem_strength
+
+    def set_rem_strength(self, rem_strength):
+        self.rem_strength = rem_strength
+        self.blocks_multiply_const_vxx_1.set_k((10 ** ((self.rem_signal + 35 )* 50e-3) * self.rem_strength, ))
+
     def get_rem_signal(self):
         return self.rem_signal
 
     def set_rem_signal(self, rem_signal):
         self.rem_signal = rem_signal
-        self.blocks_multiply_const_vxx_1.set_k((10 ** ((self.rem_signal + 35 )* 50e-3), ))
+        self.blocks_multiply_const_vxx_1.set_k((10 ** ((self.rem_signal + 35 )* 50e-3) * self.rem_strength, ))
 
     def get_file_usrp_out(self):
         return self.file_usrp_out
@@ -241,23 +285,23 @@ class dig_sic_off_psk(gr.top_block, Qt.QWidget):
         self.file_usrp_in = file_usrp_in
         self.blocks_file_source_0.open(self.file_usrp_in, True)
 
-    def get_fd_message_display(self):
-        return self.fd_message_display
-
-    def set_fd_message_display(self, fd_message_display):
-        self.fd_message_display = fd_message_display
-
     def get_constellation(self):
         return self.constellation
 
     def set_constellation(self, constellation):
         self.constellation = constellation
 
-    def get_access_code(self):
-        return self.access_code
+    def get_access_code_tx(self):
+        return self.access_code_tx
 
-    def set_access_code(self, access_code):
-        self.access_code = access_code
+    def set_access_code_tx(self, access_code_tx):
+        self.access_code_tx = access_code_tx
+
+    def get_access_code_rx(self):
+        return self.access_code_rx
+
+    def set_access_code_rx(self, access_code_rx):
+        self.access_code_rx = access_code_rx
 
 
 def main(top_block_cls=dig_sic_off_psk, options=None):
