@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?grc format='1' created='3.7.11'?>
+<?grc format='1' created='3.7.10'?>
 <flow_graph>
   <timestamp>Mon Nov 13 13:33:50 2017</timestamp>
   <block>
@@ -201,7 +201,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(376, 876)</value>
+      <value>(1128, 292)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -213,7 +213,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>"usrp_out"</value>
+      <value>"usrp_out_link"</value>
     </param>
   </block>
   <block>
@@ -546,7 +546,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>50e3</value>
+      <value>10e6</value>
     </param>
   </block>
   <block>
@@ -904,6 +904,57 @@
     <param>
       <key>repeat</key>
       <value>False</value>
+    </param>
+    <param>
+      <key>vlen</key>
+      <value>1</value>
+    </param>
+  </block>
+  <block>
+    <key>blocks_multiply_const_vxx</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>const</key>
+      <value>100</value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(88, 844)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>blocks_multiply_const_vxx_0</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>complex</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
     </param>
     <param>
       <key>vlen</key>
@@ -1712,7 +1763,7 @@ os.chdir(script_path)</value>
     </param>
     <param>
       <key>grid</key>
-      <value>False</value>
+      <value>True</value>
     </param>
     <param>
       <key>id</key>
@@ -1728,15 +1779,15 @@ os.chdir(script_path)</value>
     </param>
     <param>
       <key>color1</key>
-      <value>"blue"</value>
+      <value>"black"</value>
     </param>
     <param>
       <key>label1</key>
-      <value>SIC In TX</value>
+      <value>TX Signal</value>
     </param>
     <param>
       <key>width1</key>
-      <value>1</value>
+      <value>2</value>
     </param>
     <param>
       <key>alpha10</key>
@@ -1764,11 +1815,11 @@ os.chdir(script_path)</value>
     </param>
     <param>
       <key>label2</key>
-      <value>SIC Out</value>
+      <value>RX Signal after RF SIC</value>
     </param>
     <param>
       <key>width2</key>
-      <value>1</value>
+      <value>2</value>
     </param>
     <param>
       <key>alpha3</key>
@@ -1776,31 +1827,31 @@ os.chdir(script_path)</value>
     </param>
     <param>
       <key>color3</key>
-      <value>"green"</value>
+      <value>"blue"</value>
     </param>
     <param>
       <key>label3</key>
-      <value></value>
+      <value>RF Signal after Digital SIC</value>
     </param>
     <param>
       <key>width3</key>
-      <value>1</value>
+      <value>2</value>
     </param>
     <param>
       <key>alpha4</key>
-      <value>1.0</value>
+      <value>2.0</value>
     </param>
     <param>
       <key>color4</key>
-      <value>"black"</value>
+      <value>"green"</value>
     </param>
     <param>
       <key>label4</key>
-      <value></value>
+      <value>RX Noise Floor</value>
     </param>
     <param>
       <key>width4</key>
-      <value>1</value>
+      <value>2</value>
     </param>
     <param>
       <key>alpha5</key>
@@ -1896,7 +1947,7 @@ os.chdir(script_path)</value>
     </param>
     <param>
       <key>nconnections</key>
-      <value>2</value>
+      <value>3</value>
     </param>
     <param>
       <key>showports</key>
@@ -1936,19 +1987,19 @@ os.chdir(script_path)</value>
     </param>
     <param>
       <key>label</key>
-      <value>Relative Gain</value>
+      <value>Power</value>
     </param>
     <param>
       <key>ymax</key>
-      <value>10</value>
+      <value>20</value>
     </param>
     <param>
       <key>ymin</key>
-      <value>-140</value>
+      <value>-120</value>
     </param>
     <param>
       <key>units</key>
-      <value>dB</value>
+      <value>dBm</value>
     </param>
   </block>
   <block>
@@ -2044,7 +2095,7 @@ os.chdir(script_path)</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(16, 980)</value>
+      <value>(16, 1004)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -2071,7 +2122,7 @@ os.chdir(script_path)</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(32, 932)</value>
+      <value>(32, 956)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -2084,6 +2135,33 @@ os.chdir(script_path)</value>
     <param>
       <key>stream_id</key>
       <value>sic_in_rx</value>
+    </param>
+  </block>
+  <block>
+    <key>virtual_source</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(40, 908)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>virtual_source_0_1_0</value>
+    </param>
+    <param>
+      <key>stream_id</key>
+      <value>sic_in_tx</value>
     </param>
   </block>
   <connection>
@@ -2133,6 +2211,12 @@ os.chdir(script_path)</value>
     <sink_block_id>blocks_add_xx_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>1</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_multiply_const_vxx_0</source_block_id>
+    <sink_block_id>qtgui_freq_sink_x_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
   </connection>
   <connection>
     <source_block_id>blocks_multiply_const_vxx_1</source_block_id>
@@ -2186,11 +2270,17 @@ os.chdir(script_path)</value>
     <source_block_id>virtual_source_0_0_0</source_block_id>
     <sink_block_id>qtgui_freq_sink_x_0</sink_block_id>
     <source_key>0</source_key>
-    <sink_key>1</sink_key>
+    <sink_key>2</sink_key>
   </connection>
   <connection>
     <source_block_id>virtual_source_0_1</source_block_id>
     <sink_block_id>qtgui_freq_sink_x_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>1</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>virtual_source_0_1_0</source_block_id>
+    <sink_block_id>blocks_multiply_const_vxx_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
