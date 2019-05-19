@@ -8,33 +8,42 @@ More full-duplex source code examples are currently under development and will b
 ## Technical Report
 Our Gen-1 RF Canceller is installed with `node11-10` in the ORBIT main grid. This node is equipped with a USRP N210 SDR. For more information, please read
 
-*Tingjun Chen, Mahmood Baraani Dastjerdi, Jin Zhou, Harish Krishnaswamy, and Gil Zussman, “Open-access full-duplex wireless in the ORBIT testbed,” arXiv preprint: 1801.03069 [cs.NI], Jan. 2018.* [[arXiv]](https://arxiv.org/pdf/1801.03069.pdf)
+*Tingjun Chen, Mahmood Baraani Dastjerdi, Guy Farkash, Jin Zhou, Harish Krishnaswamy, and Gil Zussman, “Open-access full-duplex wireless in the ORBIT testbed,” arXiv preprint: 1801.03069v2 [cs.NI], May 2018.* [[arXiv]](https://arxiv.org/abs/1801.03069)
 
 Please cite the above report if you use the hardware. Please email Tingjun Chen (tingjun [at] ee.columbia.edu) if you use (or plan to use) the full-duplex node or if you have any questions.
 
 #### Useful links
 * Columbia FlexICoN project website: [http://flexicon.ee.columbia.edu/](http://flexicon.ee.columbia.edu/)
 * ORBIT Testbed: [http://www.orbit-lab.org/](http://www.orbit-lab.org/)
-* Full-duplex tutorial at ORBIT: [http://www.orbit-lab.org/wiki/Tutorials/k0SDR/Tutorial25#Full-DuplexWirelessusingUSRPN210](http://www.orbit-lab.org/wiki/Tutorials/k0SDR/Tutorial25#Full-DuplexWirelessusingUSRPN210)
+* Full-duplex tutorial at ORBIT: [http://www.orbit-lab.org/wiki/Tutorials/k0SDR/Tutorial25#Full-DuplexWirelessusingUSRPN210](http://www.orbit-lab.org/wiki/Tutorials/k0SDR/Tutorial25#Full-DuplexWirelessusingUSRPN210). We highly recommend you to go through the tutorials.
 
 ## Software (SW)
+
+The most updated ORBIT node image with all the configurations and examples is `flexicon-orbit-v3.ndz` (May 18, 2019).
+
+#### A real-time full-duplex transceiver example using OFDM PHY
+We build a GNU Radio OOT module in C++ for performing the digital SIC on the packet-level.  The source code is under `./fd_transceiver_ofdm` with the following sub-directories:
+* `/grc` contains the GNU Radio flowgraph for the real-time full-duplex transceiver including the sub-20 control through `gnuradio-companion`
+
+#### A full-duplex transcevier example with PSK modulation
+
 #### A full-duplex transcevier example
-The source code is under ```./fd_transceviver_simple``` with the following sub-directories:
-* ```/uhd``` contains the UHD code for the full-duplex transceiver
-* ```/sub20``` contains the code for configuring the RF canceller using a SUB-20 controller
-* ```/scripts``` contains the ```MATLAB``` code for post-processing the experimental data
+The source code is under `./fd_transceiver_simple` with the following sub-directories:
+* `/uhd` contains the UHD code for the full-duplex transceiver
+* `/sub20` contains the code for configuring the RF canceller using a SUB-20 controller
+* `/scripts` contains the MATLAB code for post-processing the experimental data
 
 #### UHD
 The instructions of UHD can be found on the Ettus Resesarch UHD repository at [here](https://github.com/EttusResearch/uhd).
 
-#### The `Eigen C++` Library
-The `Eigen C++` library is used for basic albegra in channel estimation and digital self-interference cancellation. The `Eigen` releases can be found on the [Eigen website](http://eigen.tuxfamily.org/index.php?title=Main_Page). We used the latest stable release `Eigen 3.3.4` through our testings and experiments.
+#### The Eigen C++ Library
+The Eigen C++ library is used for basic albegra in channel estimation and digital self-interference cancellation. The Eigen releases can be found on the [Eigen website](http://eigen.tuxfamily.org/index.php?title=Main_Page). We used the latest stable release Eigen 3.3.4 through our testings and experiments.
 
-On Linux, download and unzip `Eigen 3.3.4` and copy the main librararies to the desired path by running ```scp -r /eigen/Eigen/ /usr/include/```.
+On Linux, download and unzip Eigen 3.3.4 and copy the main librararies to the desired path by running `scp -r /eigen/Eigen/ /usr/include/`. The Eigen C++ is already included in the provided node image `flexicon-orbit-v3.ndz`.
 
 ## Hardware (HW)
 #### Columbia FlexICoN's Gen-1 Frequency-Flat Amplitude- and Phase-based RF Canceller
-Please refer to our [technical report](https://arxiv.org/pdf/1801.03069.pdf).
+Please refer to our [technical report](https://arxiv.org/abs/1801.03069).
 
 #### Universal Software Radio Peripheral (USRP)
 Our full-duplex transceiver is based on the Ettus Research USRP. Our example has been tested successfully on USRP models N210/USRP2/B210/B205-mini.
