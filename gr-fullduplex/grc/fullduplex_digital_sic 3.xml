@@ -1,0 +1,78 @@
+<block>
+  <name>Digital SIC</name>
+  <key>fullduplex_digital_sic</key>
+  <category>[FULLDUPLEX]</category>
+  <import>import fullduplex</import>
+  <make>fullduplex.digital_sic($debug, $delay_tx2rx, $pad_front, $sig_pilot_pos, $frame_len, $si_chan_k, $si_chan_dim, $premultiplier)</make>
+
+  <callback>set_delay_tx2rx($delay_tx2rx)</callback>
+
+  <param>
+    <name>Debug</name>
+    <key>debug</key>
+    <value>False</value>
+    <type>bool</type>
+  </param>
+
+  <param>
+    <name>Delay Tx2Rx</name>
+    <key>delay_tx2rx</key>
+    <value>0</value>
+    <type>int</type>
+  </param>
+
+  <param>
+    <name>Pad Front</name>
+    <key>pad_front</key>
+    <value>0</value>
+    <type>int</type>
+  </param>
+
+  <param>
+    <name>Sig Pilot Pos</name>
+    <key>sig_pilot_pos</key>
+    <value>0</value>
+    <type>int</type>
+  </param>
+
+  <param>
+    <name>Frame Length</name>
+    <key>frame_len</key>
+    <value>0</value>
+    <type>int</type>
+  </param>
+
+  <param>
+    <name>SI Channel: k</name>
+    <key>si_chan_k</key>
+    <value>0</value>
+    <type>int</type>
+  </param>
+
+  <param>
+    <name>SI Channel: dim</name>
+    <key>si_chan_dim</key>
+    <value>1</value>
+    <type>int</type>
+  </param>
+
+  <param>
+    <name>Premultiplier</name>
+    <key>premultiplier</key>
+    <value>1</value>
+    <type>real</type>
+  </param>
+
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+    <nports>2</nports>
+  </sink>
+
+  <source>
+    <name>out</name>
+    <type>complex</type>
+    <nports>3</nports>
+  </source>
+
+</block>

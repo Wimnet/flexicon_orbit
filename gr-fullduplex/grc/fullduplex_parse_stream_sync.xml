@@ -1,0 +1,49 @@
+<block>
+  <name>Parse stream sync</name>
+  <key>fullduplex_parse_stream_sync</key>
+  <category>[FULLDUPLEX]</category>
+  <import>import fullduplex</import>
+  <make>fullduplex.parse_stream_sync($debug, $delay_tx2rx, $pad_front, $frame_len)</make>
+  <callback>set_delay($delay_tx2rx)</callback>
+
+  <param>
+    <name>Debug</name>
+    <key>debug</key>
+    <value>False</value>
+    <type>bool</type>
+  </param>
+
+  <param>
+    <name>Delay Tx2Rx</name>
+    <key>delay_tx2rx</key>
+    <value>0</value>
+    <type>int</type>
+  </param>
+
+  <param>
+    <name>Pad Front</name>
+    <key>pad_front</key>
+    <value>0</value>
+    <type>int</type>
+  </param>
+
+  <param>
+    <name>Frame Length</name>
+    <key>frame_len</key>
+    <value>0</value>
+    <type>int</type>
+  </param>
+
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+    <nports>2</nports>
+  </sink>
+
+  <source>
+    <name>out</name>
+    <type>complex</type>
+    <nports>2</nports>
+  </source>
+
+</block>

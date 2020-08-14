@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<block>
+  <name>SNR Calculator</name>
+  <key>fullduplex_snr_calc</key>
+  <category>[FULLDUPLEX]</category>
+  <import>import fullduplex</import>
+  <make>fullduplex.snr_calc($debug, $delay_txrx, $pad_front, $data_symbols, $noise_start_idx, $noise_length)</make>
+
+  <callback>set_delay_tx2rx($delay_txrx)</callback>
+  <!-- Make one 'param' node for every Parameter you want settable from the GUI.
+       Sub-nodes:
+       * name
+       * key (makes the value accessible as $keyname, e.g. in the make node)
+       * type -->
+  <param>
+    <name>Debug</name>
+    <key>debug</key>
+    <type>bool</type>
+  </param>
+
+  <param>
+    <name>Delay Tx2Rx</name>
+    <key>delay_txrx</key>
+    <type>int</type>
+  </param>
+
+  <param>
+    <name>Pad Front</name>
+    <key>pad_front</key>
+    <type>int</type>
+  </param>
+
+  <param>
+    <name>Data Symbols</name>
+    <key>data_symbols</key>
+    <type>int</type>
+  </param>
+
+  <param>
+    <name>Noise Start Index</name>
+    <key>noise_start_idx</key>
+    <type>int</type>
+  </param>
+
+  <param>
+    <name>Noise Length</name>
+    <key>noise_length</key>
+    <type>int</type>
+  </param>
+
+  <!-- Make one 'sink' node per input. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+  </sink>
+
+  <!-- Make one 'source' node per output. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <source>
+    <name>out</name>
+    <type>float</type>
+  </source>
+</block>

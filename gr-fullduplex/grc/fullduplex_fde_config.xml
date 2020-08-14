@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<block>
+  <name>FDE Config</name>
+  <key>fullduplex_fde_config</key>
+  <category>[FULLDUPLEX]</category>
+  <import>import fullduplex</import>
+  <make>fullduplex.fde_config($init_cap_addr, $init_cap_val, $sn_val)</make>
+  <!-- <callback>set_canc_path($canc_path_val)</callback>
+  <callback>set_att(0, $att_0_val)</callback>
+  <callback>set_att(1, $att_1_val)</callback>
+  <callback>set_att(2, $att_2_val)</callback>
+  <callback>set_dac(0, $dac_0_val)</callback>
+  <callback>set_dac(1, $dac_1_val)</callback>
+  <callback>set_dac(2, $dac_2_val)</callback> -->
+  <!-- <callback>set_cf_cap(0, $cf_0_val)</callback>
+  <callback>set_cf_cap(1, $cf_1_val)</callback>
+  <callback>set_qf_cap(0, $qf_0_val)</callback>
+  <callback>set_qf_cap(1, $qf_1_val)</callback>
+  <callback>set_tuner_cap(0, $tuner_cap_0_val)</callback>
+  <callback>set_tuner_cap(1, $tuner_cap_1_val)</callback>
+  <callback>set_tuner_cap(2, $tuner_cap_2_val)</callback> -->
+  <callback>set_all($att_0_val, $att_1_val, $att_2_val, $cf_0_val, $cf_1_val, $qf_0_val, $qf_1_val, $dac_0_val, $dac_1_val, $dac_2_val, $canc_path_val, $tuner_cap_0_val, $tuner_cap_1_val, $tuner_cap_2_val)</callback>
+  <callback>fde_config_find_dev($sn_val)</callback>
+  <param>
+    <name>FDE board</name>
+    <key>sn_val</key>
+    <type>string</type>
+  </param>
+  <param>
+    <name>Canceller Path Val</name>
+    <key>canc_path_val</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Attenuator 0 Val</name>
+    <key>att_0_val</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Attenuator 1 Val</name>
+    <key>att_1_val</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Attenuator 2 Val</name>
+    <key>att_2_val</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>DAC 0 Val</name>
+    <key>dac_0_val</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>DAC 1 Val</name>
+    <key>dac_1_val</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>DAC 2 Val</name>
+    <key>dac_2_val</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>CF 0 Val</name>
+    <key>cf_0_val</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>CF 1 Val</name>
+    <key>cf_1_val</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>QF 0 Val</name>
+    <key>qf_0_val</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>QF 1 Val</name>
+    <key>qf_1_val</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Init Cap Addr</name>
+    <key>init_cap_addr</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Init Cap Val</name>
+    <key>init_cap_val</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Tuner Cap 0 Val</name>
+    <key>tuner_cap_0_val</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Tuner Cap 1 Val</name>
+    <key>tuner_cap_1_val</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Tuner Cap 2 Val</name>
+    <key>tuner_cap_2_val</key>
+    <type>int</type>
+  </param>
+</block>
