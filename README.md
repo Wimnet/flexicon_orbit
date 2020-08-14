@@ -6,11 +6,13 @@ The tutorial consists of three demo experiments which run through GNU Radio on t
 We will update this repository with more full-duplex source code and examples as they are developed.
 
 ## Publications
-For further information on the integrated Gen-1 and Gen-2 radios, please see the following paper:
+For further information on the integrated Gen-1 and Gen-2 radios, please see the following papers:
 
 *Manav Kohli, Tingjun Chen, Mahmood Baraani Dastjerdi, Jackson Welles, Ivan Seskar, Harish Krishnaswamy, and Gil Zussman, "Open-Access Full-Duplex Wireless in the ORBIT and COSMOS Testbeds," in Proc. ACM MobiCom'20 Workshop on Wireless Network Testbeds, Experimental evaluation & CHaracterization (WiNTECH '20) (invited paper) (to appear), Sep. 2020.* [[download](https://wimnet.ee.columbia.edu/wp-content/uploads/2020/08/wintech2020_orbit_cosmos_fullduplex_integration.pdf)]
 
-We greatly appreciate that you cite the above report if you use the hardware. Please email Tingjun Chen (tingjun [at] ee.columbia.edu) or Manav Kohli (mpk2138 [at] columbia.edu) if you use (or plan to use) the full-duplex node or if you have any questions.
+*Tingjun Chen, Mahmood Baraani Dastjerdi, Jin Zhou, Harish Krishnaswamy, and Gil Zussman, “Wideband Full-Duplex Wireless via Frequency-Domain Equalization: Design and Experimentation,” in Proc. ACM MobiCom'19, Oct. 2019.* [[download](https://wimnet.ee.columbia.edu/wp-content/uploads/2018/12/FDE_MobiCom19.pdf)]
+
+We greatly appreciate that you cite the above papers if you use the hardware. Please email Tingjun Chen (tingjun [at] ee.columbia.edu) or Manav Kohli (mpk2138 [at] columbia.edu) if you use (or plan to use) the full-duplex node or if you have any questions.
 
 ## Hardware (HW)
 ### The Gen-1 Narrowband Frequency-Flat Amplitude- and Phase-based RF Canceller Box
