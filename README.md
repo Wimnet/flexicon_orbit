@@ -1,7 +1,7 @@
 # Open-Access Full-Duplex Wireless in the ORBIT and COSMOS Testbeds
 This GitHub repository contains the source code and experiment files for the [Full-Duplex (FD) tutorial located on the COSMOS/ORBIT Wiki](https://wiki.cosmos-lab.org/wiki/Tutorials/Wireless/FullDuplex).
 
-The tutorial consists of three demo experiments which run through GNU Radio on the integrated 1st-generation (Gen-1) *narrowband* and 2nd-generation (Gen-2) *wideband* FD radios. Each experiment is accessible at `gr-fullduplex/experiments`. While these demo experiments are designed to be run on the ORBIT and COSMOS testbeds, we provide them here so that they may be used as a basis for other experimentation with FD wireless. 
+The tutorial consists of three demo experiments which run through GNU Radio on the integrated 1st-generation (Gen-1) *narrowband* and 2nd-generation (Gen-2) *wideband* FD radios. Each experiment is accessible at `./experiments`. While these demo experiments are designed to be run on the ORBIT and COSMOS testbeds, we provide them here so that they may be used as a basis for other experimentation with FD wireless. 
 
 We will update this repository with more full-duplex source code and examples as they are developed.
 
