@@ -18,7 +18,7 @@ We greatly appreciate that you cite the above papers if you use the hardware. Pl
 ### The Gen-1 Narrowband Frequency-Flat Amplitude- and Phase-based RF Canceller Box
 Please refer to our [WiNTECH'20 paper](https://wimnet.ee.columbia.edu/wp-content/uploads/2020/08/wintech2020_orbit_cosmos_fullduplex_integration.pdf) for details on the design and integration of the Gen-1 RF Canceller Box in the ORBIT testbed.
 
-### The Gen-2 Narrowband Frequency-Domain Equalization-based RF Canceller Box
+### The Gen-2 Wideband Frequency-Domain Equalization (FDE)-based RF Canceller Box
 Please refer to our [WiNTECH'20 paper](https://wimnet.ee.columbia.edu/wp-content/uploads/2020/08/wintech2020_orbit_cosmos_fullduplex_integration.pdf) for details on the integration of the Gen-2 RF Canceller Box in the COSMOS testbed. Our [MobiCom'19 paper](https://wimnet.ee.columbia.edu/wp-content/uploads/2018/12/FDE_MobiCom19.pdf) provides an in-depth evaluation of the Gen-2 hardware.
 
 ### Universal Software Radio Peripheral (USRP) 
