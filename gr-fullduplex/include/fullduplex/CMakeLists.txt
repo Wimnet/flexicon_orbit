@@ -33,5 +33,6 @@ install(FILES
     #compute_ofdm_prr.h
     count_packets.h
     async_divide.h
-    fde_config.h DESTINATION include/fullduplex
+    fde_config.h
+    sub20_init.h DESTINATION include/fullduplex
 )

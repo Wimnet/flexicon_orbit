@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structsub__cfg__vpd" kind="struct" language="C++" prot="public">
+    <compoundname>sub_cfg_vpd</compoundname>
+    <includes refid="libsub_8h" local="no">libsub.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsub__cfg__vpd_1af64374ffcb4254c3704200f10909e657" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sub_cfg_vpd::lcd_w</definition>
+        <argsstring></argsstring>
+        <name>lcd_w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="76" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsub__cfg__vpd_1ab80a6e7eea60c9ada9c273a1c820f8e6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sub_cfg_vpd::lcd_h</definition>
+        <argsstring></argsstring>
+        <name>lcd_h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="77" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsub__cfg__vpd_1a06a43df77c78c6af61f79814f647ba4b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sub_cfg_vpd::serial</definition>
+        <argsstring></argsstring>
+        <name>serial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="78" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsub__cfg__vpd_1a6c78ee87a42963765f69f0d47fa66f78" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sub_cfg_vpd::buttons</definition>
+        <argsstring></argsstring>
+        <name>buttons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="79" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsub__cfg__vpd_1ab110fa7b3b0eefd0efec560d4dec8596" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sub_cfg_vpd::ir_car</definition>
+        <argsstring></argsstring>
+        <name>ir_car</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="80" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="75" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="74" bodyend="81"/>
+    <listofallmembers>
+      <member refid="structsub__cfg__vpd_1a6c78ee87a42963765f69f0d47fa66f78" prot="public" virt="non-virtual"><scope>sub_cfg_vpd</scope><name>buttons</name></member>
+      <member refid="structsub__cfg__vpd_1ab110fa7b3b0eefd0efec560d4dec8596" prot="public" virt="non-virtual"><scope>sub_cfg_vpd</scope><name>ir_car</name></member>
+      <member refid="structsub__cfg__vpd_1ab80a6e7eea60c9ada9c273a1c820f8e6" prot="public" virt="non-virtual"><scope>sub_cfg_vpd</scope><name>lcd_h</name></member>
+      <member refid="structsub__cfg__vpd_1af64374ffcb4254c3704200f10909e657" prot="public" virt="non-virtual"><scope>sub_cfg_vpd</scope><name>lcd_w</name></member>
+      <member refid="structsub__cfg__vpd_1a06a43df77c78c6af61f79814f647ba4b" prot="public" virt="non-virtual"><scope>sub_cfg_vpd</scope><name>serial</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

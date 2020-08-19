@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="unionsub__mdio__frame" kind="union" language="C++" prot="public">
+    <compoundname>sub_mdio_frame</compoundname>
+    <includes refid="libsub_8h" local="no">libsub.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionsub__mdio__frame_1a20fc055731c7e6c3f0bd0ff284f29ff5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sub_mdio_frame::op</definition>
+        <argsstring></argsstring>
+        <name>op</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="99" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionsub__mdio__frame_1a10fe8f0cdb9cd013bfa5733d1ee451df" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sub_mdio_frame::phyad</definition>
+        <argsstring></argsstring>
+        <name>phyad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="100" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionsub__mdio__frame_1af4281434e98daf2634c1c3dbf0fabea0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sub_mdio_frame::regad</definition>
+        <argsstring></argsstring>
+        <name>regad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="101" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionsub__mdio__frame_1a4d9849573833ba33491c97352bb3c937" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sub_mdio_frame::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="102" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionsub__mdio__frame_1a81d214b0db764efb1cad821f16b802e6" prot="public" static="no" mutable="no">
+        <type>struct sub_mdio_frame::@5</type>
+        <definition>struct sub_mdio_frame::@5 sub_mdio_frame::clause22</definition>
+        <argsstring></argsstring>
+        <name>clause22</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="103" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionsub__mdio__frame_1a71ab48aa71ec8a0b5b9775de00d0308a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sub_mdio_frame::prtad</definition>
+        <argsstring></argsstring>
+        <name>prtad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="107" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionsub__mdio__frame_1a95b5ad67d7d67889ff954e91316192c8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sub_mdio_frame::devad</definition>
+        <argsstring></argsstring>
+        <name>devad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="108" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionsub__mdio__frame_1a657760c95803d067f1ee39280f5fd8d0" prot="public" static="no" mutable="no">
+        <type>struct sub_mdio_frame::@6</type>
+        <definition>struct sub_mdio_frame::@6 sub_mdio_frame::clause45</definition>
+        <argsstring></argsstring>
+        <name>clause45</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="110" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="96" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="95" bodyend="111"/>
+    <listofallmembers>
+      <member refid="unionsub__mdio__frame_1a81d214b0db764efb1cad821f16b802e6" prot="public" virt="non-virtual"><scope>sub_mdio_frame</scope><name>clause22</name></member>
+      <member refid="unionsub__mdio__frame_1a657760c95803d067f1ee39280f5fd8d0" prot="public" virt="non-virtual"><scope>sub_mdio_frame</scope><name>clause45</name></member>
+      <member refid="unionsub__mdio__frame_1a4d9849573833ba33491c97352bb3c937" prot="public" virt="non-virtual"><scope>sub_mdio_frame</scope><name>data</name></member>
+      <member refid="unionsub__mdio__frame_1a95b5ad67d7d67889ff954e91316192c8" prot="public" virt="non-virtual"><scope>sub_mdio_frame</scope><name>devad</name></member>
+      <member refid="unionsub__mdio__frame_1a20fc055731c7e6c3f0bd0ff284f29ff5" prot="public" virt="non-virtual"><scope>sub_mdio_frame</scope><name>op</name></member>
+      <member refid="unionsub__mdio__frame_1a10fe8f0cdb9cd013bfa5733d1ee451df" prot="public" virt="non-virtual"><scope>sub_mdio_frame</scope><name>phyad</name></member>
+      <member refid="unionsub__mdio__frame_1a71ab48aa71ec8a0b5b9775de00d0308a" prot="public" virt="non-virtual"><scope>sub_mdio_frame</scope><name>prtad</name></member>
+      <member refid="unionsub__mdio__frame_1af4281434e98daf2634c1c3dbf0fabea0" prot="public" virt="non-virtual"><scope>sub_mdio_frame</scope><name>regad</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

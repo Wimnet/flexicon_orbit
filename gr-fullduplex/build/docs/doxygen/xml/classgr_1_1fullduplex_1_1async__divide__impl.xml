@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1fullduplex_1_1async__divide__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::fullduplex::async_divide_impl</compoundname>
+    <basecompoundref refid="classgr_1_1fullduplex_1_1async__divide" prot="public" virt="non-virtual">gr::fullduplex::async_divide</basecompoundref>
+    <includes refid="async__divide__impl_8h" local="no">async_divide_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1async__divide__impl_1a3aeee43a11620510d3cffe3d9277abce" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::fullduplex::async_divide_impl::d_result</definition>
+        <argsstring></argsstring>
+        <name>d_result</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/async_divide_impl.h" line="33" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/async_divide_impl.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1async__divide__impl_1af3748c4bff0a2d8bb26ed9671a0f08ab" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::fullduplex::async_divide_impl::d_in1</definition>
+        <argsstring></argsstring>
+        <name>d_in1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/async_divide_impl.h" line="34" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/async_divide_impl.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1async__divide__impl_1af38b72fd00907865cba406ed6afece9c" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::fullduplex::async_divide_impl::d_in2</definition>
+        <argsstring></argsstring>
+        <name>d_in2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/async_divide_impl.h" line="35" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/async_divide_impl.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1async__divide__impl_1a0a0512ac941c7547e6a74e705efb6231" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::fullduplex::async_divide_impl::handle1</definition>
+        <argsstring>(pmt::pmt_t msg)</argsstring>
+        <name>handle1</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/async_divide_impl.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1async__divide__impl_1a49a0a758d19f71abeff1414b8417c3bf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::fullduplex::async_divide_impl::handle2</definition>
+        <argsstring>(pmt::pmt_t msg)</argsstring>
+        <name>handle2</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/async_divide_impl.h" line="37" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1async__divide__impl_1adcacd4265f4b9b745770f24306b84533" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::fullduplex::async_divide_impl::async_divide_impl</definition>
+        <argsstring>()</argsstring>
+        <name>async_divide_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/async_divide_impl.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1async__divide__impl_1af4d90340e30a12a13df4087d6b6c28a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::fullduplex::async_divide_impl::~async_divide_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~async_divide_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/async_divide_impl.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1async__divide__impl_1a670915e657e3ea78bea7aa5497a5808f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::fullduplex::async_divide_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/async_divide_impl.h" line="44" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6">
+        <label>gr::fullduplex::async_divide</label>
+        <link refid="classgr_1_1fullduplex_1_1async__divide"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>gr::sync_block</label>
+      </node>
+      <node id="5">
+        <label>gr::fullduplex::async_divide_impl</label>
+        <link refid="classgr_1_1fullduplex_1_1async__divide__impl"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>gr::fullduplex::async_divide</label>
+        <link refid="classgr_1_1fullduplex_1_1async__divide"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>gr::sync_block</label>
+      </node>
+      <node id="8">
+        <label>gr::fullduplex::async_divide_impl</label>
+        <link refid="classgr_1_1fullduplex_1_1async__divide__impl"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/async_divide_impl.h" line="30" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/async_divide_impl.h" bodystart="29" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classgr_1_1fullduplex_1_1async__divide__impl_1adcacd4265f4b9b745770f24306b84533" prot="public" virt="non-virtual"><scope>gr::fullduplex::async_divide_impl</scope><name>async_divide_impl</name></member>
+      <member refid="classgr_1_1fullduplex_1_1async__divide__impl_1af3748c4bff0a2d8bb26ed9671a0f08ab" prot="private" virt="non-virtual"><scope>gr::fullduplex::async_divide_impl</scope><name>d_in1</name></member>
+      <member refid="classgr_1_1fullduplex_1_1async__divide__impl_1af38b72fd00907865cba406ed6afece9c" prot="private" virt="non-virtual"><scope>gr::fullduplex::async_divide_impl</scope><name>d_in2</name></member>
+      <member refid="classgr_1_1fullduplex_1_1async__divide__impl_1a3aeee43a11620510d3cffe3d9277abce" prot="private" virt="non-virtual"><scope>gr::fullduplex::async_divide_impl</scope><name>d_result</name></member>
+      <member refid="classgr_1_1fullduplex_1_1async__divide__impl_1a0a0512ac941c7547e6a74e705efb6231" prot="private" virt="non-virtual"><scope>gr::fullduplex::async_divide_impl</scope><name>handle1</name></member>
+      <member refid="classgr_1_1fullduplex_1_1async__divide__impl_1a49a0a758d19f71abeff1414b8417c3bf" prot="private" virt="non-virtual"><scope>gr::fullduplex::async_divide_impl</scope><name>handle2</name></member>
+      <member refid="classgr_1_1fullduplex_1_1async__divide_1a1ddb372fcb9f8fc02f1df87a2a958f5b" prot="public" virt="non-virtual"><scope>gr::fullduplex::async_divide_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1fullduplex_1_1async__divide_1a1b6c25d3f013b3fe4ebcf95dd2ba848c" prot="public" virt="non-virtual"><scope>gr::fullduplex::async_divide_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1fullduplex_1_1async__divide__impl_1a670915e657e3ea78bea7aa5497a5808f" prot="public" virt="non-virtual"><scope>gr::fullduplex::async_divide_impl</scope><name>work</name></member>
+      <member refid="classgr_1_1fullduplex_1_1async__divide__impl_1af4d90340e30a12a13df4087d6b6c28a5" prot="public" virt="non-virtual"><scope>gr::fullduplex::async_divide_impl</scope><name>~async_divide_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

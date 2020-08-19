@@ -39,7 +39,8 @@ list(APPEND fullduplex_sources
     #compute_ofdm_prr_impl.cc
     count_packets_impl.cc
     async_divide_impl.cc
-    fde_config_impl.cc )
+    fde_config_impl.cc
+    sub20_init_impl.cc )
 
 set(fullduplex_sources "${fullduplex_sources}" PARENT_SCOPE)
 if(NOT fullduplex_sources)

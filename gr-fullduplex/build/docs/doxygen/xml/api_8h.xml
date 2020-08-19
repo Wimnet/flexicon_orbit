@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="api_8h" kind="file" language="C++">
+    <compoundname>api.h</compoundname>
+    <includes local="no">gnuradio/attributes.h</includes>
+    <includedby refid="async__divide_8h" local="no">async_divide.h</includedby>
+    <includedby refid="compute__ofdm__prr_8h" local="no">compute_ofdm_prr.h</includedby>
+    <includedby refid="count__packets_8h" local="no">count_packets.h</includedby>
+    <includedby refid="digital__sic_8h" local="no">digital_sic.h</includedby>
+    <includedby refid="fde__config_8h" local="no">fde_config.h</includedby>
+    <includedby refid="ofdm__constellation_8h" local="no">ofdm_constellation.h</includedby>
+    <includedby refid="packet__decap_8h" local="no">packet_decap.h</includedby>
+    <includedby refid="packet__encap_8h" local="no">packet_encap.h</includedby>
+    <includedby refid="packet__encap2_8h" local="no">packet_encap2.h</includedby>
+    <includedby refid="parse__stream__sync_8h" local="no">parse_stream_sync.h</includedby>
+    <includedby refid="residual__si__vis_8h" local="no">residual_si_vis.h</includedby>
+    <includedby refid="snr__calc_8h" local="no">snr_calc.h</includedby>
+    <includedby refid="sub20__init_8h" local="no">sub20_init.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="0">
+        <label>api.h</label>
+        <link refid="api.h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="14">
+        <label>ofdm_constellation_impl.h</label>
+        <link refid="ofdm__constellation__impl_8h"/>
+      </node>
+      <node id="21">
+        <label>parse_stream_sync_impl.h</label>
+        <link refid="parse__stream__sync__impl_8h_source"/>
+      </node>
+      <node id="4">
+        <label>async_divide_impl.h</label>
+        <link refid="async__divide__impl_8h"/>
+      </node>
+      <node id="19">
+        <label>packet_encap2.h</label>
+        <link refid="packet__encap2_8h"/>
+      </node>
+      <node id="15">
+        <label>packet_decap.h</label>
+        <link refid="packet__decap_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>ofdm_constellation.h</label>
+        <link refid="ofdm__constellation_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>residual_si_vis_impl.h</label>
+        <link refid="residual__si__vis__impl_8h"/>
+      </node>
+      <node id="17">
+        <label>packet_encap.h</label>
+        <link refid="packet__encap_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>fde_config.h</label>
+        <link refid="fde__config_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>async_divide.h</label>
+        <link refid="async__divide_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>snr_calc.h</label>
+        <link refid="snr__calc_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>sub20_init_impl.h</label>
+        <link refid="sub20__init__impl_8h"/>
+      </node>
+      <node id="12">
+        <label>fde_config_impl.h</label>
+        <link refid="fde__config__impl_8h"/>
+      </node>
+      <node id="8">
+        <label>count_packets_impl.h</label>
+        <link refid="count__packets__impl_8h"/>
+      </node>
+      <node id="9">
+        <label>digital_sic.h</label>
+        <link refid="digital__sic_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>snr_calc_impl.h</label>
+        <link refid="snr__calc__impl_8h"/>
+      </node>
+      <node id="20">
+        <label>parse_stream_sync.h</label>
+        <link refid="parse__stream__sync_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>digital_sic_impl.h</label>
+        <link refid="digital__sic__impl_8h"/>
+      </node>
+      <node id="2">
+        <label>api.h</label>
+        <link refid="api.h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>count_packets.h</label>
+        <link refid="count__packets_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>packet_decap_impl.h</label>
+        <link refid="packet__decap__impl_8h"/>
+      </node>
+      <node id="26">
+        <label>sub20_init.h</label>
+        <link refid="sub20__init_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>compute_ofdm_prr_impl.h</label>
+        <link refid="compute__ofdm__prr__impl_8h"/>
+      </node>
+      <node id="18">
+        <label>packet_encap_impl.h</label>
+        <link refid="packet__encap__impl_8h"/>
+      </node>
+      <node id="22">
+        <label>residual_si_vis.h</label>
+        <link refid="residual__si__vis_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>compute_ofdm_prr.h</label>
+        <link refid="compute__ofdm__prr_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="api_8h_1afa055ea697e5ed562d2ffdf0a70b6718" prot="public" static="no">
+        <name>FULLDUPLEX_API</name>
+        <initializer>__GR_ATTR_IMPORT</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/include/fullduplex/api.h" line="30" column="12" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/include/fullduplex/api.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/include/fullduplex/api.h"/>
+  </compounddef>
+</doxygen>

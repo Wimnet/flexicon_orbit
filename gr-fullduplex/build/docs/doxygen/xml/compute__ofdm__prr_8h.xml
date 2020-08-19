@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="compute__ofdm__prr_8h" kind="file" language="C++">
+    <compoundname>compute_ofdm_prr.h</compoundname>
+    <includes refid="api_8h" local="no">fullduplex/api.h</includes>
+    <includes local="no">gnuradio/tagged_stream_block.h</includes>
+    <includedby refid="compute__ofdm__prr__impl_8h" local="no">compute_ofdm_prr_impl.h</includedby>
+    <incdepgraph>
+      <node id="42">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="41">
+        <label>fullduplex/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>gnuradio/tagged_stream_block.h</label>
+      </node>
+      <node id="40">
+        <label>compute_ofdm_prr.h</label>
+        <link refid="compute_ofdm_prr.h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="45">
+        <label>compute_ofdm_prr_impl.h</label>
+        <link refid="compute__ofdm__prr__impl_8h"/>
+      </node>
+      <node id="44">
+        <label>compute_ofdm_prr.h</label>
+        <link refid="compute_ofdm_prr.h"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgr_1_1fullduplex_1_1compute__ofdm__prr" prot="public">gr::fullduplex::compute_ofdm_prr</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1fullduplex">gr::fullduplex</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/include/fullduplex/compute_ofdm_prr.h"/>
+  </compounddef>
+</doxygen>

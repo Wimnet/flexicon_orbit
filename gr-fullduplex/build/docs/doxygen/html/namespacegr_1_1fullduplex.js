@@ -1,0 +1,26 @@
+var namespacegr_1_1fullduplex =
+[
+    [ "async_divide", "classgr_1_1fullduplex_1_1async__divide.html", "classgr_1_1fullduplex_1_1async__divide" ],
+    [ "async_divide_impl", "classgr_1_1fullduplex_1_1async__divide__impl.html", "classgr_1_1fullduplex_1_1async__divide__impl" ],
+    [ "compute_ofdm_prr", "classgr_1_1fullduplex_1_1compute__ofdm__prr.html", "classgr_1_1fullduplex_1_1compute__ofdm__prr" ],
+    [ "compute_ofdm_prr_impl", "classgr_1_1fullduplex_1_1compute__ofdm__prr__impl.html", "classgr_1_1fullduplex_1_1compute__ofdm__prr__impl" ],
+    [ "count_packets", "classgr_1_1fullduplex_1_1count__packets.html", "classgr_1_1fullduplex_1_1count__packets" ],
+    [ "count_packets_impl", "classgr_1_1fullduplex_1_1count__packets__impl.html", "classgr_1_1fullduplex_1_1count__packets__impl" ],
+    [ "digital_sic", "classgr_1_1fullduplex_1_1digital__sic.html", "classgr_1_1fullduplex_1_1digital__sic" ],
+    [ "digital_sic_impl", "classgr_1_1fullduplex_1_1digital__sic__impl.html", "classgr_1_1fullduplex_1_1digital__sic__impl" ],
+    [ "fde_config", "classgr_1_1fullduplex_1_1fde__config.html", "classgr_1_1fullduplex_1_1fde__config" ],
+    [ "fde_config_impl", "classgr_1_1fullduplex_1_1fde__config__impl.html", "classgr_1_1fullduplex_1_1fde__config__impl" ],
+    [ "ofdm_constellation", "classgr_1_1fullduplex_1_1ofdm__constellation.html", "classgr_1_1fullduplex_1_1ofdm__constellation" ],
+    [ "ofdm_constellation_impl", "classgr_1_1fullduplex_1_1ofdm__constellation__impl.html", "classgr_1_1fullduplex_1_1ofdm__constellation__impl" ],
+    [ "packet_decap", "classgr_1_1fullduplex_1_1packet__decap.html", "classgr_1_1fullduplex_1_1packet__decap" ],
+    [ "packet_decap_impl", "classgr_1_1fullduplex_1_1packet__decap__impl.html", "classgr_1_1fullduplex_1_1packet__decap__impl" ],
+    [ "packet_encap", "classgr_1_1fullduplex_1_1packet__encap.html", "classgr_1_1fullduplex_1_1packet__encap" ],
+    [ "packet_encap2", "classgr_1_1fullduplex_1_1packet__encap2.html", "classgr_1_1fullduplex_1_1packet__encap2" ],
+    [ "packet_encap_impl", "classgr_1_1fullduplex_1_1packet__encap__impl.html", "classgr_1_1fullduplex_1_1packet__encap__impl" ],
+    [ "residual_si_vis", "classgr_1_1fullduplex_1_1residual__si__vis.html", "classgr_1_1fullduplex_1_1residual__si__vis" ],
+    [ "residual_si_vis_impl", "classgr_1_1fullduplex_1_1residual__si__vis__impl.html", "classgr_1_1fullduplex_1_1residual__si__vis__impl" ],
+    [ "snr_calc", "classgr_1_1fullduplex_1_1snr__calc.html", "classgr_1_1fullduplex_1_1snr__calc" ],
+    [ "snr_calc_impl", "classgr_1_1fullduplex_1_1snr__calc__impl.html", "classgr_1_1fullduplex_1_1snr__calc__impl" ],
+    [ "sub20_init", "classgr_1_1fullduplex_1_1sub20__init.html", "classgr_1_1fullduplex_1_1sub20__init" ],
+    [ "sub20_init_impl", "classgr_1_1fullduplex_1_1sub20__init__impl.html", "classgr_1_1fullduplex_1_1sub20__init__impl" ]
+];

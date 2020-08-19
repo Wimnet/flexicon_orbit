@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="ofdm__constellation_8h" kind="file" language="C++">
+    <compoundname>ofdm_constellation.h</compoundname>
+    <includes refid="api_8h" local="no">fullduplex/api.h</includes>
+    <includes local="no">gnuradio/tagged_stream_block.h</includes>
+    <includedby refid="ofdm__constellation__impl_8h" local="no">ofdm_constellation_impl.h</includedby>
+    <incdepgraph>
+      <node id="99">
+        <label>ofdm_constellation.h</label>
+        <link refid="ofdm_constellation.h"/>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+      </node>
+      <node id="101">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="100">
+        <label>fullduplex/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="101" relation="include">
+        </childnode>
+      </node>
+      <node id="102">
+        <label>gnuradio/tagged_stream_block.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="104">
+        <label>ofdm_constellation_impl.h</label>
+        <link refid="ofdm__constellation__impl_8h"/>
+      </node>
+      <node id="103">
+        <label>ofdm_constellation.h</label>
+        <link refid="ofdm_constellation.h"/>
+        <childnode refid="104" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgr_1_1fullduplex_1_1ofdm__constellation" prot="public">gr::fullduplex::ofdm_constellation</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1fullduplex">gr::fullduplex</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/include/fullduplex/ofdm_constellation.h"/>
+  </compounddef>
+</doxygen>

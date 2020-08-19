@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/fullduplex/api.h
+gnuradio/attributes.h
+-
+
+../include/fullduplex/sub20_init.h
+fullduplex/api.h
+-
+gnuradio/block.h
+-
+
+../lib/libsub.h
+
+/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/sub20_init_impl.cc
+config.h
+/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/config.h
+gnuradio/io_signature.h
+-
+sub20_init_impl.h
+/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/sub20_init_impl.h
+
+/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/sub20_init_impl.h
+libsub.h
+-
+fullduplex/sub20_init.h
+-
+

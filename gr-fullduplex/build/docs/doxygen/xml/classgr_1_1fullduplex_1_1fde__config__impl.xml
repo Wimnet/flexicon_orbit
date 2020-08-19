@@ -1,0 +1,544 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1fullduplex_1_1fde__config__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::fullduplex::fde_config_impl</compoundname>
+    <basecompoundref refid="classgr_1_1fullduplex_1_1fde__config" prot="public" virt="non-virtual">gr::fullduplex::fde_config</basecompoundref>
+    <includes refid="fde__config__impl_8h" local="no">fde_config_impl.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1fde__config__impl_1a381860e638c9e0c65a12bfa06e395a9c" prot="public" static="no" mutable="no">
+        <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+        <definition>sub_handle gr::fullduplex::fde_config_impl::my_sub20</definition>
+        <argsstring></argsstring>
+        <name>my_sub20</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" line="60" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1fde__config__impl_1ac11aeb681ac6303dad6574926fbfdb6e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fullduplex::fde_config_impl::d_canc_path_val</definition>
+        <argsstring></argsstring>
+        <name>d_canc_path_val</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" line="62" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1fde__config__impl_1a4d35287efa3660b6188b97b3843705f4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fullduplex::fde_config_impl::d_att_addr</definition>
+        <argsstring></argsstring>
+        <name>d_att_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" line="65" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1fde__config__impl_1af4a0e7045f5cb401694b60143ff45d63" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fullduplex::fde_config_impl::d_att_val[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>d_att_val</name>
+        <initializer>= {127, 127, 127}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" line="66" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1fde__config__impl_1a7c4b375c8d67fb079b5af29257e03f0e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fullduplex::fde_config_impl::d_dac_addr</definition>
+        <argsstring></argsstring>
+        <name>d_dac_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" line="67" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1fde__config__impl_1a6ec4e38143f3358ad5dc0efbd7174888" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fullduplex::fde_config_impl::d_dac_val[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>d_dac_val</name>
+        <initializer>= {  0,   0,   0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" line="68" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1fde__config__impl_1a907466c97619f9d94cc67422288ac030" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fullduplex::fde_config_impl::d_cf_cap_addr</definition>
+        <argsstring></argsstring>
+        <name>d_cf_cap_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" line="70" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1fde__config__impl_1a339304ba9f2101ad4283129d61be7583" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char gr::fullduplex::fde_config_impl::d_cf_cap_val[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>d_cf_cap_val</name>
+        <initializer>= {0, 0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" line="71" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1fde__config__impl_1a0d5c31a51ef7f205abeb415d00952b73" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fullduplex::fde_config_impl::d_qf_cap_addr</definition>
+        <argsstring></argsstring>
+        <name>d_qf_cap_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" line="73" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1fde__config__impl_1aa44cc5074f3d73c16cd6bdaec50ad0b6" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char gr::fullduplex::fde_config_impl::d_qf_cap_val[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>d_qf_cap_val</name>
+        <initializer>= {0, 0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" line="74" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1fde__config__impl_1a4b81afadb0ce315292a5fbb982e51eaa" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fullduplex::fde_config_impl::d_tuner_cap_addr</definition>
+        <argsstring></argsstring>
+        <name>d_tuner_cap_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" line="76" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1fde__config__impl_1a8654d196d398ebde7a93f4255487c328" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fullduplex::fde_config_impl::d_tuner_cap_val[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>d_tuner_cap_val</name>
+        <initializer>= {0, 0, 0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" line="77" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1fde__config__impl_1a07cdee54c34c59e9b308bbf772e82a04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::fullduplex::fde_config_impl::fde_config_impl</definition>
+        <argsstring>(int init_cap_addr, int init_cap_val, char *init_sn)</argsstring>
+        <name>fde_config_impl</name>
+        <param>
+          <type>int</type>
+          <declname>init_cap_addr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>init_cap_val</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>init_sn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1fde__config__impl_1aa71be91ed1460cafab47ff273b7bbf3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::fullduplex::fde_config_impl::~fde_config_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~fde_config_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1fde__config__impl_1af67071e708d76685af669a759f67d4d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void gr::fullduplex::fde_config_impl::fde_config_find_dev</definition>
+        <argsstring>(char *serial)</argsstring>
+        <name>fde_config_find_dev</name>
+        <reimplements refid="classgr_1_1fullduplex_1_1fde__config_1ac819a091ee5d57dbebd23e1c54f6ad89">fde_config_find_dev</reimplements>
+        <param>
+          <type>char *</type>
+          <declname>serial</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1fde__config__impl_1abe64815c79198e2e56862cbec86ed453" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void gr::fullduplex::fde_config_impl::set_canc_path</definition>
+        <argsstring>(int val)</argsstring>
+        <name>set_canc_path</name>
+        <reimplements refid="classgr_1_1fullduplex_1_1fde__config_1a5114964da27f8051edd57359ea04bf38">set_canc_path</reimplements>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1fde__config__impl_1a71cbbb5a4bcf4bca1e9f333749a24dab" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void gr::fullduplex::fde_config_impl::set_att</definition>
+        <argsstring>(int addr, int val)</argsstring>
+        <name>set_att</name>
+        <reimplements refid="classgr_1_1fullduplex_1_1fde__config_1a9e6099a4ece0ec1d716c8ebfa1a926cb">set_att</reimplements>
+        <param>
+          <type>int</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1fde__config__impl_1afd96f719eecf61603bb9fcbc663f8fa3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void gr::fullduplex::fde_config_impl::set_dac</definition>
+        <argsstring>(int addr, int val)</argsstring>
+        <name>set_dac</name>
+        <reimplements refid="classgr_1_1fullduplex_1_1fde__config_1a5871036dca4583100c250b05b65afbdb">set_dac</reimplements>
+        <param>
+          <type>int</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1fde__config__impl_1ad6561126537a628dd925492082f11f33" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void gr::fullduplex::fde_config_impl::set_cf_cap</definition>
+        <argsstring>(int addr, int val)</argsstring>
+        <name>set_cf_cap</name>
+        <reimplements refid="classgr_1_1fullduplex_1_1fde__config_1ad7184b3a78b4a7f6dd8bb0ab666da569">set_cf_cap</reimplements>
+        <param>
+          <type>int</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1fde__config__impl_1a1eeca027a02ba2007e46184f13b21f36" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void gr::fullduplex::fde_config_impl::set_qf_cap</definition>
+        <argsstring>(int addr, int val)</argsstring>
+        <name>set_qf_cap</name>
+        <reimplements refid="classgr_1_1fullduplex_1_1fde__config_1afe888ba0faa9ebe29c88c4cb672b6853">set_qf_cap</reimplements>
+        <param>
+          <type>int</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1fde__config__impl_1a5443aace36dbee764f799be384f1066b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void gr::fullduplex::fde_config_impl::set_tuner_cap</definition>
+        <argsstring>(int addr, int val)</argsstring>
+        <name>set_tuner_cap</name>
+        <reimplements refid="classgr_1_1fullduplex_1_1fde__config_1aaeb8be7269fcaf7264baa347c092f97a">set_tuner_cap</reimplements>
+        <param>
+          <type>int</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1fde__config__impl_1a6411ae843979877383404aac2775bf53" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void gr::fullduplex::fde_config_impl::set_all</definition>
+        <argsstring>(int att_0_val, int att_1_val, int att_2_val, int cf_cap_0_val, int cf_cap_1_val, int qf_cap_0_val, int qf_cap_1_val, int dac_0_val, int dac_1_val, int dac_2_val, int canc_path_val, int tuner_cap_0_val, int tuner_cap_1_val, int tuner_cap_2_val)</argsstring>
+        <name>set_all</name>
+        <reimplements refid="classgr_1_1fullduplex_1_1fde__config_1a742054af2bd3dee17dfc418523978b12">set_all</reimplements>
+        <param>
+          <type>int</type>
+          <declname>att_0_val</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>att_1_val</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>att_2_val</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cf_cap_0_val</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cf_cap_1_val</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>qf_cap_0_val</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>qf_cap_1_val</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dac_0_val</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dac_1_val</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dac_2_val</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>canc_path_val</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tuner_cap_0_val</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tuner_cap_1_val</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tuner_cap_2_val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1fde__config__impl_1ad091e615aa2af93960087929a3493b64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::fullduplex::fde_config_impl::forecast</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
+        <name>forecast</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_required</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1fde__config__impl_1a93e6646f0003e513f1d66d89a583f425" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::fullduplex::fde_config_impl::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>general_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" line="82" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="49">
+        <label>gr::fullduplex::fde_config_impl</label>
+        <link refid="classgr_1_1fullduplex_1_1fde__config__impl"/>
+        <childnode refid="50" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>block</label>
+      </node>
+      <node id="50">
+        <label>gr::fullduplex::fde_config</label>
+        <link refid="classgr_1_1fullduplex_1_1fde__config"/>
+        <childnode refid="51" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="52">
+        <label>gr::fullduplex::fde_config_impl</label>
+        <link refid="classgr_1_1fullduplex_1_1fde__config__impl"/>
+        <childnode refid="53" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>block</label>
+      </node>
+      <node id="53">
+        <label>gr::fullduplex::fde_config</label>
+        <link refid="classgr_1_1fullduplex_1_1fde__config"/>
+        <childnode refid="54" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" line="33" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/fde_config_impl.h" bodystart="32" bodyend="86"/>
+    <listofallmembers>
+      <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1a4d35287efa3660b6188b97b3843705f4" prot="public" virt="non-virtual"><scope>gr::fullduplex::fde_config_impl</scope><name>d_att_addr</name></member>
+      <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1af4a0e7045f5cb401694b60143ff45d63" prot="public" virt="non-virtual"><scope>gr::fullduplex::fde_config_impl</scope><name>d_att_val</name></member>
+      <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1ac11aeb681ac6303dad6574926fbfdb6e" prot="public" virt="non-virtual"><scope>gr::fullduplex::fde_config_impl</scope><name>d_canc_path_val</name></member>
+      <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1a907466c97619f9d94cc67422288ac030" prot="public" virt="non-virtual"><scope>gr::fullduplex::fde_config_impl</scope><name>d_cf_cap_addr</name></member>
+      <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1a339304ba9f2101ad4283129d61be7583" prot="public" virt="non-virtual"><scope>gr::fullduplex::fde_config_impl</scope><name>d_cf_cap_val</name></member>
+      <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1a7c4b375c8d67fb079b5af29257e03f0e" prot="public" virt="non-virtual"><scope>gr::fullduplex::fde_config_impl</scope><name>d_dac_addr</name></member>
+      <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1a6ec4e38143f3358ad5dc0efbd7174888" prot="public" virt="non-virtual"><scope>gr::fullduplex::fde_config_impl</scope><name>d_dac_val</name></member>
+      <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1a0d5c31a51ef7f205abeb415d00952b73" prot="public" virt="non-virtual"><scope>gr::fullduplex::fde_config_impl</scope><name>d_qf_cap_addr</name></member>
+      <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1aa44cc5074f3d73c16cd6bdaec50ad0b6" prot="public" virt="non-virtual"><scope>gr::fullduplex::fde_config_impl</scope><name>d_qf_cap_val</name></member>
+      <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1a4b81afadb0ce315292a5fbb982e51eaa" prot="public" virt="non-virtual"><scope>gr::fullduplex::fde_config_impl</scope><name>d_tuner_cap_addr</name></member>
+      <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1a8654d196d398ebde7a93f4255487c328" prot="public" virt="non-virtual"><scope>gr::fullduplex::fde_config_impl</scope><name>d_tuner_cap_val</name></member>
+      <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1af67071e708d76685af669a759f67d4d7" prot="public" virt="virtual"><scope>gr::fullduplex::fde_config_impl</scope><name>fde_config_find_dev</name></member>
+      <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1a07cdee54c34c59e9b308bbf772e82a04" prot="public" virt="non-virtual"><scope>gr::fullduplex::fde_config_impl</scope><name>fde_config_impl</name></member>
+      <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1ad091e615aa2af93960087929a3493b64" prot="public" virt="non-virtual"><scope>gr::fullduplex::fde_config_impl</scope><name>forecast</name></member>
+      <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1a93e6646f0003e513f1d66d89a583f425" prot="public" virt="non-virtual"><scope>gr::fullduplex::fde_config_impl</scope><name>general_work</name></member>
+      <member refid="classgr_1_1fullduplex_1_1fde__config_1a9dd38705d0c11a9eb381fb43376f721c" prot="public" virt="non-virtual"><scope>gr::fullduplex::fde_config_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1a381860e638c9e0c65a12bfa06e395a9c" prot="public" virt="non-virtual"><scope>gr::fullduplex::fde_config_impl</scope><name>my_sub20</name></member>
+      <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1a6411ae843979877383404aac2775bf53" prot="public" virt="virtual"><scope>gr::fullduplex::fde_config_impl</scope><name>set_all</name></member>
+      <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1a71cbbb5a4bcf4bca1e9f333749a24dab" prot="public" virt="virtual"><scope>gr::fullduplex::fde_config_impl</scope><name>set_att</name></member>
+      <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1abe64815c79198e2e56862cbec86ed453" prot="public" virt="virtual"><scope>gr::fullduplex::fde_config_impl</scope><name>set_canc_path</name></member>
+      <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1ad6561126537a628dd925492082f11f33" prot="public" virt="virtual"><scope>gr::fullduplex::fde_config_impl</scope><name>set_cf_cap</name></member>
+      <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1afd96f719eecf61603bb9fcbc663f8fa3" prot="public" virt="virtual"><scope>gr::fullduplex::fde_config_impl</scope><name>set_dac</name></member>
+      <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1a1eeca027a02ba2007e46184f13b21f36" prot="public" virt="virtual"><scope>gr::fullduplex::fde_config_impl</scope><name>set_qf_cap</name></member>
+      <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1a5443aace36dbee764f799be384f1066b" prot="public" virt="virtual"><scope>gr::fullduplex::fde_config_impl</scope><name>set_tuner_cap</name></member>
+      <member refid="classgr_1_1fullduplex_1_1fde__config_1a33245155be09674923eca4a1ffee1554" prot="public" virt="non-virtual"><scope>gr::fullduplex::fde_config_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1aa71be91ed1460cafab47ff273b7bbf3a" prot="public" virt="non-virtual"><scope>gr::fullduplex::fde_config_impl</scope><name>~fde_config_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_fc8b0e648888754833d2066bd46cb9b3" kind="dir">
+    <compoundname>fullduplex</compoundname>
+    <innerfile refid="api_8h">api.h</innerfile>
+    <innerfile refid="async__divide_8h">async_divide.h</innerfile>
+    <innerfile refid="compute__ofdm__prr_8h">compute_ofdm_prr.h</innerfile>
+    <innerfile refid="count__packets_8h">count_packets.h</innerfile>
+    <innerfile refid="digital__sic_8h">digital_sic.h</innerfile>
+    <innerfile refid="fde__config_8h">fde_config.h</innerfile>
+    <innerfile refid="ofdm__constellation_8h">ofdm_constellation.h</innerfile>
+    <innerfile refid="packet__decap_8h">packet_decap.h</innerfile>
+    <innerfile refid="packet__encap_8h">packet_encap.h</innerfile>
+    <innerfile refid="packet__encap2_8h">packet_encap2.h</innerfile>
+    <innerfile refid="parse__stream__sync_8h">parse_stream_sync.h</innerfile>
+    <innerfile refid="residual__si__vis_8h">residual_si_vis.h</innerfile>
+    <innerfile refid="snr__calc_8h">snr_calc.h</innerfile>
+    <innerfile refid="sub20__init_8h">sub20_init.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/include/fullduplex/"/>
+  </compounddef>
+</doxygen>

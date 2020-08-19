@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacegr_1_1fullduplex" kind="namespace" language="C++">
+    <compoundname>gr::fullduplex</compoundname>
+    <innerclass refid="classgr_1_1fullduplex_1_1async__divide" prot="public">gr::fullduplex::async_divide</innerclass>
+    <innerclass refid="classgr_1_1fullduplex_1_1compute__ofdm__prr" prot="public">gr::fullduplex::compute_ofdm_prr</innerclass>
+    <innerclass refid="classgr_1_1fullduplex_1_1count__packets" prot="public">gr::fullduplex::count_packets</innerclass>
+    <innerclass refid="classgr_1_1fullduplex_1_1digital__sic" prot="public">gr::fullduplex::digital_sic</innerclass>
+    <innerclass refid="classgr_1_1fullduplex_1_1fde__config" prot="public">gr::fullduplex::fde_config</innerclass>
+    <innerclass refid="classgr_1_1fullduplex_1_1ofdm__constellation" prot="public">gr::fullduplex::ofdm_constellation</innerclass>
+    <innerclass refid="classgr_1_1fullduplex_1_1packet__decap" prot="public">gr::fullduplex::packet_decap</innerclass>
+    <innerclass refid="classgr_1_1fullduplex_1_1packet__encap" prot="public">gr::fullduplex::packet_encap</innerclass>
+    <innerclass refid="classgr_1_1fullduplex_1_1packet__encap2" prot="public">gr::fullduplex::packet_encap2</innerclass>
+    <innerclass refid="classgr_1_1fullduplex_1_1parse__stream__sync" prot="public">gr::fullduplex::parse_stream_sync</innerclass>
+    <innerclass refid="classgr_1_1fullduplex_1_1residual__si__vis" prot="public">gr::fullduplex::residual_si_vis</innerclass>
+    <innerclass refid="classgr_1_1fullduplex_1_1snr__calc" prot="public">gr::fullduplex::snr_calc</innerclass>
+    <innerclass refid="classgr_1_1fullduplex_1_1sub20__init" prot="public">gr::fullduplex::sub20_init</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/include/fullduplex/async_divide.h" line="29" column="1"/>
+  </compounddef>
+</doxygen>

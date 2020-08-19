@@ -1,0 +1,319 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1fullduplex_1_1digital__sic__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::fullduplex::digital_sic_impl</compoundname>
+    <basecompoundref refid="classgr_1_1fullduplex_1_1digital__sic" prot="public" virt="non-virtual">gr::fullduplex::digital_sic</basecompoundref>
+    <includes refid="digital__sic__impl_8h" local="no">digital_sic_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1digital__sic__impl_1a5ac44e82a160291d49993e781e09a493" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fullduplex::digital_sic_impl::d_delay_tx2rx</definition>
+        <argsstring></argsstring>
+        <name>d_delay_tx2rx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/digital_sic_impl.h" line="100" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/digital_sic_impl.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1digital__sic__impl_1a7d65f080202b95411064a2c621981b5b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fullduplex::digital_sic_impl::d_pad_front</definition>
+        <argsstring></argsstring>
+        <name>d_pad_front</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/digital_sic_impl.h" line="101" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/digital_sic_impl.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1digital__sic__impl_1a3a416892d236ad33558087034f4f2433" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fullduplex::digital_sic_impl::d_frame_len</definition>
+        <argsstring></argsstring>
+        <name>d_frame_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/digital_sic_impl.h" line="102" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/digital_sic_impl.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1digital__sic__impl_1ac7e4c0e5c09110332dc11bb823f235fb" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fullduplex::digital_sic_impl::d_sig_pilot_pos</definition>
+        <argsstring></argsstring>
+        <name>d_sig_pilot_pos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/digital_sic_impl.h" line="103" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/digital_sic_impl.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1digital__sic__impl_1ae431560762a8e20d8381fcee134e797f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fullduplex::digital_sic_impl::d_si_chan_k</definition>
+        <argsstring></argsstring>
+        <name>d_si_chan_k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/digital_sic_impl.h" line="104" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/digital_sic_impl.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1digital__sic__impl_1ae51c0c1b6138e16c027e3aa1dbfbeec7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fullduplex::digital_sic_impl::d_si_chan_dim</definition>
+        <argsstring></argsstring>
+        <name>d_si_chan_dim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/digital_sic_impl.h" line="105" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/digital_sic_impl.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1digital__sic__impl_1a6979023e7b4ad002ffb543f73250333c" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double gr::fullduplex::digital_sic_impl::d_sig_pilot_scale</definition>
+        <argsstring></argsstring>
+        <name>d_sig_pilot_scale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/digital_sic_impl.h" line="106" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/digital_sic_impl.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1digital__sic__impl_1a3dcdad7c6fe59ccfb462251bdd048745" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double gr::fullduplex::digital_sic_impl::d_premultiplier</definition>
+        <argsstring></argsstring>
+        <name>d_premultiplier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/digital_sic_impl.h" line="107" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/digital_sic_impl.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1digital__sic__impl_1ad22b6c5d93cecb5c2a066e3d29cd92d0" prot="private" static="no" mutable="no">
+        <type>Eigen::VectorXcf</type>
+        <definition>Eigen::VectorXcf gr::fullduplex::digital_sic_impl::d_h</definition>
+        <argsstring></argsstring>
+        <name>d_h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/digital_sic_impl.h" line="109" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/digital_sic_impl.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1digital__sic__impl_1ac7fd67c4805cd05a55a11f58cb7ec69d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::fullduplex::digital_sic_impl::d_initial</definition>
+        <argsstring></argsstring>
+        <name>d_initial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/digital_sic_impl.h" line="110" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/digital_sic_impl.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1digital__sic__impl_1a0c2fd812e9bb0ee0eb2c7464fa8fa5e3" prot="private" static="no" mutable="no">
+        <type>gr::thread::mutex</type>
+        <definition>gr::thread::mutex gr::fullduplex::digital_sic_impl::d_mutex</definition>
+        <argsstring></argsstring>
+        <name>d_mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/digital_sic_impl.h" line="112" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/digital_sic_impl.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1digital__sic__impl_1ae1394e3b42fc2ca84b201a775b7b461c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::fullduplex::digital_sic_impl::digital_sic_impl</definition>
+        <argsstring>(bool debug, unsigned int delay_tx2rx, unsigned int pad_front, unsigned int sig_pilot_pos, unsigned int frame_len, unsigned int si_chan_k, unsigned int si_chan_dim, double premultiplier)</argsstring>
+        <name>digital_sic_impl</name>
+        <param>
+          <type>bool</type>
+          <declname>debug</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>delay_tx2rx</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>pad_front</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>sig_pilot_pos</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>frame_len</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>si_chan_k</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>si_chan_dim</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>premultiplier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/digital_sic_impl.h" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1digital__sic__impl_1af9dc3ae38d65ed27f4e387cc80e98c45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::fullduplex::digital_sic_impl::~digital_sic_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~digital_sic_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/digital_sic_impl.h" line="123" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1digital__sic__impl_1a8351818a7bae2be1817f4e578849def3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void gr::fullduplex::digital_sic_impl::set_delay_tx2rx</definition>
+        <argsstring>(int delay_tx2rx)</argsstring>
+        <name>set_delay_tx2rx</name>
+        <reimplements refid="classgr_1_1fullduplex_1_1digital__sic_1a91da2df90fba9bd582214a863c42ec58">set_delay_tx2rx</reimplements>
+        <param>
+          <type>int</type>
+          <declname>delay_tx2rx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/digital_sic_impl.h" line="125" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1digital__sic__impl_1aa7492496ee8292e53ce0c4cc870a4e46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::fullduplex::digital_sic_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/digital_sic_impl.h" line="130" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="40">
+        <label>tagged_stream_block</label>
+      </node>
+      <node id="39">
+        <label>gr::fullduplex::digital_sic</label>
+        <link refid="classgr_1_1fullduplex_1_1digital__sic"/>
+        <childnode refid="40" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>gr::fullduplex::digital_sic_impl</label>
+        <link refid="classgr_1_1fullduplex_1_1digital__sic__impl"/>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="43">
+        <label>tagged_stream_block</label>
+      </node>
+      <node id="42">
+        <label>gr::fullduplex::digital_sic</label>
+        <link refid="classgr_1_1fullduplex_1_1digital__sic"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>gr::fullduplex::digital_sic_impl</label>
+        <link refid="classgr_1_1fullduplex_1_1digital__sic__impl"/>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/digital_sic_impl.h" line="96" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/digital_sic_impl.h" bodystart="95" bodyend="134"/>
+    <listofallmembers>
+      <member refid="classgr_1_1fullduplex_1_1digital__sic__impl_1a5ac44e82a160291d49993e781e09a493" prot="private" virt="non-virtual"><scope>gr::fullduplex::digital_sic_impl</scope><name>d_delay_tx2rx</name></member>
+      <member refid="classgr_1_1fullduplex_1_1digital__sic__impl_1a3a416892d236ad33558087034f4f2433" prot="private" virt="non-virtual"><scope>gr::fullduplex::digital_sic_impl</scope><name>d_frame_len</name></member>
+      <member refid="classgr_1_1fullduplex_1_1digital__sic__impl_1ad22b6c5d93cecb5c2a066e3d29cd92d0" prot="private" virt="non-virtual"><scope>gr::fullduplex::digital_sic_impl</scope><name>d_h</name></member>
+      <member refid="classgr_1_1fullduplex_1_1digital__sic__impl_1ac7fd67c4805cd05a55a11f58cb7ec69d" prot="private" virt="non-virtual"><scope>gr::fullduplex::digital_sic_impl</scope><name>d_initial</name></member>
+      <member refid="classgr_1_1fullduplex_1_1digital__sic__impl_1a0c2fd812e9bb0ee0eb2c7464fa8fa5e3" prot="private" virt="non-virtual"><scope>gr::fullduplex::digital_sic_impl</scope><name>d_mutex</name></member>
+      <member refid="classgr_1_1fullduplex_1_1digital__sic__impl_1a7d65f080202b95411064a2c621981b5b" prot="private" virt="non-virtual"><scope>gr::fullduplex::digital_sic_impl</scope><name>d_pad_front</name></member>
+      <member refid="classgr_1_1fullduplex_1_1digital__sic__impl_1a3dcdad7c6fe59ccfb462251bdd048745" prot="private" virt="non-virtual"><scope>gr::fullduplex::digital_sic_impl</scope><name>d_premultiplier</name></member>
+      <member refid="classgr_1_1fullduplex_1_1digital__sic__impl_1ae51c0c1b6138e16c027e3aa1dbfbeec7" prot="private" virt="non-virtual"><scope>gr::fullduplex::digital_sic_impl</scope><name>d_si_chan_dim</name></member>
+      <member refid="classgr_1_1fullduplex_1_1digital__sic__impl_1ae431560762a8e20d8381fcee134e797f" prot="private" virt="non-virtual"><scope>gr::fullduplex::digital_sic_impl</scope><name>d_si_chan_k</name></member>
+      <member refid="classgr_1_1fullduplex_1_1digital__sic_1a59da6ccfb5f6344d97f44402d20998cb" prot="protected" virt="non-virtual"><scope>gr::fullduplex::digital_sic_impl</scope><name>d_sig_pilot</name></member>
+      <member refid="classgr_1_1fullduplex_1_1digital__sic__impl_1ac7e4c0e5c09110332dc11bb823f235fb" prot="private" virt="non-virtual"><scope>gr::fullduplex::digital_sic_impl</scope><name>d_sig_pilot_pos</name></member>
+      <member refid="classgr_1_1fullduplex_1_1digital__sic__impl_1a6979023e7b4ad002ffb543f73250333c" prot="private" virt="non-virtual"><scope>gr::fullduplex::digital_sic_impl</scope><name>d_sig_pilot_scale</name></member>
+      <member refid="classgr_1_1fullduplex_1_1digital__sic__impl_1ae1394e3b42fc2ca84b201a775b7b461c" prot="public" virt="non-virtual"><scope>gr::fullduplex::digital_sic_impl</scope><name>digital_sic_impl</name></member>
+      <member refid="classgr_1_1fullduplex_1_1digital__sic_1a1cccc1312f16b6e961afe2751d10080c" prot="public" virt="non-virtual"><scope>gr::fullduplex::digital_sic_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1fullduplex_1_1digital__sic__impl_1a8351818a7bae2be1817f4e578849def3" prot="public" virt="virtual"><scope>gr::fullduplex::digital_sic_impl</scope><name>set_delay_tx2rx</name></member>
+      <member refid="classgr_1_1fullduplex_1_1digital__sic_1ae37f3097ffc6dc72be42ba73832d3648" prot="public" virt="non-virtual"><scope>gr::fullduplex::digital_sic_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1fullduplex_1_1digital__sic__impl_1aa7492496ee8292e53ce0c4cc870a4e46" prot="public" virt="non-virtual"><scope>gr::fullduplex::digital_sic_impl</scope><name>work</name></member>
+      <member refid="classgr_1_1fullduplex_1_1digital__sic__impl_1af9dc3ae38d65ed27f4e387cc80e98c45" prot="public" virt="non-virtual"><scope>gr::fullduplex::digital_sic_impl</scope><name>~digital_sic_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

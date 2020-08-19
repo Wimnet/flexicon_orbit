@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<block>
+  <name>Gen-1 Config</name>
+  <key>fullduplex_sub20_init</key>
+  <category>[FULLDUPLEX]</category>
+  <import>import fullduplex</import>
+  <make>subdev.sub20_init($atten_code, $phase_code)</make>
+  <callback>set_atten_code($atten_code)</callback>
+  <callback>set_phase_code($phase_code)</callback>
+  <param>
+    <name>Atten Code</name>
+    <key>atten_code</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Phase Code</name>
+    <key>phase_code</key>
+    <type>int</type>
+  </param>
+</block>

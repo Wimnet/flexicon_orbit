@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1fullduplex_1_1compute__ofdm__prr__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::fullduplex::compute_ofdm_prr_impl</compoundname>
+    <basecompoundref refid="classgr_1_1fullduplex_1_1compute__ofdm__prr" prot="public" virt="non-virtual">gr::fullduplex::compute_ofdm_prr</basecompoundref>
+    <includes refid="compute__ofdm__prr__impl_8h" local="no">compute_ofdm_prr_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1compute__ofdm__prr__impl_1a760308701bcf77af5064e4bb5521c4d3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fullduplex::compute_ofdm_prr_impl::d_packet_len</definition>
+        <argsstring></argsstring>
+        <name>d_packet_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/compute_ofdm_prr_impl.h" line="34" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/compute_ofdm_prr_impl.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1compute__ofdm__prr__impl_1a97bbdeca42e849095f49f6b11b53e022" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fullduplex::compute_ofdm_prr_impl::d_decoded_count</definition>
+        <argsstring></argsstring>
+        <name>d_decoded_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/compute_ofdm_prr_impl.h" line="35" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/compute_ofdm_prr_impl.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1compute__ofdm__prr__impl_1affd4346a63bad5fc50080efda294cf70" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fullduplex::compute_ofdm_prr_impl::d_transmitted_count</definition>
+        <argsstring></argsstring>
+        <name>d_transmitted_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/compute_ofdm_prr_impl.h" line="36" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/compute_ofdm_prr_impl.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1compute__ofdm__prr__impl_1ab1ba6d2d685b64716176504ff477523c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::fullduplex::compute_ofdm_prr_impl::calculate_output_stream_length</definition>
+        <argsstring>(const gr_vector_int &amp;ninput_items)</argsstring>
+        <name>calculate_output_stream_length</name>
+        <param>
+          <type>const gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/compute_ofdm_prr_impl.h" line="39" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1compute__ofdm__prr__impl_1ab0a180c7838728af5234dd22cf6842b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::fullduplex::compute_ofdm_prr_impl::compute_ofdm_prr_impl</definition>
+        <argsstring>(bool debug)</argsstring>
+        <name>compute_ofdm_prr_impl</name>
+        <param>
+          <type>bool</type>
+          <declname>debug</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/compute_ofdm_prr_impl.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1compute__ofdm__prr__impl_1ac507aea33167d9d45144efff274c7d81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::fullduplex::compute_ofdm_prr_impl::~compute_ofdm_prr_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~compute_ofdm_prr_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/compute_ofdm_prr_impl.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1compute__ofdm__prr__impl_1a8484a5e98eb934c1a3eb8575ce6afd75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::fullduplex::compute_ofdm_prr_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/compute_ofdm_prr_impl.h" line="46" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="16">
+        <label>gr::fullduplex::compute_ofdm_prr_impl</label>
+        <link refid="classgr_1_1fullduplex_1_1compute__ofdm__prr__impl"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>tagged_stream_block</label>
+      </node>
+      <node id="17">
+        <label>gr::fullduplex::compute_ofdm_prr</label>
+        <link refid="classgr_1_1fullduplex_1_1compute__ofdm__prr"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="19">
+        <label>gr::fullduplex::compute_ofdm_prr_impl</label>
+        <link refid="classgr_1_1fullduplex_1_1compute__ofdm__prr__impl"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>tagged_stream_block</label>
+      </node>
+      <node id="20">
+        <label>gr::fullduplex::compute_ofdm_prr</label>
+        <link refid="classgr_1_1fullduplex_1_1compute__ofdm__prr"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/compute_ofdm_prr_impl.h" line="30" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/compute_ofdm_prr_impl.h" bodystart="29" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classgr_1_1fullduplex_1_1compute__ofdm__prr__impl_1ab1ba6d2d685b64716176504ff477523c" prot="protected" virt="non-virtual"><scope>gr::fullduplex::compute_ofdm_prr_impl</scope><name>calculate_output_stream_length</name></member>
+      <member refid="classgr_1_1fullduplex_1_1compute__ofdm__prr__impl_1ab0a180c7838728af5234dd22cf6842b4" prot="public" virt="non-virtual"><scope>gr::fullduplex::compute_ofdm_prr_impl</scope><name>compute_ofdm_prr_impl</name></member>
+      <member refid="classgr_1_1fullduplex_1_1compute__ofdm__prr__impl_1a97bbdeca42e849095f49f6b11b53e022" prot="private" virt="non-virtual"><scope>gr::fullduplex::compute_ofdm_prr_impl</scope><name>d_decoded_count</name></member>
+      <member refid="classgr_1_1fullduplex_1_1compute__ofdm__prr__impl_1a760308701bcf77af5064e4bb5521c4d3" prot="private" virt="non-virtual"><scope>gr::fullduplex::compute_ofdm_prr_impl</scope><name>d_packet_len</name></member>
+      <member refid="classgr_1_1fullduplex_1_1compute__ofdm__prr__impl_1affd4346a63bad5fc50080efda294cf70" prot="private" virt="non-virtual"><scope>gr::fullduplex::compute_ofdm_prr_impl</scope><name>d_transmitted_count</name></member>
+      <member refid="classgr_1_1fullduplex_1_1compute__ofdm__prr_1ae0db46165e3f1f22a28fd35b7446af65" prot="public" virt="non-virtual"><scope>gr::fullduplex::compute_ofdm_prr_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1fullduplex_1_1compute__ofdm__prr_1a10beb5a56a1d5e95ea3586757e5b5576" prot="public" virt="non-virtual"><scope>gr::fullduplex::compute_ofdm_prr_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1fullduplex_1_1compute__ofdm__prr__impl_1a8484a5e98eb934c1a3eb8575ce6afd75" prot="public" virt="non-virtual"><scope>gr::fullduplex::compute_ofdm_prr_impl</scope><name>work</name></member>
+      <member refid="classgr_1_1fullduplex_1_1compute__ofdm__prr__impl_1ac507aea33167d9d45144efff274c7d81" prot="public" virt="non-virtual"><scope>gr::fullduplex::compute_ofdm_prr_impl</scope><name>~compute_ofdm_prr_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

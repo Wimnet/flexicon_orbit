@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="digital__sic_8h" kind="file" language="C++">
+    <compoundname>digital_sic.h</compoundname>
+    <includes refid="api_8h" local="no">fullduplex/api.h</includes>
+    <includes local="no">gnuradio/tagged_stream_block.h</includes>
+    <includedby refid="digital__sic__impl_8h" local="no">digital_sic_impl.h</includedby>
+    <incdepgraph>
+      <node id="66">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="64">
+        <label>digital_sic.h</label>
+        <link refid="digital_sic.h"/>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>fullduplex/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>gnuradio/tagged_stream_block.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="68">
+        <label>digital_sic.h</label>
+        <link refid="digital_sic.h"/>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>digital_sic_impl.h</label>
+        <link refid="digital__sic__impl_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgr_1_1fullduplex_1_1digital__sic" prot="public">gr::fullduplex::digital_sic</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1fullduplex">gr::fullduplex</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/include/fullduplex/digital_sic.h"/>
+  </compounddef>
+</doxygen>

@@ -19,6 +19,7 @@
 #include "fullduplex/count_packets.h"
 #include "fullduplex/async_divide.h"
 #include "fullduplex/fde_config.h"
+#include "fullduplex/sub20_init.h"
 //#include "fullduplex/compute_ofdm_prr.h"
 %}
 
@@ -47,3 +48,5 @@ GR_SWIG_BLOCK_MAGIC2(fullduplex, count_packets);
 GR_SWIG_BLOCK_MAGIC2(fullduplex, async_divide);
 %include "fullduplex/fde_config.h"
 GR_SWIG_BLOCK_MAGIC2(fullduplex, fde_config);
+%include "fullduplex/sub20_init.h"
+GR_SWIG_BLOCK_MAGIC2(fullduplex, sub20_init);

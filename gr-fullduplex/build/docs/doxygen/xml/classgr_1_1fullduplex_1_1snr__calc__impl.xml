@@ -1,0 +1,394 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1fullduplex_1_1snr__calc__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::fullduplex::snr_calc_impl</compoundname>
+    <basecompoundref refid="classgr_1_1fullduplex_1_1snr__calc" prot="public" virt="non-virtual">gr::fullduplex::snr_calc</basecompoundref>
+    <includes refid="snr__calc__impl_8h" local="no">snr_calc_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1snr__calc__impl_1a4529d21418e0a65b3c1f7fcb7f419a21" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fullduplex::snr_calc_impl::d_delay_tx2rx</definition>
+        <argsstring></argsstring>
+        <name>d_delay_tx2rx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" line="40" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1snr__calc__impl_1af3c5bf19119549bfdd2ad1456381d20f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fullduplex::snr_calc_impl::d_pad_front</definition>
+        <argsstring></argsstring>
+        <name>d_pad_front</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" line="41" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1snr__calc__impl_1a29f7c52a1f91f44a0c276ca2c69e103c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fullduplex::snr_calc_impl::d_data_symbols</definition>
+        <argsstring></argsstring>
+        <name>d_data_symbols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" line="42" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1snr__calc__impl_1aa822f7bd721ed533633c1667baa8eb10" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fullduplex::snr_calc_impl::d_symbol_len</definition>
+        <argsstring></argsstring>
+        <name>d_symbol_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" line="43" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1snr__calc__impl_1a75d19797578b1a8d91b9f041c33333d4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fullduplex::snr_calc_impl::d_CP_len</definition>
+        <argsstring></argsstring>
+        <name>d_CP_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" line="44" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1snr__calc__impl_1aad88a8a923252ebe829aec53882038ba" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fullduplex::snr_calc_impl::d_noise_start_idx</definition>
+        <argsstring></argsstring>
+        <name>d_noise_start_idx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" line="45" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1snr__calc__impl_1a245589a6f116fa44991b651c07a33a1b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fullduplex::snr_calc_impl::d_noise_length</definition>
+        <argsstring></argsstring>
+        <name>d_noise_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" line="46" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1snr__calc__impl_1a826abef7d5f5d1363a8f760b7ea7e1e5" prot="private" static="no" mutable="no">
+        <type>fftw_complex *</type>
+        <definition>fftw_complex* gr::fullduplex::snr_calc_impl::d_noise_t</definition>
+        <argsstring></argsstring>
+        <name>d_noise_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" line="49" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1snr__calc__impl_1a2292779221fea05bebb732504a9ebd83" prot="private" static="no" mutable="no">
+        <type>fftw_complex *</type>
+        <definition>fftw_complex* gr::fullduplex::snr_calc_impl::d_noise_f</definition>
+        <argsstring></argsstring>
+        <name>d_noise_f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" line="50" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1snr__calc__impl_1a65171d79366997c3900a93a965711c8e" prot="private" static="no" mutable="no">
+        <type>fftw_complex *</type>
+        <definition>fftw_complex* gr::fullduplex::snr_calc_impl::d_pkt_t</definition>
+        <argsstring></argsstring>
+        <name>d_pkt_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" line="51" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1snr__calc__impl_1a6cd1faa30b9412adb804f005603e2bbf" prot="private" static="no" mutable="no">
+        <type>fftw_complex *</type>
+        <definition>fftw_complex* gr::fullduplex::snr_calc_impl::d_pkt_f</definition>
+        <argsstring></argsstring>
+        <name>d_pkt_f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" line="52" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1snr__calc__impl_1a470d339e7f31ace699771fad3b366576" prot="private" static="no" mutable="no">
+        <type>fftw_plan</type>
+        <definition>fftw_plan gr::fullduplex::snr_calc_impl::d_noise_p</definition>
+        <argsstring></argsstring>
+        <name>d_noise_p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" line="55" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1snr__calc__impl_1a39474cbae32feac409e19a2f656690e6" prot="private" static="no" mutable="no">
+        <type>fftw_plan</type>
+        <definition>fftw_plan gr::fullduplex::snr_calc_impl::d_pkt_p</definition>
+        <argsstring></argsstring>
+        <name>d_pkt_p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" line="56" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1snr__calc__impl_1accb94afc359136c4c7e6ab8b10178f0c" prot="private" static="no" mutable="no">
+        <type>gr::thread::mutex</type>
+        <definition>gr::thread::mutex gr::fullduplex::snr_calc_impl::d_mutex</definition>
+        <argsstring></argsstring>
+        <name>d_mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" line="59" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1snr__calc__impl_1a1d5bf7ed4a7c830386c8f6fe4a75c78a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::fullduplex::snr_calc_impl::calculate_output_stream_length</definition>
+        <argsstring>(const gr_vector_int &amp;ninput_items)</argsstring>
+        <name>calculate_output_stream_length</name>
+        <param>
+          <type>const gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1snr__calc__impl_1aeb80d4adac99139a5234227b0017efae" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void gr::fullduplex::snr_calc_impl::set_delay_tx2rx</definition>
+        <argsstring>(int delay_tx2rx)</argsstring>
+        <name>set_delay_tx2rx</name>
+        <reimplements refid="classgr_1_1fullduplex_1_1snr__calc_1a589dc1e1a42992f5f99dd905bdc36ce2">set_delay_tx2rx</reimplements>
+        <param>
+          <type>int</type>
+          <declname>delay_tx2rx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1snr__calc__impl_1a5eecf113d05e763454c4a6f32990fd5f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::fullduplex::snr_calc_impl::compute_fft_power</definition>
+        <argsstring>(const fftw_complex *fft, int fft_len)</argsstring>
+        <name>compute_fft_power</name>
+        <param>
+          <type>const fftw_complex *</type>
+          <declname>fft</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>fft_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" line="68" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1snr__calc__impl_1a8a1c5b7a1118692b9eacf26ebe61dc2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::fullduplex::snr_calc_impl::snr_calc_impl</definition>
+        <argsstring>(bool debug, int delay_txrx, int pad_front, int data_symbols, int noise_start_idx, int noise_length)</argsstring>
+        <name>snr_calc_impl</name>
+        <param>
+          <type>bool</type>
+          <declname>debug</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>delay_txrx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pad_front</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>data_symbols</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>noise_start_idx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>noise_length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1snr__calc__impl_1a34ba69d169cb55f53052008f21edd91f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::fullduplex::snr_calc_impl::~snr_calc_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~snr_calc_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1snr__calc__impl_1a822a63008bb25e0d58e31323d2a40973" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::fullduplex::snr_calc_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" line="75" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="109">
+        <label>gr::fullduplex::snr_calc</label>
+        <link refid="classgr_1_1fullduplex_1_1snr__calc"/>
+        <childnode refid="110" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>gr::fullduplex::snr_calc_impl</label>
+        <link refid="classgr_1_1fullduplex_1_1snr__calc__impl"/>
+        <childnode refid="109" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="110">
+        <label>gr::tagged_stream_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="112">
+        <label>gr::fullduplex::snr_calc</label>
+        <link refid="classgr_1_1fullduplex_1_1snr__calc"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="111">
+        <label>gr::fullduplex::snr_calc_impl</label>
+        <link refid="classgr_1_1fullduplex_1_1snr__calc__impl"/>
+        <childnode refid="112" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="113">
+        <label>gr::tagged_stream_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" line="37" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/snr_calc_impl.h" bodystart="36" bodyend="79"/>
+    <listofallmembers>
+      <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1a1d5bf7ed4a7c830386c8f6fe4a75c78a" prot="protected" virt="non-virtual"><scope>gr::fullduplex::snr_calc_impl</scope><name>calculate_output_stream_length</name></member>
+      <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1a5eecf113d05e763454c4a6f32990fd5f" prot="protected" virt="non-virtual"><scope>gr::fullduplex::snr_calc_impl</scope><name>compute_fft_power</name></member>
+      <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1a75d19797578b1a8d91b9f041c33333d4" prot="private" virt="non-virtual"><scope>gr::fullduplex::snr_calc_impl</scope><name>d_CP_len</name></member>
+      <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1a29f7c52a1f91f44a0c276ca2c69e103c" prot="private" virt="non-virtual"><scope>gr::fullduplex::snr_calc_impl</scope><name>d_data_symbols</name></member>
+      <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1a4529d21418e0a65b3c1f7fcb7f419a21" prot="private" virt="non-virtual"><scope>gr::fullduplex::snr_calc_impl</scope><name>d_delay_tx2rx</name></member>
+      <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1accb94afc359136c4c7e6ab8b10178f0c" prot="private" virt="non-virtual"><scope>gr::fullduplex::snr_calc_impl</scope><name>d_mutex</name></member>
+      <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1a2292779221fea05bebb732504a9ebd83" prot="private" virt="non-virtual"><scope>gr::fullduplex::snr_calc_impl</scope><name>d_noise_f</name></member>
+      <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1a245589a6f116fa44991b651c07a33a1b" prot="private" virt="non-virtual"><scope>gr::fullduplex::snr_calc_impl</scope><name>d_noise_length</name></member>
+      <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1a470d339e7f31ace699771fad3b366576" prot="private" virt="non-virtual"><scope>gr::fullduplex::snr_calc_impl</scope><name>d_noise_p</name></member>
+      <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1aad88a8a923252ebe829aec53882038ba" prot="private" virt="non-virtual"><scope>gr::fullduplex::snr_calc_impl</scope><name>d_noise_start_idx</name></member>
+      <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1a826abef7d5f5d1363a8f760b7ea7e1e5" prot="private" virt="non-virtual"><scope>gr::fullduplex::snr_calc_impl</scope><name>d_noise_t</name></member>
+      <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1af3c5bf19119549bfdd2ad1456381d20f" prot="private" virt="non-virtual"><scope>gr::fullduplex::snr_calc_impl</scope><name>d_pad_front</name></member>
+      <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1a6cd1faa30b9412adb804f005603e2bbf" prot="private" virt="non-virtual"><scope>gr::fullduplex::snr_calc_impl</scope><name>d_pkt_f</name></member>
+      <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1a39474cbae32feac409e19a2f656690e6" prot="private" virt="non-virtual"><scope>gr::fullduplex::snr_calc_impl</scope><name>d_pkt_p</name></member>
+      <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1a65171d79366997c3900a93a965711c8e" prot="private" virt="non-virtual"><scope>gr::fullduplex::snr_calc_impl</scope><name>d_pkt_t</name></member>
+      <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1aa822f7bd721ed533633c1667baa8eb10" prot="private" virt="non-virtual"><scope>gr::fullduplex::snr_calc_impl</scope><name>d_symbol_len</name></member>
+      <member refid="classgr_1_1fullduplex_1_1snr__calc_1acddc0f87d4baf3308974a2ad71bb983f" prot="public" virt="non-virtual"><scope>gr::fullduplex::snr_calc_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1aeb80d4adac99139a5234227b0017efae" prot="protected" virt="virtual"><scope>gr::fullduplex::snr_calc_impl</scope><name>set_delay_tx2rx</name></member>
+      <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1a8a1c5b7a1118692b9eacf26ebe61dc2d" prot="public" virt="non-virtual"><scope>gr::fullduplex::snr_calc_impl</scope><name>snr_calc_impl</name></member>
+      <member refid="classgr_1_1fullduplex_1_1snr__calc_1a2aeb4bb573ffa6d7ab4eba012667e425" prot="public" virt="non-virtual"><scope>gr::fullduplex::snr_calc_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1a822a63008bb25e0d58e31323d2a40973" prot="public" virt="non-virtual"><scope>gr::fullduplex::snr_calc_impl</scope><name>work</name></member>
+      <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1a34ba69d169cb55f53052008f21edd91f" prot="public" virt="non-virtual"><scope>gr::fullduplex::snr_calc_impl</scope><name>~snr_calc_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

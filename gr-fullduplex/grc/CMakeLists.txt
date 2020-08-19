@@ -29,5 +29,6 @@ install(FILES
     #fullduplex_compute_ofdm_prr.xml
     fullduplex_count_packets.xml
     fullduplex_async_divide.xml
-    fullduplex_fde_config.xml DESTINATION share/gnuradio/grc/blocks
+    fullduplex_fde_config.xml
+    fullduplex_sub20_init.xml DESTINATION share/gnuradio/grc/blocks
 )

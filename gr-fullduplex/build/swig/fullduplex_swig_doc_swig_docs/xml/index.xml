@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="classgr_1_1fullduplex_1_1async__divide" kind="class"><name>gr::fullduplex::async_divide</name>
+    <member refid="classgr_1_1fullduplex_1_1async__divide_1a1b6c25d3f013b3fe4ebcf95dd2ba848c" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1fullduplex_1_1async__divide_1a1ddb372fcb9f8fc02f1df87a2a958f5b" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1compute__ofdm__prr" kind="class"><name>gr::fullduplex::compute_ofdm_prr</name>
+    <member refid="classgr_1_1fullduplex_1_1compute__ofdm__prr_1a10beb5a56a1d5e95ea3586757e5b5576" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1fullduplex_1_1compute__ofdm__prr_1ae0db46165e3f1f22a28fd35b7446af65" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1count__packets" kind="class"><name>gr::fullduplex::count_packets</name>
+    <member refid="classgr_1_1fullduplex_1_1count__packets_1ac8df28aa5f814b3845c61bc34895ff8d" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1fullduplex_1_1count__packets_1acec886da3f280f88b97205a959eb22bb" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1digital__sic" kind="class"><name>gr::fullduplex::digital_sic</name>
+    <member refid="classgr_1_1fullduplex_1_1digital__sic_1ae37f3097ffc6dc72be42ba73832d3648" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1fullduplex_1_1digital__sic_1a59da6ccfb5f6344d97f44402d20998cb" kind="variable"><name>d_sig_pilot</name></member>
+    <member refid="classgr_1_1fullduplex_1_1digital__sic_1a1cccc1312f16b6e961afe2751d10080c" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1fullduplex_1_1digital__sic_1a91da2df90fba9bd582214a863c42ec58" kind="function"><name>set_delay_tx2rx</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1fde__config" kind="class"><name>gr::fullduplex::fde_config</name>
+    <member refid="classgr_1_1fullduplex_1_1fde__config_1a33245155be09674923eca4a1ffee1554" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config_1a9dd38705d0c11a9eb381fb43376f721c" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config_1ac819a091ee5d57dbebd23e1c54f6ad89" kind="function"><name>fde_config_find_dev</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config_1a5114964da27f8051edd57359ea04bf38" kind="function"><name>set_canc_path</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config_1a9e6099a4ece0ec1d716c8ebfa1a926cb" kind="function"><name>set_att</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config_1a5871036dca4583100c250b05b65afbdb" kind="function"><name>set_dac</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config_1ad7184b3a78b4a7f6dd8bb0ab666da569" kind="function"><name>set_cf_cap</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config_1afe888ba0faa9ebe29c88c4cb672b6853" kind="function"><name>set_qf_cap</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config_1aaeb8be7269fcaf7264baa347c092f97a" kind="function"><name>set_tuner_cap</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config_1a742054af2bd3dee17dfc418523978b12" kind="function"><name>set_all</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1ofdm__constellation" kind="class"><name>gr::fullduplex::ofdm_constellation</name>
+    <member refid="classgr_1_1fullduplex_1_1ofdm__constellation_1ace3a5b5f5b9cc42ea38fc17cbe1b6850" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1fullduplex_1_1ofdm__constellation_1a82de7c3687393d5cb167a55889f32f4a" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1fullduplex_1_1ofdm__constellation_1ae733aadeae82bf04a7a172062f84fdfe" kind="function"><name>set_delay_tx2rx</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1packet__decap" kind="class"><name>gr::fullduplex::packet_decap</name>
+    <member refid="classgr_1_1fullduplex_1_1packet__decap_1a35e571a1dd3228f93df437fddbd98313" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1fullduplex_1_1packet__decap_1a2871548de5b2c9995c8c8b5a110507a6" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1packet__encap" kind="class"><name>gr::fullduplex::packet_encap</name>
+    <member refid="classgr_1_1fullduplex_1_1packet__encap_1a6cde5ce2b497aba8304c7385a75800e4" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1fullduplex_1_1packet__encap_1a59fdd5250b65c48ebb13574afda8923b" kind="variable"><name>d_sig_pilot</name></member>
+    <member refid="classgr_1_1fullduplex_1_1packet__encap_1a4f6f7234fb6eb916cab375cc55f3a97c" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1packet__encap2" kind="class"><name>gr::fullduplex::packet_encap2</name>
+    <member refid="classgr_1_1fullduplex_1_1packet__encap2_1ae9e4a104bddbe3713bd1193df09b342e" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1fullduplex_1_1packet__encap2_1ad6cdef5cc6602478fbe50e5f796455d1" kind="variable"><name>d_sig_pilot_duplicates</name></member>
+    <member refid="classgr_1_1fullduplex_1_1packet__encap2_1afb25fd13614baabc7db56c72da92296d" kind="variable"><name>d_sig_pilot</name></member>
+    <member refid="classgr_1_1fullduplex_1_1packet__encap2_1a88521f7f15ce0637f08fdb16417ee355" kind="variable"><name>d_mutex</name></member>
+    <member refid="classgr_1_1fullduplex_1_1packet__encap2_1a784b767118a3f3df3ae77d0ce73b85cb" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1parse__stream__sync" kind="class"><name>gr::fullduplex::parse_stream_sync</name>
+    <member refid="classgr_1_1fullduplex_1_1parse__stream__sync_1a9c163a8856d08b1530cf7e2a4f2ce6fd" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1fullduplex_1_1parse__stream__sync_1abc4914a9f3c2529480e0eaf6067991a9" kind="variable"><name>d_sig_pilot</name></member>
+    <member refid="classgr_1_1fullduplex_1_1parse__stream__sync_1a004747111d077f32b4767ab44f98101b" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1fullduplex_1_1parse__stream__sync_1a3aabac9804d67bcb2f3ae49d9ac73e1f" kind="function"><name>set_delay</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1residual__si__vis" kind="class"><name>gr::fullduplex::residual_si_vis</name>
+    <member refid="classgr_1_1fullduplex_1_1residual__si__vis_1a73e0a2aab1644b83a88d754a2846b731" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1fullduplex_1_1residual__si__vis_1a280ac59422883fecea28032286e36598" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1fullduplex_1_1residual__si__vis_1a6cedac03d85853102fabbfea47470804" kind="function"><name>setVals</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1snr__calc" kind="class"><name>gr::fullduplex::snr_calc</name>
+    <member refid="classgr_1_1fullduplex_1_1snr__calc_1a2aeb4bb573ffa6d7ab4eba012667e425" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1fullduplex_1_1snr__calc_1acddc0f87d4baf3308974a2ad71bb983f" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1fullduplex_1_1snr__calc_1a589dc1e1a42992f5f99dd905bdc36ce2" kind="function"><name>set_delay_tx2rx</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1sub20__init" kind="class"><name>gr::fullduplex::sub20_init</name>
+    <member refid="classgr_1_1fullduplex_1_1sub20__init_1acf57c6c57c357c0a7dbeb47a3c545b0d" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1fullduplex_1_1sub20__init_1a3354e04bc39c43dcb3640976bf574a66" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1fullduplex_1_1sub20__init_1a936a463cdee7ea4d7afeb26f992bb423" kind="function"><name>set_atten_code</name></member>
+    <member refid="classgr_1_1fullduplex_1_1sub20__init_1a653a016d8a74ac2cc2856b2dc40e1ffc" kind="function"><name>set_phase_code</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1fullduplex" kind="namespace"><name>gr::fullduplex</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1afa055ea697e5ed562d2ffdf0a70b6718" kind="define"><name>FULLDUPLEX_API</name></member>
+  </compound>
+  <compound refid="async__divide_8h" kind="file"><name>async_divide.h</name>
+  </compound>
+  <compound refid="compute__ofdm__prr_8h" kind="file"><name>compute_ofdm_prr.h</name>
+  </compound>
+  <compound refid="count__packets_8h" kind="file"><name>count_packets.h</name>
+  </compound>
+  <compound refid="digital__sic_8h" kind="file"><name>digital_sic.h</name>
+  </compound>
+  <compound refid="fde__config_8h" kind="file"><name>fde_config.h</name>
+  </compound>
+  <compound refid="ofdm__constellation_8h" kind="file"><name>ofdm_constellation.h</name>
+  </compound>
+  <compound refid="packet__decap_8h" kind="file"><name>packet_decap.h</name>
+  </compound>
+  <compound refid="packet__encap_8h" kind="file"><name>packet_encap.h</name>
+  </compound>
+  <compound refid="packet__encap2_8h" kind="file"><name>packet_encap2.h</name>
+  </compound>
+  <compound refid="parse__stream__sync_8h" kind="file"><name>parse_stream_sync.h</name>
+  </compound>
+  <compound refid="residual__si__vis_8h" kind="file"><name>residual_si_vis.h</name>
+  </compound>
+  <compound refid="snr__calc_8h" kind="file"><name>snr_calc.h</name>
+  </compound>
+  <compound refid="sub20__init_8h" kind="file"><name>sub20_init.h</name>
+  </compound>
+  <compound refid="dir_fc8b0e648888754833d2066bd46cb9b3" kind="dir"><name>/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/include/fullduplex</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/include</name>
+  </compound>
+</doxygenindex>

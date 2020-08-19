@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1fullduplex_1_1sub20__init__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::fullduplex::sub20_init_impl</compoundname>
+    <basecompoundref refid="classgr_1_1fullduplex_1_1sub20__init" prot="public" virt="non-virtual">gr::fullduplex::sub20_init</basecompoundref>
+    <includes refid="sub20__init__impl_8h" local="no">sub20_init_impl.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1sub20__init__impl_1ac1521b63e05946ac4b78f85c3603b062" prot="public" static="no" mutable="no">
+        <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+        <definition>sub_handle gr::fullduplex::sub20_init_impl::my_sub20</definition>
+        <argsstring></argsstring>
+        <name>my_sub20</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/sub20_init_impl.h" line="47" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/sub20_init_impl.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1sub20__init__impl_1a8e84372c837ed9e1854664ba56fa0ecf" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fullduplex::sub20_init_impl::d_atten_code</definition>
+        <argsstring></argsstring>
+        <name>d_atten_code</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/sub20_init_impl.h" line="50" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/sub20_init_impl.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1sub20__init__impl_1a0fbfdfd53b50bcf92fa0ca421ae1500b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fullduplex::sub20_init_impl::d_phase_code</definition>
+        <argsstring></argsstring>
+        <name>d_phase_code</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/sub20_init_impl.h" line="51" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/sub20_init_impl.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1sub20__init__impl_1a460668cae183e8e32147754a190b2d3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::fullduplex::sub20_init_impl::sub20_init_impl</definition>
+        <argsstring>(int atten_code, int phase_code)</argsstring>
+        <name>sub20_init_impl</name>
+        <param>
+          <type>int</type>
+          <declname>atten_code</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>phase_code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/sub20_init_impl.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1sub20__init__impl_1ab249e2b8f52fc560a956b67a83c57761" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::fullduplex::sub20_init_impl::~sub20_init_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~sub20_init_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/sub20_init_impl.h" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1sub20__init__impl_1aae112281b1a516d587e82c2f16c22447" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::fullduplex::sub20_init_impl::sub20_init_find_dev</definition>
+        <argsstring>()</argsstring>
+        <name>sub20_init_find_dev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/sub20_init_impl.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1sub20__init__impl_1a7da989e508813f37893a71b82e36c06e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void gr::fullduplex::sub20_init_impl::set_atten_code</definition>
+        <argsstring>(int code)</argsstring>
+        <name>set_atten_code</name>
+        <reimplements refid="classgr_1_1fullduplex_1_1sub20__init_1a936a463cdee7ea4d7afeb26f992bb423">set_atten_code</reimplements>
+        <param>
+          <type>int</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/sub20_init_impl.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1sub20__init__impl_1a03d5552a861a3db588c6b8eb2ac5ef80" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void gr::fullduplex::sub20_init_impl::set_phase_code</definition>
+        <argsstring>(int code)</argsstring>
+        <name>set_phase_code</name>
+        <reimplements refid="classgr_1_1fullduplex_1_1sub20__init_1a653a016d8a74ac2cc2856b2dc40e1ffc">set_phase_code</reimplements>
+        <param>
+          <type>int</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/sub20_init_impl.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1sub20__init__impl_1a5fc1a8e70546408d594487c8b0e1433a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::fullduplex::sub20_init_impl::set_tuner</definition>
+        <argsstring>()</argsstring>
+        <name>set_tuner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/sub20_init_impl.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1sub20__init__impl_1a085701d7232106f8af81fd3a08dbc3a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::fullduplex::sub20_init_impl::forecast</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
+        <name>forecast</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_required</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/sub20_init_impl.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1sub20__init__impl_1a0a2d8f06830db2e5d0636b9e406bef99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::fullduplex::sub20_init_impl::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>general_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/sub20_init_impl.h" line="56" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="119">
+        <label>gr::fullduplex::sub20_init_impl</label>
+        <link refid="classgr_1_1fullduplex_1_1sub20__init__impl"/>
+        <childnode refid="120" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="120">
+        <label>gr::fullduplex::sub20_init</label>
+        <link refid="classgr_1_1fullduplex_1_1sub20__init"/>
+        <childnode refid="121" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="121">
+        <label>gr::block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="122">
+        <label>gr::fullduplex::sub20_init_impl</label>
+        <link refid="classgr_1_1fullduplex_1_1sub20__init__impl"/>
+        <childnode refid="123" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="123">
+        <label>gr::fullduplex::sub20_init</label>
+        <link refid="classgr_1_1fullduplex_1_1sub20__init"/>
+        <childnode refid="124" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="124">
+        <label>gr::block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/sub20_init_impl.h" line="32" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/sub20_init_impl.h" bodystart="31" bodyend="60"/>
+    <listofallmembers>
+      <member refid="classgr_1_1fullduplex_1_1sub20__init__impl_1a8e84372c837ed9e1854664ba56fa0ecf" prot="public" virt="non-virtual"><scope>gr::fullduplex::sub20_init_impl</scope><name>d_atten_code</name></member>
+      <member refid="classgr_1_1fullduplex_1_1sub20__init__impl_1a0fbfdfd53b50bcf92fa0ca421ae1500b" prot="public" virt="non-virtual"><scope>gr::fullduplex::sub20_init_impl</scope><name>d_phase_code</name></member>
+      <member refid="classgr_1_1fullduplex_1_1sub20__init__impl_1a085701d7232106f8af81fd3a08dbc3a2" prot="public" virt="non-virtual"><scope>gr::fullduplex::sub20_init_impl</scope><name>forecast</name></member>
+      <member refid="classgr_1_1fullduplex_1_1sub20__init__impl_1a0a2d8f06830db2e5d0636b9e406bef99" prot="public" virt="non-virtual"><scope>gr::fullduplex::sub20_init_impl</scope><name>general_work</name></member>
+      <member refid="classgr_1_1fullduplex_1_1sub20__init_1a3354e04bc39c43dcb3640976bf574a66" prot="public" virt="non-virtual"><scope>gr::fullduplex::sub20_init_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1fullduplex_1_1sub20__init__impl_1ac1521b63e05946ac4b78f85c3603b062" prot="public" virt="non-virtual"><scope>gr::fullduplex::sub20_init_impl</scope><name>my_sub20</name></member>
+      <member refid="classgr_1_1fullduplex_1_1sub20__init__impl_1a7da989e508813f37893a71b82e36c06e" prot="public" virt="virtual"><scope>gr::fullduplex::sub20_init_impl</scope><name>set_atten_code</name></member>
+      <member refid="classgr_1_1fullduplex_1_1sub20__init__impl_1a03d5552a861a3db588c6b8eb2ac5ef80" prot="public" virt="virtual"><scope>gr::fullduplex::sub20_init_impl</scope><name>set_phase_code</name></member>
+      <member refid="classgr_1_1fullduplex_1_1sub20__init__impl_1a5fc1a8e70546408d594487c8b0e1433a" prot="public" virt="non-virtual"><scope>gr::fullduplex::sub20_init_impl</scope><name>set_tuner</name></member>
+      <member refid="classgr_1_1fullduplex_1_1sub20__init_1acf57c6c57c357c0a7dbeb47a3c545b0d" prot="public" virt="non-virtual"><scope>gr::fullduplex::sub20_init_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1fullduplex_1_1sub20__init__impl_1aae112281b1a516d587e82c2f16c22447" prot="public" virt="non-virtual"><scope>gr::fullduplex::sub20_init_impl</scope><name>sub20_init_find_dev</name></member>
+      <member refid="classgr_1_1fullduplex_1_1sub20__init__impl_1a460668cae183e8e32147754a190b2d3f" prot="public" virt="non-virtual"><scope>gr::fullduplex::sub20_init_impl</scope><name>sub20_init_impl</name></member>
+      <member refid="classgr_1_1fullduplex_1_1sub20__init__impl_1ab249e2b8f52fc560a956b67a83c57761" prot="public" virt="non-virtual"><scope>gr::fullduplex::sub20_init_impl</scope><name>~sub20_init_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

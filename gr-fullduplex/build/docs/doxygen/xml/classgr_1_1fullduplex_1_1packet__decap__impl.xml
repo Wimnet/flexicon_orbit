@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1fullduplex_1_1packet__decap__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::fullduplex::packet_decap_impl</compoundname>
+    <basecompoundref refid="classgr_1_1fullduplex_1_1packet__decap" prot="public" virt="non-virtual">gr::fullduplex::packet_decap</basecompoundref>
+    <includes refid="packet__decap__impl_8h" local="no">packet_decap_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1packet__decap__impl_1ac1f17026c49de1ba89909b067ffed291" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fullduplex::packet_decap_impl::d_sig_pilot_pos</definition>
+        <argsstring></argsstring>
+        <name>d_sig_pilot_pos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/packet_decap_impl.h" line="36" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/packet_decap_impl.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1packet__decap__impl_1a48ddedd6aa2f08e7aa71aa316be7e436" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fullduplex::packet_decap_impl::d_pad_front</definition>
+        <argsstring></argsstring>
+        <name>d_pad_front</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/packet_decap_impl.h" line="37" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/packet_decap_impl.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1packet__decap__impl_1af49d9795e67ff63c54da41a3d5ada7bc" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fullduplex::packet_decap_impl::d_delay_tx2rx</definition>
+        <argsstring></argsstring>
+        <name>d_delay_tx2rx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/packet_decap_impl.h" line="38" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/packet_decap_impl.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1packet__decap__impl_1a157f8edb8c2b1d4003d9fa062d90f18c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fullduplex::packet_decap_impl::d_frame_len</definition>
+        <argsstring></argsstring>
+        <name>d_frame_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/packet_decap_impl.h" line="39" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/packet_decap_impl.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1packet__decap__impl_1a0e3820f49ae4b05c9e067b074a6241c6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fullduplex::packet_decap_impl::d_pad</definition>
+        <argsstring></argsstring>
+        <name>d_pad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/packet_decap_impl.h" line="68" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/packet_decap_impl.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fullduplex_1_1packet__decap__impl_1abff564e7b0195ead0e9fad7d4fba49ed" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fullduplex::packet_decap_impl::d_sig_pilot_len</definition>
+        <argsstring></argsstring>
+        <name>d_sig_pilot_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/packet_decap_impl.h" line="70" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/packet_decap_impl.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1packet__decap__impl_1aa091b378ff11ab260691500a568d423d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::fullduplex::packet_decap_impl::packet_decap_impl</definition>
+        <argsstring>(bool debug, unsigned int sig_pilot_pos, unsigned int pad_front, unsigned int delay_tx2rx, unsigned int frame_len, const std::string &amp;len_tag_key)</argsstring>
+        <name>packet_decap_impl</name>
+        <param>
+          <type>bool</type>
+          <declname>debug</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>sig_pilot_pos</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>pad_front</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>delay_tx2rx</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>frame_len</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>len_tag_key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/packet_decap_impl.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1packet__decap__impl_1ab33ed148d2ce82292126888efb2a34f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::fullduplex::packet_decap_impl::~packet_decap_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~packet_decap_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/packet_decap_impl.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1packet__decap__impl_1ab2f7dae456f0cd0568b4f5ff2ad05598" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::fullduplex::packet_decap_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/packet_decap_impl.h" line="57" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="73">
+        <label>tagged_stream_block</label>
+      </node>
+      <node id="72">
+        <label>gr::fullduplex::packet_decap</label>
+        <link refid="classgr_1_1fullduplex_1_1packet__decap"/>
+        <childnode refid="73" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>gr::fullduplex::packet_decap_impl</label>
+        <link refid="classgr_1_1fullduplex_1_1packet__decap__impl"/>
+        <childnode refid="72" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="76">
+        <label>tagged_stream_block</label>
+      </node>
+      <node id="75">
+        <label>gr::fullduplex::packet_decap</label>
+        <link refid="classgr_1_1fullduplex_1_1packet__decap"/>
+        <childnode refid="76" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>gr::fullduplex::packet_decap_impl</label>
+        <link refid="classgr_1_1fullduplex_1_1packet__decap__impl"/>
+        <childnode refid="75" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/packet_decap_impl.h" line="32" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/packet_decap_impl.h" bodystart="31" bodyend="71"/>
+    <listofallmembers>
+      <member refid="classgr_1_1fullduplex_1_1packet__decap__impl_1af49d9795e67ff63c54da41a3d5ada7bc" prot="private" virt="non-virtual"><scope>gr::fullduplex::packet_decap_impl</scope><name>d_delay_tx2rx</name></member>
+      <member refid="classgr_1_1fullduplex_1_1packet__decap__impl_1a157f8edb8c2b1d4003d9fa062d90f18c" prot="private" virt="non-virtual"><scope>gr::fullduplex::packet_decap_impl</scope><name>d_frame_len</name></member>
+      <member refid="classgr_1_1fullduplex_1_1packet__decap__impl_1a0e3820f49ae4b05c9e067b074a6241c6" prot="public" virt="non-virtual"><scope>gr::fullduplex::packet_decap_impl</scope><name>d_pad</name></member>
+      <member refid="classgr_1_1fullduplex_1_1packet__decap__impl_1a48ddedd6aa2f08e7aa71aa316be7e436" prot="private" virt="non-virtual"><scope>gr::fullduplex::packet_decap_impl</scope><name>d_pad_front</name></member>
+      <member refid="classgr_1_1fullduplex_1_1packet__decap__impl_1abff564e7b0195ead0e9fad7d4fba49ed" prot="public" virt="non-virtual"><scope>gr::fullduplex::packet_decap_impl</scope><name>d_sig_pilot_len</name></member>
+      <member refid="classgr_1_1fullduplex_1_1packet__decap__impl_1ac1f17026c49de1ba89909b067ffed291" prot="private" virt="non-virtual"><scope>gr::fullduplex::packet_decap_impl</scope><name>d_sig_pilot_pos</name></member>
+      <member refid="classgr_1_1fullduplex_1_1packet__decap_1a2871548de5b2c9995c8c8b5a110507a6" prot="public" virt="non-virtual"><scope>gr::fullduplex::packet_decap_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1fullduplex_1_1packet__decap__impl_1aa091b378ff11ab260691500a568d423d" prot="public" virt="non-virtual"><scope>gr::fullduplex::packet_decap_impl</scope><name>packet_decap_impl</name></member>
+      <member refid="classgr_1_1fullduplex_1_1packet__decap_1a35e571a1dd3228f93df437fddbd98313" prot="public" virt="non-virtual"><scope>gr::fullduplex::packet_decap_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1fullduplex_1_1packet__decap__impl_1ab2f7dae456f0cd0568b4f5ff2ad05598" prot="public" virt="non-virtual"><scope>gr::fullduplex::packet_decap_impl</scope><name>work</name></member>
+      <member refid="classgr_1_1fullduplex_1_1packet__decap__impl_1ab33ed148d2ce82292126888efb2a34f9" prot="public" virt="non-virtual"><scope>gr::fullduplex::packet_decap_impl</scope><name>~packet_decap_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

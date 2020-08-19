@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="count__packets_8h" kind="file" language="C++">
+    <compoundname>count_packets.h</compoundname>
+    <includes refid="api_8h" local="no">fullduplex/api.h</includes>
+    <includes local="no">gnuradio/tagged_stream_block.h</includes>
+    <includedby refid="count__packets__impl_8h" local="no">count_packets_impl.h</includedby>
+    <incdepgraph>
+      <node id="54">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="53">
+        <label>fullduplex/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>count_packets.h</label>
+        <link refid="count_packets.h"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>gnuradio/tagged_stream_block.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="57">
+        <label>count_packets_impl.h</label>
+        <link refid="count__packets__impl_8h"/>
+      </node>
+      <node id="56">
+        <label>count_packets.h</label>
+        <link refid="count_packets.h"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgr_1_1fullduplex_1_1count__packets" prot="public">gr::fullduplex::count_packets</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1fullduplex">gr::fullduplex</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/include/fullduplex/count_packets.h"/>
+  </compounddef>
+</doxygen>

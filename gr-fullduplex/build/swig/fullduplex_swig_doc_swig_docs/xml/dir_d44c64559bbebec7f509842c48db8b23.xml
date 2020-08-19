@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_d44c64559bbebec7f509842c48db8b23" kind="dir">
+    <compoundname>/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/include</compoundname>
+    <innerdir refid="dir_fc8b0e648888754833d2066bd46cb9b3">/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/include/fullduplex</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/include/"/>
+  </compounddef>
+</doxygen>

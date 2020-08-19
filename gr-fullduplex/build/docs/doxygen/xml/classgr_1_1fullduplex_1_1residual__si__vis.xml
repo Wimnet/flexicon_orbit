@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1fullduplex_1_1residual__si__vis" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>gr::fullduplex::residual_si_vis</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <derivedcompoundref refid="classgr_1_1fullduplex_1_1residual__si__vis__impl" prot="public" virt="non-virtual">gr::fullduplex::residual_si_vis_impl</derivedcompoundref>
+    <includes refid="residual__si__vis_8h" local="no">residual_si_vis.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1fullduplex_1_1residual__si__vis_1a73e0a2aab1644b83a88d754a2846b731" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1fullduplex_1_1residual__si__vis" kindref="compound">residual_si_vis</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;residual_si_vis&gt; gr::fullduplex::residual_si_vis::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/include/fullduplex/residual_si_vis.h" line="39" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/include/fullduplex/residual_si_vis.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1residual__si__vis_1a280ac59422883fecea28032286e36598" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1fullduplex_1_1residual__si__vis_1a73e0a2aab1644b83a88d754a2846b731" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::fullduplex::residual_si_vis::make</definition>
+        <argsstring>()</argsstring>
+        <name>make</name>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1fullduplex_1_1residual__si__vis" kindref="compound">fullduplex::residual_si_vis</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1fullduplex_1_1residual__si__vis" kindref="compound">fullduplex::residual_si_vis</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1fullduplex_1_1residual__si__vis_1a280ac59422883fecea28032286e36598" kindref="member">fullduplex::residual_si_vis::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/include/fullduplex/residual_si_vis.h" line="49" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1residual__si__vis_1a6cedac03d85853102fabbfea47470804" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::fullduplex::residual_si_vis::setVals</definition>
+        <argsstring>(int cf_0, int cf_1)=0</argsstring>
+        <name>setVals</name>
+        <reimplementedby refid="classgr_1_1fullduplex_1_1residual__si__vis__impl_1ad51f8339b453182a8c673f61c3af1901">setVals</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>cf_0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cf_1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/include/fullduplex/residual_si_vis.h" line="51" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="94">
+        <label>gr::fullduplex::residual_si_vis_impl</label>
+        <link refid="classgr_1_1fullduplex_1_1residual__si__vis__impl"/>
+        <childnode refid="92" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>sync_block</label>
+      </node>
+      <node id="92">
+        <label>gr::fullduplex::residual_si_vis</label>
+        <link refid="classgr_1_1fullduplex_1_1residual__si__vis"/>
+        <childnode refid="93" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="96">
+        <label>sync_block</label>
+      </node>
+      <node id="95">
+        <label>gr::fullduplex::residual_si_vis</label>
+        <link refid="classgr_1_1fullduplex_1_1residual__si__vis"/>
+        <childnode refid="96" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/include/fullduplex/residual_si_vis.h" line="37" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/include/fullduplex/residual_si_vis.h" bodystart="36" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classgr_1_1fullduplex_1_1residual__si__vis_1a280ac59422883fecea28032286e36598" prot="public" virt="non-virtual"><scope>gr::fullduplex::residual_si_vis</scope><name>make</name></member>
+      <member refid="classgr_1_1fullduplex_1_1residual__si__vis_1a6cedac03d85853102fabbfea47470804" prot="public" virt="pure-virtual"><scope>gr::fullduplex::residual_si_vis</scope><name>setVals</name></member>
+      <member refid="classgr_1_1fullduplex_1_1residual__si__vis_1a73e0a2aab1644b83a88d754a2846b731" prot="public" virt="non-virtual"><scope>gr::fullduplex::residual_si_vis</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

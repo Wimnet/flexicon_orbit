@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1fullduplex_1_1compute__ofdm__prr" kind="class" language="C++" prot="public">
+    <compoundname>gr::fullduplex::compute_ofdm_prr</compoundname>
+    <basecompoundref prot="public" virt="virtual">tagged_stream_block</basecompoundref>
+    <derivedcompoundref refid="classgr_1_1fullduplex_1_1compute__ofdm__prr__impl" prot="public" virt="non-virtual">gr::fullduplex::compute_ofdm_prr_impl</derivedcompoundref>
+    <includes refid="compute__ofdm__prr_8h" local="no">compute_ofdm_prr.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1fullduplex_1_1compute__ofdm__prr_1a10beb5a56a1d5e95ea3586757e5b5576" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1fullduplex_1_1compute__ofdm__prr" kindref="compound">compute_ofdm_prr</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;compute_ofdm_prr&gt; gr::fullduplex::compute_ofdm_prr::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/include/fullduplex/compute_ofdm_prr.h" line="39" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/include/fullduplex/compute_ofdm_prr.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1fullduplex_1_1compute__ofdm__prr_1ae0db46165e3f1f22a28fd35b7446af65" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1fullduplex_1_1compute__ofdm__prr_1a10beb5a56a1d5e95ea3586757e5b5576" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::fullduplex::compute_ofdm_prr::make</definition>
+        <argsstring>(bool debug)</argsstring>
+        <name>make</name>
+        <param>
+          <type>bool</type>
+          <declname>debug</declname>
+        </param>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1fullduplex_1_1compute__ofdm__prr" kindref="compound">fullduplex::compute_ofdm_prr</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1fullduplex_1_1compute__ofdm__prr" kindref="compound">fullduplex::compute_ofdm_prr</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1fullduplex_1_1compute__ofdm__prr_1ae0db46165e3f1f22a28fd35b7446af65" kindref="member">fullduplex::compute_ofdm_prr::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/include/fullduplex/compute_ofdm_prr.h" line="49" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="13">
+        <label>gr::fullduplex::compute_ofdm_prr_impl</label>
+        <link refid="classgr_1_1fullduplex_1_1compute__ofdm__prr__impl"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>tagged_stream_block</label>
+      </node>
+      <node id="11">
+        <label>gr::fullduplex::compute_ofdm_prr</label>
+        <link refid="classgr_1_1fullduplex_1_1compute__ofdm__prr"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="15">
+        <label>tagged_stream_block</label>
+      </node>
+      <node id="14">
+        <label>gr::fullduplex::compute_ofdm_prr</label>
+        <link refid="classgr_1_1fullduplex_1_1compute__ofdm__prr"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/include/fullduplex/compute_ofdm_prr.h" line="37" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/include/fullduplex/compute_ofdm_prr.h" bodystart="36" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classgr_1_1fullduplex_1_1compute__ofdm__prr_1ae0db46165e3f1f22a28fd35b7446af65" prot="public" virt="non-virtual"><scope>gr::fullduplex::compute_ofdm_prr</scope><name>make</name></member>
+      <member refid="classgr_1_1fullduplex_1_1compute__ofdm__prr_1a10beb5a56a1d5e95ea3586757e5b5576" prot="public" virt="non-virtual"><scope>gr::fullduplex::compute_ofdm_prr</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

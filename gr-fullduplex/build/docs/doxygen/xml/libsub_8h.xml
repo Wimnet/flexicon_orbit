@@ -1,0 +1,2951 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="libsub_8h" kind="file" language="C++">
+    <compoundname>libsub.h</compoundname>
+    <includedby refid="fde__config__impl_8h" local="no">fde_config_impl.h</includedby>
+    <includedby refid="sub20__init__impl_8h" local="no">sub20_init_impl.h</includedby>
+    <invincdepgraph>
+      <node id="96">
+        <label>sub20_init_impl.h</label>
+        <link refid="sub20__init__impl_8h"/>
+      </node>
+      <node id="95">
+        <label>fde_config_impl.h</label>
+        <link refid="fde__config__impl_8h"/>
+      </node>
+      <node id="94">
+        <label>libsub.h</label>
+        <link refid="libsub.h"/>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structsub__version" prot="public">sub_version</innerclass>
+    <innerclass refid="structsub__cfg__vpd" prot="public">sub_cfg_vpd</innerclass>
+    <innerclass refid="structsub__i2c__hs__xfer" prot="public">sub_i2c_hs_xfer</innerclass>
+    <innerclass refid="unionsub__mdio__frame" prot="public">sub_mdio_frame</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="libsub_8h_1ab088d03dc4aa788a62360d30fc257c95" prot="public" static="no">
+        <name>SUB_ERRORS</name>
+        <initializer><ref refid="libsub_8h_1ab39589d2b130e8e25b8b615e9035ff86" kindref="member">DEF_SUB_ERROR</ref>( SE_OK, 			0, 	&quot;OK&quot; 									)\
+DEF_SUB_ERROR( SE_NODEV, 		1, 	&quot;SUB Device not found&quot; 					)\
+DEF_SUB_ERROR( SE_OPEN,			2,	&quot;Can&apos;t open SUB device&quot;					)\
+DEF_SUB_ERROR( SE_SETCONF,	    3,	&quot;Can&apos;t set configuration&quot;				)\
+DEF_SUB_ERROR( SE_CLAIM,	    4,	&quot;Can&apos;t claim interface&quot;					)\
+DEF_SUB_ERROR( SE_SETA,		    5,	&quot;Failed to setup async transaction&quot;		)\
+DEF_SUB_ERROR( SE_SUBMIT,	    6,	&quot;Failed to submit async transaction&quot;	)\
+DEF_SUB_ERROR( SE_BULKOUT,	    7,	&quot;Bulk write failed&quot;						)\
+DEF_SUB_ERROR( SE_BULKIN_RC,    8,	&quot;Bulk read failed&quot;						)\
+DEF_SUB_ERROR( SE_BULKIN_SZ,    9,	&quot;Bulk read incomplete&quot;					)\
+DEF_SUB_ERROR( SE_OUT_OVF,    	10,	&quot;Out buffer overflow&quot;					)\
+DEF_SUB_ERROR( SE_I2C,    		11,	&quot;I2C error&quot;								)\
+DEF_SUB_ERROR( SE_TAG_CODE,    	12,	&quot;Wrong tag code in response&quot;			)\
+DEF_SUB_ERROR( SE_TAG_SIZE,    	13,	&quot;Wrong tag size in response&quot;			)\
+DEF_SUB_ERROR( SE_PARAM,    	14,	&quot;Wrong parameters&quot;						)\
+DEF_SUB_ERROR( SE_SPI_DIS,    	15,	&quot;SPI Disabled&quot;							)\
+DEF_SUB_ERROR( SE_NSUPPORTED,   16,	&quot;Feature not supported&quot;					)\
+DEF_SUB_ERROR( SE_TIMEOUT,    	17,	&quot;Timeout&quot;								)\
+DEF_SUB_ERROR( SE_INIT,    		18,	&quot;Init Failed&quot;							)\
+DEF_SUB_ERROR( SE_BAD_HNDL,		19,	&quot;Bad Handle&quot;							)\
+DEF_SUB_ERROR( SE_IR,			20,	&quot;InfraRed Failure&quot;						)\
+DEF_SUB_ERROR( SE_EACCESS,		21,	&quot;Access Denied&quot;							)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="122" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1ab39589d2b130e8e25b8b615e9035ff86" prot="public" static="no">
+        <name>DEF_SUB_ERROR</name>
+        <param><defname>NAME</defname></param>
+        <param><defname>VAL</defname></param>
+        <param><defname>DESCR</defname></param>
+        <initializer>NAME=VAL,</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="146" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a597718e59a8fc9c4d4ab63f5a34e28b1" prot="public" static="no">
+        <name>ETIMEDOUT</name>
+        <initializer>116</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="150" column="10" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a12437fbace49764803ce4edb1d6c9fdf" prot="public" static="no">
+        <name>__SUB_DECL__</name>
+        <initializer>extern</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="173" column="13" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1ae9c5a06b4a9a640798142857dbf2c7d0" prot="public" static="no">
+        <name>I2C_GCE</name>
+        <initializer>0x01	/* Enable general call (sa=0) in slave mode */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="188" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1aa314cf7ad54bb5b7aac40e022704c3bb" prot="public" static="no">
+        <name>I2C_DISABLE</name>
+        <initializer>0x02	/* Disable I2C Module */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="189" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a4b051c58b05a43e3d0d8e67c3db3a11d" prot="public" static="no">
+        <name>I2C_MA_HI</name>
+        <param><defname>VAL</defname></param>
+        <initializer>((VAL&lt;&lt;16))  /* Optional bytes 4,5 of MA */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="190" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a28af8c7de938e6e909d1bd8b828fe9c6" prot="public" static="no">
+        <name>BB_I2C_FAST_P</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="193" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1aa48938364d67d359ff3871af374cfc45" prot="public" static="no">
+        <name>BB_I2C_FAST</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="194" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a4eb1c8c23644021d35ad560c17026355" prot="public" static="no">
+        <name>BB_I2C_STD</name>
+        <initializer>0x03</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="195" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a27537db92d0837cc77baa0d99b8cac48" prot="public" static="no">
+        <name>SPI_ENABLE</name>
+        <initializer>0x40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="200" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1afbedf03a58e1ff48761a4b8ac5546394" prot="public" static="no">
+        <name>SPI_CPOL_RISE</name>
+        <initializer>0x00	/* ____/--\__ */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="203" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1ae66a261a968f5fa9d7462b2aba121f50" prot="public" static="no">
+        <name>SPI_CPOL_FALL</name>
+        <initializer>0x08	/* ----\__/-- */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="204" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1aaff7708d4da9560473983ce4e154dec1" prot="public" static="no">
+        <name>SPI_SMPL_SETUP</name>
+        <initializer>0x00	/* Leading - Sample, Traling - Setup  */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="207" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a163c0439da1332da5f1edc6f83fab52b" prot="public" static="no">
+        <name>SPI_SETUP_SMPL</name>
+        <initializer>0x04    /* Leading - Setup,  Traling - Sample */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="208" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a943af7f8a98cf5a3f2107ed593215a4b" prot="public" static="no">
+        <name>SPI_SLAVE</name>
+        <initializer>0x10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="211" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a8d194446c8ac9f3c878ead3c9382c9e4" prot="public" static="no">
+        <name>SPI_LSB_FIRST</name>
+        <initializer>0x20	/* Transmit LSB first */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="214" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a701fce0a1e220262d9912911e87c9e00" prot="public" static="no">
+        <name>SPI_MSB_FIRST</name>
+        <initializer>0x00	/* Transmit MSB first */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="215" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a3f578abec86dcd0376230b59e9719eca" prot="public" static="no">
+        <name>SPI_CLK_8MHZ</name>
+        <initializer>0x80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="218" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1afc650fd51392e61599be56b3c9ca99f2" prot="public" static="no">
+        <name>SPI_CLK_4MHZ</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="219" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a16141a1b1771ebc512e3ded8e77ab434" prot="public" static="no">
+        <name>SPI_CLK_2MHZ</name>
+        <initializer>0x81</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="220" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1aa7b706560df3e54181c616c8296b097d" prot="public" static="no">
+        <name>SPI_CLK_1MHZ</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="221" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a540749b3cd993628cd717ad7da27d88e" prot="public" static="no">
+        <name>SPI_CLK_500KHZ</name>
+        <initializer>0x82</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="222" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a773dcbe07a7a3994b52787c0698e54d9" prot="public" static="no">
+        <name>SPI_CLK_250KHZ</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="223" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a831e2a0b341d969c6acd70888b07868e" prot="public" static="no">
+        <name>SPI_CLK_125KHZ</name>
+        <initializer>0x03</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="224" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a1ee974c4516bdb5e97abf86f6636f8db" prot="public" static="no">
+        <name>SPI_CLK_LOW</name>
+        <initializer>0x0083		/* 250 ... 4 KHz */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="227" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a9571a4f7f5bb05583a0e1c1a0e449b8f" prot="public" static="no">
+        <name>SPI_CLK_HZ</name>
+        <param><defname>FHZ</defname></param>
+        <initializer>( ( ((1000000UL/(FHZ)/2)&amp;0x7F) &lt;&lt;8) |SPI_CLK_LOW)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="228" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1abaa2698384282ab3b39114b60ed4a98b" prot="public" static="no">
+        <name>SS_CONF</name>
+        <param><defname>SS_N</defname></param>
+        <param><defname>SS_MODE</defname></param>
+        <initializer>((SS_N)&lt;&lt;4)|((SS_MODE)&amp;0x0F)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="231" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a4aeaad6d7749a0b22c72f83c59e82cdf" prot="public" static="no">
+        <name>SS_H</name>
+        <initializer>0x0F	/* ____/----- - - - */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="232" column="10" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1af772b3021c9f55bbc5e8017afc6ab198" prot="public" static="no">
+        <name>SS_HL</name>
+        <initializer>0x09	/* ____/-\___ _ _ _ */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="233" column="10" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a105bd4bac76690be707fc3fa0faea06a" prot="public" static="no">
+        <name>SS_HHL</name>
+        <initializer>0x0A	/* ____/--\__ _ _ _ */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="234" column="10" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a4e6c38e15957289c8516d6b09943639b" prot="public" static="no">
+        <name>SS_HHHL</name>
+        <initializer>0x0B	/* ____/---\_ _ _ _ */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="235" column="10" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a3fc72bf53ccd839ebb8d6bcc46c0c309" prot="public" static="no">
+        <name>SS_HHHHL</name>
+        <initializer>0x0C	/* ____/----\__ _ _ */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="236" column="10" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a724888f001c16c676c767403ace2ca72" prot="public" static="no">
+        <name>SS_HI</name>
+        <initializer>0x0D	/* ____/-- - -\__ _ */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="237" column="10" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1ab1e3db96bfb9a4885572e9fd132fe249" prot="public" static="no">
+        <name>SS_L</name>
+        <initializer>0x07	/* ----\_____ _ _ _ */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="238" column="10" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1aac1b628cff7a4e6430f8a1e0cc42422f" prot="public" static="no">
+        <name>SS_LH</name>
+        <initializer>0x01	/* ----\_/----- - - */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="239" column="10" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a5a4f8d24d46a615387138e86abfca020" prot="public" static="no">
+        <name>SS_LLH</name>
+        <initializer>0x02	/* ----\__/---- - - */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="240" column="10" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a410831663550aa873ffa8ccf0f4e3818" prot="public" static="no">
+        <name>SS_LLLH</name>
+        <initializer>0x03	/* ----\___/--- - - */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="241" column="10" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a4c5b23395329467909a3fc2c16751f75" prot="public" static="no">
+        <name>SS_LLLLH</name>
+        <initializer>0x04	/* ----\____/-- - - */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="242" column="10" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a147dd5e36830d2eb5c2d7347ec2ee962" prot="public" static="no">
+        <name>SS_LO</name>
+        <initializer>0x05	/* ----\__ _ _/-- - */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="243" column="10" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1aeed29e9bae9a55004702d0c1faccd5d9" prot="public" static="no">
+        <name>SS_HiZ</name>
+        <initializer>0x08	/* xxxxxxxxxxxxxxxx */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="244" column="10" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1ab9833a30db97666207c37f56144e6dfc" prot="public" static="no">
+        <name>SUB_MDIO22</name>
+        <initializer>0x80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="249" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a0ee3ee87504f8445b32101071d154375" prot="public" static="no">
+        <name>SUB_MDIO22_READ</name>
+        <initializer>(0x02|SUB_MDIO22)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="250" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a706496e0adc260a8f892378b5b8d791f" prot="public" static="no">
+        <name>SUB_MDIO22_WRITE</name>
+        <initializer>(0x01|SUB_MDIO22)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="251" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a4fe78c2656e733e680e5f39c88423ada" prot="public" static="no">
+        <name>SUB_MDIO45_ADDR</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="252" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a8ca6d76a2d74e993146807a5ca516abf" prot="public" static="no">
+        <name>SUB_MDIO45_WRITE</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="253" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1ae124785e94084aa33ed45c070c24408a" prot="public" static="no">
+        <name>SUB_MDIO45_PRIA</name>
+        <initializer>0x02	/* Post-Read-Increment-Address */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="254" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a977ebfb429c2cea00e409c89fc30669c" prot="public" static="no">
+        <name>SUB_MDIO45_READ</name>
+        <initializer>0x03</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="255" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a86c8c279b0c943796e6ca00fc985e490" prot="public" static="no">
+        <name>SUB_CFP_MSA</name>
+        <initializer>0x80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="257" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a99e65b7115361bee5bba085377ad2ea0" prot="public" static="no">
+        <name>FPWM_ENABLE</name>
+        <initializer>0x0001</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="262" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1af2278ba2685457b294182937178757bd" prot="public" static="no">
+        <name>FPWM_EN0</name>
+        <initializer>0x8000	/* Enable FPWM0 */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="263" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a4ff8e220965d0f8dfd65bae40df2f5e9" prot="public" static="no">
+        <name>FPWM_EN1</name>
+        <initializer>0x2000	/* Enable FPWM1 */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="264" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a162280a37fb2ffce9033b4544a760658" prot="public" static="no">
+        <name>FPWM_EN2</name>
+        <initializer>0x0800	/* Enable FPWM2 */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="265" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1af0f7ac4025d1623cda58f7656fcffade" prot="public" static="no">
+        <name>ADC_ENABLE</name>
+        <initializer>0x8000	/* ADC Enable */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="270" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1ace17af43b64b290289a2d7477cc45c0b" prot="public" static="no">
+        <name>ADC_REF_VCC</name>
+        <initializer>0x0040	/* ADC Reference - Vcc */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="271" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a13a892f461d00a29d15a55f536123f05" prot="public" static="no">
+        <name>ADC_REF_AREF</name>
+        <initializer>0x0000	/* ADC Reference - AREF */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="272" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a589996e2f998b288ce765acfddb8fd21" prot="public" static="no">
+        <name>ADC_REF_2_56</name>
+        <initializer>0x00C0	/* ADC Reference - 2.56V */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="273" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a54253ee26e7850bc6fc6565927062211" prot="public" static="no">
+        <name>RS_RX_ENABLE</name>
+        <initializer>0x80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="305" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a0e577929fe11949e14de97063c63b775" prot="public" static="no">
+        <name>RS_TX_ENABLE</name>
+        <initializer>0x40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="306" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a74378e4ece9a2076a57edecee20453ef" prot="public" static="no">
+        <name>RS_CHAR_5</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="309" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a82be041afebfc27df7f2fc9b9ce92dd3" prot="public" static="no">
+        <name>RS_CHAR_6</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="310" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a810a55f47e50ad2434b12ebf6ab20d2c" prot="public" static="no">
+        <name>RS_CHAR_7</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="311" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1afe35ee04ab902a78b65c01338b7c12b5" prot="public" static="no">
+        <name>RS_CHAR_8</name>
+        <initializer>0x06</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="312" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a96ee61ac972ff01b98118b3e33455450" prot="public" static="no">
+        <name>RS_CHAR_9</name>
+        <initializer>0x07</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="313" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1ab00abbe7515cf3b72e242dca2341e43a" prot="public" static="no">
+        <name>RS_PARITY_NONE</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="316" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a47861412aa49e4c8b93e1cc94c7066e1" prot="public" static="no">
+        <name>RS_PARITY_EVEN</name>
+        <initializer>0x20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="317" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a6dddf9c57015868ea0a589192c73a670" prot="public" static="no">
+        <name>RS_PARITY_ODD</name>
+        <initializer>0x30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="318" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="318" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a05f9eadf6b8ab1f35d7e241cb4d27017" prot="public" static="no">
+        <name>RS_STOP_1</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="321" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a2f64b514675fa432a289696b20653e99" prot="public" static="no">
+        <name>RS_STOP_2</name>
+        <initializer>0x08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="322" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1ac94b34201a9bd519010fce33c7f086a7" prot="public" static="no">
+        <name>RS_RX_BEFORE_TX</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="325" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a4a303738ef9a885f7dc1befce098b5c5" prot="public" static="no">
+        <name>RS_RX_AFTER_TX</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="326" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a820dbcc0c4dee8424d4a9aec2e10d58f" prot="public" static="no">
+        <name>IR_UART_MODE</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="329" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a61ef0f867e0a8382d8e18f82c3b170eb" prot="public" static="no">
+        <name>IR_ROW_MODE</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="330" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a4d93af71d395fbcac0ea70f164d64682" prot="public" static="no">
+        <name>FIFO_SELECT_SPI</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="335" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a74109ad0bc78f999c55dca64876e4dff" prot="public" static="no">
+        <name>FIFO_SELECT_UART</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="336" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1aa060305d690ab88f55988e9aeddf4520" prot="public" static="no">
+        <name>FIFO_SELECT_I2C</name>
+        <initializer>0x10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="337" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a0cc7c221c7a384fde4c5bee5a7d095a2" prot="public" static="no">
+        <name>FIFO_CLEAR</name>
+        <initializer>0x100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="338" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1accac2a32670572f28f409b116c7c113a" prot="public" static="no">
+        <name>FIFO_READ_FULL</name>
+        <initializer>0x200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="339" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a9d6fe9af5b4af0d8b0b1b35390fe97d6" prot="public" static="no">
+        <name>CNTR_EN</name>
+        <initializer>0x80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="344" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1ad13b0d625d3718dc2106b062277e53a9" prot="public" static="no">
+        <name>CNTR_CLR</name>
+        <initializer>0x40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="345" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1ae3978263affb5ddf81da421dad17b5f6" prot="public" static="no">
+        <name>CNTR_16MHZ</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="346" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1ab60ad15406d7956a4a665154a1bf3210" prot="public" static="no">
+        <name>CNTR_2MHZ</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="347" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a72c61908df0c298809f6835240d37d29" prot="public" static="no">
+        <name>CNTR_250KHZ</name>
+        <initializer>0x03</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="348" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a80d6cca412c6baa96387c5fd4c2ab36b" prot="public" static="no">
+        <name>CNTR_62500HZ</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="349" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a5b7da850853a8b9b64161856bf8f5cfa" prot="public" static="no">
+        <name>CNTR_15625HZ</name>
+        <initializer>0x05</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="350" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="350" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a7c770c72eda57d173de7a953390cac56" prot="public" static="no">
+        <name>CNTR_FEDGE</name>
+        <initializer>0x06</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="351" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1ab674d078a4eaf208cc47136855ff0563" prot="public" static="no">
+        <name>CNTR_REDGE</name>
+        <initializer>0x07</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="352" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="352" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libsub_8h_1a91ddb3dd90dc776e2dfb3d434b353cb5" prot="public" static="no">
+        <name>SUB_BOOT_MODE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="361" column="9" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="libsub_8h_1a06fc87d81c62e9abb8790b6e5713c55b" prot="public" static="no">
+        <name>@0</name>
+        <enumvalue id="libsub_8h_1a06fc87d81c62e9abb8790b6e5713c55ba70950d67e6653719fed3a3a5f7dc7e3e" prot="public">
+          <name>SUB_LASTERROR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="147" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="147" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="enum" id="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7" prot="public" static="no">
+        <name>@1</name>
+        <enumvalue id="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a3ef00fae524b5b1f0cd775a7b9cd8629" prot="public">
+          <name>ADC_S0</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a5dd3b1a4eb7f2baec590a5d84cde85f6" prot="public">
+          <name>ADC_S1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a7f9f15db343eb0509b71cf9b84f4fd24" prot="public">
+          <name>ADC_S2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7af9cdceb53f9177cf0527a35b89ff093f" prot="public">
+          <name>ADC_S3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a48c3db6e0ef0090804b6242fc9e6283b" prot="public">
+          <name>ADC_S4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a14940181e1bb273919959f50e39816cf" prot="public">
+          <name>ADC_S5</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a2cb8391b366e98badd276c5ad1728dcc" prot="public">
+          <name>ADC_S6</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a139e5882f93ea2484c0708e8138c02a8" prot="public">
+          <name>ADC_S7</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7aa16b910d263cacf206eaf9cf5ef0e16f" prot="public">
+          <name>ADC_D10_10X</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7ae163b21fd8fc2bbef0ee1bba6a66f538" prot="public">
+          <name>ADC_D10_200X</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a6d8e7618ef0e08360bd2878425f6de55" prot="public">
+          <name>ADC_D32_10X</name>
+          <initializer>= 13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7aa581a0dd007b3e8931c837cc7fd19327" prot="public">
+          <name>ADC_D32_200X</name>
+          <initializer>= 15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a469df891deb9d5e29308089ed85c7644" prot="public">
+          <name>ADC_D01</name>
+          <initializer>= 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a8391c17f12a864bcaff9d393c68526a9" prot="public">
+          <name>ADC_D21</name>
+          <initializer>= 18</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a222d0b0d2268e46ac5264ba940c2d350" prot="public">
+          <name>ADC_D31</name>
+          <initializer>= 19</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a9ecb087dc9cccb5a08e2c051d26bdfc6" prot="public">
+          <name>ADC_D41</name>
+          <initializer>= 20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a76ae77c43fb7554c07bb95243a34bfe8" prot="public">
+          <name>ADC_D51</name>
+          <initializer>= 21</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a22ddc85de61ec791796a8323ff92c638" prot="public">
+          <name>ADC_D61</name>
+          <initializer>= 22</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7af15ab00ac3633cbbce3190bedf5e3505" prot="public">
+          <name>ADC_D71</name>
+          <initializer>= 23</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7ae6c8fb56bb741f9d53ccb785eecd355f" prot="public">
+          <name>ADC_D02</name>
+          <initializer>= 24</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a17b420deecea84f4cce845d1fa794f34" prot="public">
+          <name>ADC_D12</name>
+          <initializer>= 25</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a4a7792465fd252505a6cf5e50af51402" prot="public">
+          <name>ADC_D32</name>
+          <initializer>= 27</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7ad086563c6e9094e1df260a824799a7b3" prot="public">
+          <name>ADC_D42</name>
+          <initializer>= 28</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a853b61ac436f0a3e6bd2387b9b8ef4a1" prot="public">
+          <name>ADC_D52</name>
+          <initializer>= 29</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a87a4c1e0e91b7f500ec4fc54d986fe1b" prot="public">
+          <name>ADC_1_1V</name>
+          <initializer>= 30</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a312faa4c6a59f1bce770536f299b2679" prot="public">
+          <name>ADC_GND</name>
+          <initializer>= 31</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="276" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="275" bodyend="299"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="libsub_8h_1aba6eddb272c798d3b265e7ac98eaff46" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int sub_int32_t</definition>
+        <argsstring></argsstring>
+        <name>sub_int32_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="41" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="libsub_8h_1aa52b7203ab94fe2dad43a34b1db3b553" prot="public" static="no">
+        <type>void *</type>
+        <definition>typedef void* sub_device</definition>
+        <argsstring></argsstring>
+        <name>sub_device</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="44" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="libsub_8h_1a10acda8dda7253878108a0514d29d86e" prot="public" static="no">
+        <type>void *</type>
+        <definition>typedef void* sub_handle</definition>
+        <argsstring></argsstring>
+        <name>sub_handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="45" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="libsub_8h_1a963fd01b563d75889d3d30f6ff801854" prot="public" static="no" mutable="no">
+        <type><ref refid="libsub_8h_1a12437fbace49764803ce4edb1d6c9fdf" kindref="member">__SUB_DECL__</ref> int</type>
+        <definition>__SUB_DECL__ int sub_errno</definition>
+        <argsstring></argsstring>
+        <name>sub_errno</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="177" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="libsub_8h_1a5991c016d33e85cf0c298d9a7924fd5b" prot="public" static="no" mutable="no">
+        <type><ref refid="libsub_8h_1a12437fbace49764803ce4edb1d6c9fdf" kindref="member">__SUB_DECL__</ref> int</type>
+        <definition>__SUB_DECL__ int sub_i2c_status</definition>
+        <argsstring></argsstring>
+        <name>sub_i2c_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="177" column="1" bodyfile="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="libsub_8h_1ac09735ee8b4d1120eca4a9782506be52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_get_mode</definition>
+        <argsstring>(sub_handle hndl, int *boot)</argsstring>
+        <name>sub_get_mode</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>boot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="362" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a872095aa3049589e454d88943df16b5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_reset</definition>
+        <argsstring>(sub_handle hndl)</argsstring>
+        <name>sub_reset</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="365" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a62aaeee4613490110e53dd8ac6114d96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="libsub_8h_1aa52b7203ab94fe2dad43a34b1db3b553" kindref="member">sub_device</ref></type>
+        <definition>sub_device sub_find_devices</definition>
+        <argsstring>(sub_device first)</argsstring>
+        <name>sub_find_devices</name>
+        <param>
+          <type><ref refid="libsub_8h_1aa52b7203ab94fe2dad43a34b1db3b553" kindref="member">sub_device</ref></type>
+          <declname>first</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="370" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a0bf03fd21a23b8e11f9089ad56671ed0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+        <definition>sub_handle sub_open</definition>
+        <argsstring>(sub_device dev)</argsstring>
+        <name>sub_open</name>
+        <param>
+          <type><ref refid="libsub_8h_1aa52b7203ab94fe2dad43a34b1db3b553" kindref="member">sub_device</ref></type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="371" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a88616b932d051db87454ae1cae3101a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_close</definition>
+        <argsstring>(sub_handle hndl)</argsstring>
+        <name>sub_close</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="372" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a3819c45b6556df68f46a8089bb5d38e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const struct <ref refid="structsub__version" kindref="compound">sub_version</ref> *</type>
+        <definition>const struct sub_version* sub_get_version</definition>
+        <argsstring>(sub_handle hndl)</argsstring>
+        <name>sub_get_version</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="373" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1adc65b7aed0793da70121ebfbe7b7355e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const struct <ref refid="structsub__cfg__vpd" kindref="compound">sub_cfg_vpd</ref> *</type>
+        <definition>const struct sub_cfg_vpd* sub_get_cfg_vpd</definition>
+        <argsstring>(sub_handle hndl)</argsstring>
+        <name>sub_get_cfg_vpd</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="374" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1aacced0b5e920feda192fa8a358886c0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_i2c_freq</definition>
+        <argsstring>(sub_handle hndl, sub_int32_t *freq)</argsstring>
+        <name>sub_i2c_freq</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type><ref refid="libsub_8h_1aba6eddb272c798d3b265e7ac98eaff46" kindref="member">sub_int32_t</ref> *</type>
+          <declname>freq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="377" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1ac6064814c631ceaa3c29819b5dcfa23b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_i2c_config</definition>
+        <argsstring>(sub_handle hndl, int sa, int flags)</argsstring>
+        <name>sub_i2c_config</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sa</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="378" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a6ceca4548800db67ff81a24672455f33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_i2c_start</definition>
+        <argsstring>(sub_handle hndl)</argsstring>
+        <name>sub_i2c_start</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="379" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1afb6ad3d438ddb5f7b4f47e4aa3632dda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_i2c_stop</definition>
+        <argsstring>(sub_handle hndl)</argsstring>
+        <name>sub_i2c_stop</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="380" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1afd1957f5eb6eeb8a71602e5ba2ca4925" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_i2c_scan</definition>
+        <argsstring>(sub_handle hndl, int *slave_cnt, char *slave_buf)</argsstring>
+        <name>sub_i2c_scan</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>slave_cnt</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>slave_buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="381" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a900393d63ff210cf7ad63bd1bc6422ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_i2c_read</definition>
+        <argsstring>(sub_handle hndl, int sa, sub_int32_t ma, int ma_sz, char *buf, int sz)</argsstring>
+        <name>sub_i2c_read</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sa</declname>
+        </param>
+        <param>
+          <type><ref refid="libsub_8h_1aba6eddb272c798d3b265e7ac98eaff46" kindref="member">sub_int32_t</ref></type>
+          <declname>ma</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ma_sz</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="382" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a78d603af8b0b257a50a9b0d2ecbd091c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_i2c_write</definition>
+        <argsstring>(sub_handle hndl, int sa, sub_int32_t ma, int ma_sz, char *buf, int sz)</argsstring>
+        <name>sub_i2c_write</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sa</declname>
+        </param>
+        <param>
+          <type><ref refid="libsub_8h_1aba6eddb272c798d3b265e7ac98eaff46" kindref="member">sub_int32_t</ref></type>
+          <declname>ma</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ma_sz</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="383" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a5b7c6311ddac20dd150811c04e0914e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_i2c_hs_rw</definition>
+        <argsstring>(sub_handle hndl, int mcode, int count, struct sub_i2c_hs_xfer *px)</argsstring>
+        <name>sub_i2c_hs_rw</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mcode</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structsub__i2c__hs__xfer" kindref="compound">sub_i2c_hs_xfer</ref> *</type>
+          <declname>px</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="384" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a19c553656ae0e7ec0101ff8109d32c9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_spi_config</definition>
+        <argsstring>(sub_handle hndl, int cfg_set, int *cfg_get)</argsstring>
+        <name>sub_spi_config</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cfg_set</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>cfg_get</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="387" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1ad016d6fa8b7f1e5ae9b22c556ca05da5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_spi_transfer</definition>
+        <argsstring>(sub_handle hndl, char *out_buf, char *in_buf, int sz, int ss_config)</argsstring>
+        <name>sub_spi_transfer</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>out_buf</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>in_buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sz</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ss_config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="388" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a014a2968f922200963ff83299be4f778" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_sdio_transfer</definition>
+        <argsstring>(sub_handle hndl, char *out_buf, char *in_buf, int out_sz, int in_sz, int ss_config)</argsstring>
+        <name>sub_sdio_transfer</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>out_buf</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>in_buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>out_sz</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>in_sz</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ss_config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="389" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a6c01c6a47775fe6b10cb9d63872550fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_spi_transfer_ess</definition>
+        <argsstring>(sub_handle hndl, char *out_buf, char *in_buf, int sz, char *ess_str)</argsstring>
+        <name>sub_spi_transfer_ess</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>out_buf</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>in_buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sz</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>ess_str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="390" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1acc98cb096ff1b8ffc4915f6fe848daea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_mdio22</definition>
+        <argsstring>(sub_handle hndl, int op, int phyad, int regad, int data, int *content)</argsstring>
+        <name>sub_mdio22</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>phyad</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>regad</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="393" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1af9472af63e1b194be9692b7975521629" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_mdio45</definition>
+        <argsstring>(sub_handle hndl, int op, int prtad, int devad, int data, int *content)</argsstring>
+        <name>sub_mdio45</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>prtad</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>devad</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="394" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a2465b5be9b00756a32a4f0ee030383b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_mdio_xfer</definition>
+        <argsstring>(sub_handle hndl, int count, union sub_mdio_frame *mdios)</argsstring>
+        <name>sub_mdio_xfer</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>union <ref refid="unionsub__mdio__frame" kindref="compound">sub_mdio_frame</ref> *</type>
+          <declname>mdios</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="395" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a34aff60c5a02a06ef87cc9199ba42a8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_mdio_xfer_ex</definition>
+        <argsstring>(sub_handle hndl, int channel, int count, union sub_mdio_frame *mdios)</argsstring>
+        <name>sub_mdio_xfer_ex</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>union <ref refid="unionsub__mdio__frame" kindref="compound">sub_mdio_frame</ref> *</type>
+          <declname>mdios</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="396" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1add847e5790682275280ed820a3d1ada1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_gpio_config</definition>
+        <argsstring>(sub_handle hndl, sub_int32_t set, sub_int32_t *get, sub_int32_t mask)</argsstring>
+        <name>sub_gpio_config</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type><ref refid="libsub_8h_1aba6eddb272c798d3b265e7ac98eaff46" kindref="member">sub_int32_t</ref></type>
+          <declname>set</declname>
+        </param>
+        <param>
+          <type><ref refid="libsub_8h_1aba6eddb272c798d3b265e7ac98eaff46" kindref="member">sub_int32_t</ref> *</type>
+          <declname>get</declname>
+        </param>
+        <param>
+          <type><ref refid="libsub_8h_1aba6eddb272c798d3b265e7ac98eaff46" kindref="member">sub_int32_t</ref></type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="399" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1ae87765213734ee5c7322b50b472d8502" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_gpio_read</definition>
+        <argsstring>(sub_handle hndl, sub_int32_t *get)</argsstring>
+        <name>sub_gpio_read</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type><ref refid="libsub_8h_1aba6eddb272c798d3b265e7ac98eaff46" kindref="member">sub_int32_t</ref> *</type>
+          <declname>get</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="400" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1aa8853b947b9cd02a54210a301a52f5e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_gpio_write</definition>
+        <argsstring>(sub_handle hndl, sub_int32_t set, sub_int32_t *get, sub_int32_t mask)</argsstring>
+        <name>sub_gpio_write</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type><ref refid="libsub_8h_1aba6eddb272c798d3b265e7ac98eaff46" kindref="member">sub_int32_t</ref></type>
+          <declname>set</declname>
+        </param>
+        <param>
+          <type><ref refid="libsub_8h_1aba6eddb272c798d3b265e7ac98eaff46" kindref="member">sub_int32_t</ref> *</type>
+          <declname>get</declname>
+        </param>
+        <param>
+          <type><ref refid="libsub_8h_1aba6eddb272c798d3b265e7ac98eaff46" kindref="member">sub_int32_t</ref></type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="401" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a3140b8764461d5a380c4e995d4b6179f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_gpiob_config</definition>
+        <argsstring>(sub_handle hndl, sub_int32_t set, sub_int32_t *get, sub_int32_t mask)</argsstring>
+        <name>sub_gpiob_config</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type><ref refid="libsub_8h_1aba6eddb272c798d3b265e7ac98eaff46" kindref="member">sub_int32_t</ref></type>
+          <declname>set</declname>
+        </param>
+        <param>
+          <type><ref refid="libsub_8h_1aba6eddb272c798d3b265e7ac98eaff46" kindref="member">sub_int32_t</ref> *</type>
+          <declname>get</declname>
+        </param>
+        <param>
+          <type><ref refid="libsub_8h_1aba6eddb272c798d3b265e7ac98eaff46" kindref="member">sub_int32_t</ref></type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="403" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a26d13da8872f11f3eee4c092806c5b67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_gpiob_read</definition>
+        <argsstring>(sub_handle hndl, sub_int32_t *get)</argsstring>
+        <name>sub_gpiob_read</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type><ref refid="libsub_8h_1aba6eddb272c798d3b265e7ac98eaff46" kindref="member">sub_int32_t</ref> *</type>
+          <declname>get</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="404" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1abe4e89be93c0851402ea2bba076c06a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_gpiob_write</definition>
+        <argsstring>(sub_handle hndl, sub_int32_t set, sub_int32_t *get, sub_int32_t mask)</argsstring>
+        <name>sub_gpiob_write</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type><ref refid="libsub_8h_1aba6eddb272c798d3b265e7ac98eaff46" kindref="member">sub_int32_t</ref></type>
+          <declname>set</declname>
+        </param>
+        <param>
+          <type><ref refid="libsub_8h_1aba6eddb272c798d3b265e7ac98eaff46" kindref="member">sub_int32_t</ref> *</type>
+          <declname>get</declname>
+        </param>
+        <param>
+          <type><ref refid="libsub_8h_1aba6eddb272c798d3b265e7ac98eaff46" kindref="member">sub_int32_t</ref></type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="405" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a1ba0f42e44b90ddfee3600630171470c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_edge_config</definition>
+        <argsstring>(sub_handle hndl, sub_int32_t set, sub_int32_t *get)</argsstring>
+        <name>sub_edge_config</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type><ref refid="libsub_8h_1aba6eddb272c798d3b265e7ac98eaff46" kindref="member">sub_int32_t</ref></type>
+          <declname>set</declname>
+        </param>
+        <param>
+          <type><ref refid="libsub_8h_1aba6eddb272c798d3b265e7ac98eaff46" kindref="member">sub_int32_t</ref> *</type>
+          <declname>get</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="407" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1ad9d6440cea314bcdec57eec7aedee119" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_edge_read</definition>
+        <argsstring>(sub_handle hndl, sub_int32_t *get, sub_int32_t *edge)</argsstring>
+        <name>sub_edge_read</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type><ref refid="libsub_8h_1aba6eddb272c798d3b265e7ac98eaff46" kindref="member">sub_int32_t</ref> *</type>
+          <declname>get</declname>
+        </param>
+        <param>
+          <type><ref refid="libsub_8h_1aba6eddb272c798d3b265e7ac98eaff46" kindref="member">sub_int32_t</ref> *</type>
+          <declname>edge</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="408" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1ab5a84bd7812cf38f61a582b72727499c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_fpwm_config</definition>
+        <argsstring>(sub_handle hndl, double freq_hz, int flags)</argsstring>
+        <name>sub_fpwm_config</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>freq_hz</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="411" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a97cbaa927f8fcd72f1685fcf5ed701b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_fpwm_set</definition>
+        <argsstring>(sub_handle hndl, int pwm_n, double duty)</argsstring>
+        <name>sub_fpwm_set</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pwm_n</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>duty</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="412" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1ad389e02c60abbdeb0fc7a8ca3433f19d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_pwm_config</definition>
+        <argsstring>(sub_handle hndl, int res_us, int limit)</argsstring>
+        <name>sub_pwm_config</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>res_us</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="415" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1abced653c86311d613febbba8461e798c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_pwm_set</definition>
+        <argsstring>(sub_handle hndl, int pwm_n, int duty)</argsstring>
+        <name>sub_pwm_set</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pwm_n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>duty</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="416" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a944cc0ae4dfbfd38f31fb4afa6dd9482" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_adc_config</definition>
+        <argsstring>(sub_handle hndl, int flags)</argsstring>
+        <name>sub_adc_config</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="420" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a0e0829868eb957db1afc1d48f592782f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_adc_single</definition>
+        <argsstring>(sub_handle hndl, int *data, int mux)</argsstring>
+        <name>sub_adc_single</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mux</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="421" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1af65d0044456584052924a9007322c35a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_adc_read</definition>
+        <argsstring>(sub_handle hndl, int *data, int *mux, int reads)</argsstring>
+        <name>sub_adc_read</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>mux</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>reads</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="422" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1ae2624a28f12bcd80953caa6c528c619e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_lcd_write</definition>
+        <argsstring>(sub_handle hndl, char *str)</argsstring>
+        <name>sub_lcd_write</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="425" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a572258e33a9f97f57ae1d94cc928be15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_rs_set_config</definition>
+        <argsstring>(sub_handle hndl, int config, sub_int32_t baud)</argsstring>
+        <name>sub_rs_set_config</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type><ref refid="libsub_8h_1aba6eddb272c798d3b265e7ac98eaff46" kindref="member">sub_int32_t</ref></type>
+          <declname>baud</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="428" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a2ccd759a97cc5edac240f4dcf758f55f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_rs_get_config</definition>
+        <argsstring>(sub_handle hndl, int *config, sub_int32_t *baud)</argsstring>
+        <name>sub_rs_get_config</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type><ref refid="libsub_8h_1aba6eddb272c798d3b265e7ac98eaff46" kindref="member">sub_int32_t</ref> *</type>
+          <declname>baud</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="429" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a2b1c0bf3f40e4a8aa064f1028bc03c9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_rs_timing</definition>
+        <argsstring>(sub_handle hndl, int flags, int tx_space_us, int rx_msg_us, int rx_byte_us)</argsstring>
+        <name>sub_rs_timing</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tx_space_us</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rx_msg_us</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rx_byte_us</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="430" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a0c66c0804e5a9e5af08fa9e334aa524b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_rs_xfer</definition>
+        <argsstring>(sub_handle hndl, char *tx_buf, int tx_sz, char *rx_buf, int rx_sz)</argsstring>
+        <name>sub_rs_xfer</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>tx_buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tx_sz</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>rx_buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rx_sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="432" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a90ddca64bad0ab0dd9c450955d77aba6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_bb_i2c_config</definition>
+        <argsstring>(sub_handle hndl, int mode, int stretch_ms)</argsstring>
+        <name>sub_bb_i2c_config</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stretch_ms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="436" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1aacb5fb8c435333c65f29800db5f9e857" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_bb_i2c_scan</definition>
+        <argsstring>(sub_handle hndl, int channel, int *slave_cnt, char *slave_buf)</argsstring>
+        <name>sub_bb_i2c_scan</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>slave_cnt</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>slave_buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="437" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a43b49c3a7e6e744b1b527ae981ab0536" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_bb_i2c_read</definition>
+        <argsstring>(sub_handle hndl, int channel, int sa, sub_int32_t ma, int ma_sz, char *buf, int sz)</argsstring>
+        <name>sub_bb_i2c_read</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sa</declname>
+        </param>
+        <param>
+          <type><ref refid="libsub_8h_1aba6eddb272c798d3b265e7ac98eaff46" kindref="member">sub_int32_t</ref></type>
+          <declname>ma</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ma_sz</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="439" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a21b13058e3f695e55158d136a041b1da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_bb_i2c_write</definition>
+        <argsstring>(sub_handle hndl, int channel, int sa, sub_int32_t ma, int ma_sz, char *buf, int sz)</argsstring>
+        <name>sub_bb_i2c_write</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sa</declname>
+        </param>
+        <param>
+          <type><ref refid="libsub_8h_1aba6eddb272c798d3b265e7ac98eaff46" kindref="member">sub_int32_t</ref></type>
+          <declname>ma</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ma_sz</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="441" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a38871c050adada9973c6d0b7c414922d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_eep_read</definition>
+        <argsstring>(sub_handle hndl, int addr, char *buf, int sz)</argsstring>
+        <name>sub_eep_read</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="445" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a5c8a8cf93ef1bffcbf92fdfc00666ae0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_eep_write</definition>
+        <argsstring>(sub_handle hndl, int addr, char *buf, int sz)</argsstring>
+        <name>sub_eep_write</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="446" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a8f89a42a17fd29c964188aae3cfd792b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_ir_config</definition>
+        <argsstring>(sub_handle hndl, int carrier, int duty, int mode,...)</argsstring>
+        <name>sub_ir_config</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>carrier</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>duty</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="449" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1ae6bba88ef35619a8e8124a5e7107fd9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_ir_tx</definition>
+        <argsstring>(sub_handle hndl, int sz, char *buf)</argsstring>
+        <name>sub_ir_tx</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sz</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="450" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a769703b7aaa1d874573c21ee0c07f0fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_fifo_write</definition>
+        <argsstring>(sub_handle hndl, char *buf, int sz, int to_ms)</argsstring>
+        <name>sub_fifo_write</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sz</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>to_ms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="453" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1ab977021f40a947d16beb1910db910e3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_fifo_read</definition>
+        <argsstring>(sub_handle hndl, char *buf, int sz, int to_ms)</argsstring>
+        <name>sub_fifo_read</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sz</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>to_ms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="454" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1aee9dd026d4a5525c559c6b3eb866420a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_fifo_config</definition>
+        <argsstring>(sub_handle hndl, int config)</argsstring>
+        <name>sub_fifo_config</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="455" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a1d92aee18fdfeb889e822754f68e5a94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int usb_transaction</definition>
+        <argsstring>(sub_handle hndl, char *out_buf, int out_sz, char *in_buf, int in_sz, int timeout)</argsstring>
+        <name>usb_transaction</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>out_buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>out_sz</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>in_buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>in_sz</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="458" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a89d08ddd70acb2cc9a367960ddb8cc85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_control_request</definition>
+        <argsstring>(sub_handle hndl, int type, int request, int value, int index, char *buf, int sz, int timeout)</argsstring>
+        <name>sub_control_request</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sz</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="464" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a5446b57fb1e7cdde9cadeeef45789e6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_get_serial_number</definition>
+        <argsstring>(sub_handle hndl, char *buf, int sz)</argsstring>
+        <name>sub_get_serial_number</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="468" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1aca2ea60afd2f69b930be72896becef31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_get_product_id</definition>
+        <argsstring>(sub_handle hndl, char *buf, int sz)</argsstring>
+        <name>sub_get_product_id</name>
+        <param>
+          <type><ref refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kindref="member">sub_handle</ref></type>
+          <declname>hndl</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="469" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1acfe81523e05f15c5c8d7ecae9a19c58c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* sub_strerror</definition>
+        <argsstring>(int errnum)</argsstring>
+        <name>sub_strerror</name>
+        <param>
+          <type>int</type>
+          <declname>errnum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="472" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1aabe2b14dbac97d8b01e9489aedf1950e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_get_errno</definition>
+        <argsstring>(void)</argsstring>
+        <name>sub_get_errno</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="473" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="libsub_8h_1a252ce0c5698bb01f00424046e204d068" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sub_get_i2c_status</definition>
+        <argsstring>(void)</argsstring>
+        <name>sub_get_i2c_status</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h" line="474" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/wimnet-flexicon/Git/flexicon_dev/gr-fullduplex/lib/libsub.h"/>
+  </compounddef>
+</doxygen>

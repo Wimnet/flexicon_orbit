@@ -1,0 +1,523 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="classgr_1_1fullduplex_1_1async__divide" kind="class"><name>gr::fullduplex::async_divide</name>
+    <member refid="classgr_1_1fullduplex_1_1async__divide_1a1b6c25d3f013b3fe4ebcf95dd2ba848c" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1fullduplex_1_1async__divide_1a1ddb372fcb9f8fc02f1df87a2a958f5b" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1async__divide__impl" kind="class"><name>gr::fullduplex::async_divide_impl</name>
+    <member refid="classgr_1_1fullduplex_1_1async__divide__impl_1a3aeee43a11620510d3cffe3d9277abce" kind="variable"><name>d_result</name></member>
+    <member refid="classgr_1_1fullduplex_1_1async__divide__impl_1af3748c4bff0a2d8bb26ed9671a0f08ab" kind="variable"><name>d_in1</name></member>
+    <member refid="classgr_1_1fullduplex_1_1async__divide__impl_1af38b72fd00907865cba406ed6afece9c" kind="variable"><name>d_in2</name></member>
+    <member refid="classgr_1_1fullduplex_1_1async__divide__impl_1a0a0512ac941c7547e6a74e705efb6231" kind="function"><name>handle1</name></member>
+    <member refid="classgr_1_1fullduplex_1_1async__divide__impl_1a49a0a758d19f71abeff1414b8417c3bf" kind="function"><name>handle2</name></member>
+    <member refid="classgr_1_1fullduplex_1_1async__divide__impl_1adcacd4265f4b9b745770f24306b84533" kind="function"><name>async_divide_impl</name></member>
+    <member refid="classgr_1_1fullduplex_1_1async__divide__impl_1af4d90340e30a12a13df4087d6b6c28a5" kind="function"><name>~async_divide_impl</name></member>
+    <member refid="classgr_1_1fullduplex_1_1async__divide__impl_1a670915e657e3ea78bea7aa5497a5808f" kind="function"><name>work</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1compute__ofdm__prr" kind="class"><name>gr::fullduplex::compute_ofdm_prr</name>
+    <member refid="classgr_1_1fullduplex_1_1compute__ofdm__prr_1a10beb5a56a1d5e95ea3586757e5b5576" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1fullduplex_1_1compute__ofdm__prr_1ae0db46165e3f1f22a28fd35b7446af65" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1compute__ofdm__prr__impl" kind="class"><name>gr::fullduplex::compute_ofdm_prr_impl</name>
+    <member refid="classgr_1_1fullduplex_1_1compute__ofdm__prr__impl_1a760308701bcf77af5064e4bb5521c4d3" kind="variable"><name>d_packet_len</name></member>
+    <member refid="classgr_1_1fullduplex_1_1compute__ofdm__prr__impl_1a97bbdeca42e849095f49f6b11b53e022" kind="variable"><name>d_decoded_count</name></member>
+    <member refid="classgr_1_1fullduplex_1_1compute__ofdm__prr__impl_1affd4346a63bad5fc50080efda294cf70" kind="variable"><name>d_transmitted_count</name></member>
+    <member refid="classgr_1_1fullduplex_1_1compute__ofdm__prr__impl_1ab1ba6d2d685b64716176504ff477523c" kind="function"><name>calculate_output_stream_length</name></member>
+    <member refid="classgr_1_1fullduplex_1_1compute__ofdm__prr__impl_1ab0a180c7838728af5234dd22cf6842b4" kind="function"><name>compute_ofdm_prr_impl</name></member>
+    <member refid="classgr_1_1fullduplex_1_1compute__ofdm__prr__impl_1ac507aea33167d9d45144efff274c7d81" kind="function"><name>~compute_ofdm_prr_impl</name></member>
+    <member refid="classgr_1_1fullduplex_1_1compute__ofdm__prr__impl_1a8484a5e98eb934c1a3eb8575ce6afd75" kind="function"><name>work</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1count__packets" kind="class"><name>gr::fullduplex::count_packets</name>
+    <member refid="classgr_1_1fullduplex_1_1count__packets_1ac8df28aa5f814b3845c61bc34895ff8d" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1fullduplex_1_1count__packets_1acec886da3f280f88b97205a959eb22bb" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1count__packets__impl" kind="class"><name>gr::fullduplex::count_packets_impl</name>
+    <member refid="classgr_1_1fullduplex_1_1count__packets__impl_1a6d4606e3551d79259a30e23760c94df3" kind="variable"><name>d_count</name></member>
+    <member refid="classgr_1_1fullduplex_1_1count__packets__impl_1a1103f98d6fe902271e6629dc37f5f3bd" kind="function"><name>calculate_output_stream_length</name></member>
+    <member refid="classgr_1_1fullduplex_1_1count__packets__impl_1a762f62ab097741fa23aaf7bc1d1ddbb1" kind="function"><name>count_packets_impl</name></member>
+    <member refid="classgr_1_1fullduplex_1_1count__packets__impl_1ae5bdada2b10859941fc5f8d9383c5c46" kind="function"><name>~count_packets_impl</name></member>
+    <member refid="classgr_1_1fullduplex_1_1count__packets__impl_1a2e055033fd8c99c77a1c79aa665784ce" kind="function"><name>work</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1digital__sic" kind="class"><name>gr::fullduplex::digital_sic</name>
+    <member refid="classgr_1_1fullduplex_1_1digital__sic_1ae37f3097ffc6dc72be42ba73832d3648" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1fullduplex_1_1digital__sic_1a59da6ccfb5f6344d97f44402d20998cb" kind="variable"><name>d_sig_pilot</name></member>
+    <member refid="classgr_1_1fullduplex_1_1digital__sic_1a1cccc1312f16b6e961afe2751d10080c" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1fullduplex_1_1digital__sic_1a91da2df90fba9bd582214a863c42ec58" kind="function"><name>set_delay_tx2rx</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1digital__sic__impl" kind="class"><name>gr::fullduplex::digital_sic_impl</name>
+    <member refid="classgr_1_1fullduplex_1_1digital__sic__impl_1a5ac44e82a160291d49993e781e09a493" kind="variable"><name>d_delay_tx2rx</name></member>
+    <member refid="classgr_1_1fullduplex_1_1digital__sic__impl_1a7d65f080202b95411064a2c621981b5b" kind="variable"><name>d_pad_front</name></member>
+    <member refid="classgr_1_1fullduplex_1_1digital__sic__impl_1a3a416892d236ad33558087034f4f2433" kind="variable"><name>d_frame_len</name></member>
+    <member refid="classgr_1_1fullduplex_1_1digital__sic__impl_1ac7e4c0e5c09110332dc11bb823f235fb" kind="variable"><name>d_sig_pilot_pos</name></member>
+    <member refid="classgr_1_1fullduplex_1_1digital__sic__impl_1ae431560762a8e20d8381fcee134e797f" kind="variable"><name>d_si_chan_k</name></member>
+    <member refid="classgr_1_1fullduplex_1_1digital__sic__impl_1ae51c0c1b6138e16c027e3aa1dbfbeec7" kind="variable"><name>d_si_chan_dim</name></member>
+    <member refid="classgr_1_1fullduplex_1_1digital__sic__impl_1a6979023e7b4ad002ffb543f73250333c" kind="variable"><name>d_sig_pilot_scale</name></member>
+    <member refid="classgr_1_1fullduplex_1_1digital__sic__impl_1a3dcdad7c6fe59ccfb462251bdd048745" kind="variable"><name>d_premultiplier</name></member>
+    <member refid="classgr_1_1fullduplex_1_1digital__sic__impl_1ad22b6c5d93cecb5c2a066e3d29cd92d0" kind="variable"><name>d_h</name></member>
+    <member refid="classgr_1_1fullduplex_1_1digital__sic__impl_1ac7fd67c4805cd05a55a11f58cb7ec69d" kind="variable"><name>d_initial</name></member>
+    <member refid="classgr_1_1fullduplex_1_1digital__sic__impl_1a0c2fd812e9bb0ee0eb2c7464fa8fa5e3" kind="variable"><name>d_mutex</name></member>
+    <member refid="classgr_1_1fullduplex_1_1digital__sic__impl_1ae1394e3b42fc2ca84b201a775b7b461c" kind="function"><name>digital_sic_impl</name></member>
+    <member refid="classgr_1_1fullduplex_1_1digital__sic__impl_1af9dc3ae38d65ed27f4e387cc80e98c45" kind="function"><name>~digital_sic_impl</name></member>
+    <member refid="classgr_1_1fullduplex_1_1digital__sic__impl_1a8351818a7bae2be1817f4e578849def3" kind="function"><name>set_delay_tx2rx</name></member>
+    <member refid="classgr_1_1fullduplex_1_1digital__sic__impl_1aa7492496ee8292e53ce0c4cc870a4e46" kind="function"><name>work</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1fde__config" kind="class"><name>gr::fullduplex::fde_config</name>
+    <member refid="classgr_1_1fullduplex_1_1fde__config_1a33245155be09674923eca4a1ffee1554" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config_1a9dd38705d0c11a9eb381fb43376f721c" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config_1ac819a091ee5d57dbebd23e1c54f6ad89" kind="function"><name>fde_config_find_dev</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config_1a5114964da27f8051edd57359ea04bf38" kind="function"><name>set_canc_path</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config_1a9e6099a4ece0ec1d716c8ebfa1a926cb" kind="function"><name>set_att</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config_1a5871036dca4583100c250b05b65afbdb" kind="function"><name>set_dac</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config_1ad7184b3a78b4a7f6dd8bb0ab666da569" kind="function"><name>set_cf_cap</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config_1afe888ba0faa9ebe29c88c4cb672b6853" kind="function"><name>set_qf_cap</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config_1aaeb8be7269fcaf7264baa347c092f97a" kind="function"><name>set_tuner_cap</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config_1a742054af2bd3dee17dfc418523978b12" kind="function"><name>set_all</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1fde__config__impl" kind="class"><name>gr::fullduplex::fde_config_impl</name>
+    <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1a381860e638c9e0c65a12bfa06e395a9c" kind="variable"><name>my_sub20</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1ac11aeb681ac6303dad6574926fbfdb6e" kind="variable"><name>d_canc_path_val</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1a4d35287efa3660b6188b97b3843705f4" kind="variable"><name>d_att_addr</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1af4a0e7045f5cb401694b60143ff45d63" kind="variable"><name>d_att_val</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1a7c4b375c8d67fb079b5af29257e03f0e" kind="variable"><name>d_dac_addr</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1a6ec4e38143f3358ad5dc0efbd7174888" kind="variable"><name>d_dac_val</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1a907466c97619f9d94cc67422288ac030" kind="variable"><name>d_cf_cap_addr</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1a339304ba9f2101ad4283129d61be7583" kind="variable"><name>d_cf_cap_val</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1a0d5c31a51ef7f205abeb415d00952b73" kind="variable"><name>d_qf_cap_addr</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1aa44cc5074f3d73c16cd6bdaec50ad0b6" kind="variable"><name>d_qf_cap_val</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1a4b81afadb0ce315292a5fbb982e51eaa" kind="variable"><name>d_tuner_cap_addr</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1a8654d196d398ebde7a93f4255487c328" kind="variable"><name>d_tuner_cap_val</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1a07cdee54c34c59e9b308bbf772e82a04" kind="function"><name>fde_config_impl</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1aa71be91ed1460cafab47ff273b7bbf3a" kind="function"><name>~fde_config_impl</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1af67071e708d76685af669a759f67d4d7" kind="function"><name>fde_config_find_dev</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1abe64815c79198e2e56862cbec86ed453" kind="function"><name>set_canc_path</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1a71cbbb5a4bcf4bca1e9f333749a24dab" kind="function"><name>set_att</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1afd96f719eecf61603bb9fcbc663f8fa3" kind="function"><name>set_dac</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1ad6561126537a628dd925492082f11f33" kind="function"><name>set_cf_cap</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1a1eeca027a02ba2007e46184f13b21f36" kind="function"><name>set_qf_cap</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1a5443aace36dbee764f799be384f1066b" kind="function"><name>set_tuner_cap</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1a6411ae843979877383404aac2775bf53" kind="function"><name>set_all</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1ad091e615aa2af93960087929a3493b64" kind="function"><name>forecast</name></member>
+    <member refid="classgr_1_1fullduplex_1_1fde__config__impl_1a93e6646f0003e513f1d66d89a583f425" kind="function"><name>general_work</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1ofdm__constellation" kind="class"><name>gr::fullduplex::ofdm_constellation</name>
+    <member refid="classgr_1_1fullduplex_1_1ofdm__constellation_1ace3a5b5f5b9cc42ea38fc17cbe1b6850" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1fullduplex_1_1ofdm__constellation_1a82de7c3687393d5cb167a55889f32f4a" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1fullduplex_1_1ofdm__constellation_1ae733aadeae82bf04a7a172062f84fdfe" kind="function"><name>set_delay_tx2rx</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1ofdm__constellation__impl" kind="class"><name>gr::fullduplex::ofdm_constellation_impl</name>
+    <member refid="classgr_1_1fullduplex_1_1ofdm__constellation__impl_1aa5228eb42771a5b015913f2f42577bb2" kind="variable"><name>d_delay_tx2rx</name></member>
+    <member refid="classgr_1_1fullduplex_1_1ofdm__constellation__impl_1abeb358e50e787374579de686cc490513" kind="variable"><name>d_pad_front</name></member>
+    <member refid="classgr_1_1fullduplex_1_1ofdm__constellation__impl_1ad5b516c5ab957b6acb06f76f7b0e8e0a" kind="variable"><name>d_packet_len</name></member>
+    <member refid="classgr_1_1fullduplex_1_1ofdm__constellation__impl_1a3581beee623bdd36c936e0693a5657e4" kind="variable"><name>d_symbol_len</name></member>
+    <member refid="classgr_1_1fullduplex_1_1ofdm__constellation__impl_1a92bc76ae0e328d80e17fdf49f4d629e5" kind="variable"><name>d_CP_len</name></member>
+    <member refid="classgr_1_1fullduplex_1_1ofdm__constellation__impl_1aa17b05e2d5ab782a817395ab46ee61e2" kind="variable"><name>d_FFT_len</name></member>
+    <member refid="classgr_1_1fullduplex_1_1ofdm__constellation__impl_1a0a0970c5bebb107210cefd465a194508" kind="variable"><name>d_n_data_sbcrs</name></member>
+    <member refid="classgr_1_1fullduplex_1_1ofdm__constellation__impl_1a4d2af3cf17c34f1f566a40692a99fe88" kind="variable"><name>d_qpsk_mag</name></member>
+    <member refid="classgr_1_1fullduplex_1_1ofdm__constellation__impl_1a7198bf148d01443a79417315ec58490e" kind="variable"><name>d_num_symbols</name></member>
+    <member refid="classgr_1_1fullduplex_1_1ofdm__constellation__impl_1a7fb7ca1782e8bb8b3f6b336fb32feddb" kind="variable"><name>d_pilot_symbols</name></member>
+    <member refid="classgr_1_1fullduplex_1_1ofdm__constellation__impl_1a74bd3338acf6de73d69fab1a95079bfb" kind="variable"><name>d_pilot_subcarriers</name></member>
+    <member refid="classgr_1_1fullduplex_1_1ofdm__constellation__impl_1ab829f3b04696d856bcb667604156d5c3" kind="variable"><name>d_data_subcarriers</name></member>
+    <member refid="classgr_1_1fullduplex_1_1ofdm__constellation__impl_1a408b62a7d551dc062352fb3f1bb1cfba" kind="variable"><name>d_mutex</name></member>
+    <member refid="classgr_1_1fullduplex_1_1ofdm__constellation__impl_1aeeafb8acb52f89f5290a3f57550766df" kind="variable"><name>d_fft_in</name></member>
+    <member refid="classgr_1_1fullduplex_1_1ofdm__constellation__impl_1a7d56d7578e7977d70bb40906fa0db6b6" kind="variable"><name>d_fft_out</name></member>
+    <member refid="classgr_1_1fullduplex_1_1ofdm__constellation__impl_1a6852ebd9b2a1765563cfeaf81822924d" kind="variable"><name>d_fft_plan</name></member>
+    <member refid="classgr_1_1fullduplex_1_1ofdm__constellation__impl_1a9a2c1fd5302e28090cb3b5b2a66570c3" kind="function"><name>calculate_output_stream_length</name></member>
+    <member refid="classgr_1_1fullduplex_1_1ofdm__constellation__impl_1a471fa4a3036e7410b72f5553625dd8e0" kind="function"><name>set_delay_tx2rx</name></member>
+    <member refid="classgr_1_1fullduplex_1_1ofdm__constellation__impl_1a66eef6a5809d92a6a6c3537ede7b036c" kind="function"><name>average_mag</name></member>
+    <member refid="classgr_1_1fullduplex_1_1ofdm__constellation__impl_1a57509d6886255cf8a7d58749da5719f9" kind="function"><name>normalize_samples</name></member>
+    <member refid="classgr_1_1fullduplex_1_1ofdm__constellation__impl_1a55fe8d2ad523b9e46ae69bdc92845eaa" kind="function"><name>calculate_evm</name></member>
+    <member refid="classgr_1_1fullduplex_1_1ofdm__constellation__impl_1abf82d25189fa36efabced870af312ccb" kind="function"><name>ofdm_constellation_impl</name></member>
+    <member refid="classgr_1_1fullduplex_1_1ofdm__constellation__impl_1a343ce7fa72e2f6c01f6efcada008c16a" kind="function"><name>~ofdm_constellation_impl</name></member>
+    <member refid="classgr_1_1fullduplex_1_1ofdm__constellation__impl_1a6abae8db7df9b9127d6a47c23b2c1b97" kind="function"><name>work</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1packet__decap" kind="class"><name>gr::fullduplex::packet_decap</name>
+    <member refid="classgr_1_1fullduplex_1_1packet__decap_1a35e571a1dd3228f93df437fddbd98313" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1fullduplex_1_1packet__decap_1a2871548de5b2c9995c8c8b5a110507a6" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1packet__decap__impl" kind="class"><name>gr::fullduplex::packet_decap_impl</name>
+    <member refid="classgr_1_1fullduplex_1_1packet__decap__impl_1ac1f17026c49de1ba89909b067ffed291" kind="variable"><name>d_sig_pilot_pos</name></member>
+    <member refid="classgr_1_1fullduplex_1_1packet__decap__impl_1a48ddedd6aa2f08e7aa71aa316be7e436" kind="variable"><name>d_pad_front</name></member>
+    <member refid="classgr_1_1fullduplex_1_1packet__decap__impl_1af49d9795e67ff63c54da41a3d5ada7bc" kind="variable"><name>d_delay_tx2rx</name></member>
+    <member refid="classgr_1_1fullduplex_1_1packet__decap__impl_1a157f8edb8c2b1d4003d9fa062d90f18c" kind="variable"><name>d_frame_len</name></member>
+    <member refid="classgr_1_1fullduplex_1_1packet__decap__impl_1a0e3820f49ae4b05c9e067b074a6241c6" kind="variable"><name>d_pad</name></member>
+    <member refid="classgr_1_1fullduplex_1_1packet__decap__impl_1abff564e7b0195ead0e9fad7d4fba49ed" kind="variable"><name>d_sig_pilot_len</name></member>
+    <member refid="classgr_1_1fullduplex_1_1packet__decap__impl_1aa091b378ff11ab260691500a568d423d" kind="function"><name>packet_decap_impl</name></member>
+    <member refid="classgr_1_1fullduplex_1_1packet__decap__impl_1ab33ed148d2ce82292126888efb2a34f9" kind="function"><name>~packet_decap_impl</name></member>
+    <member refid="classgr_1_1fullduplex_1_1packet__decap__impl_1ab2f7dae456f0cd0568b4f5ff2ad05598" kind="function"><name>work</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1packet__encap" kind="class"><name>gr::fullduplex::packet_encap</name>
+    <member refid="classgr_1_1fullduplex_1_1packet__encap_1a6cde5ce2b497aba8304c7385a75800e4" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1fullduplex_1_1packet__encap_1a59fdd5250b65c48ebb13574afda8923b" kind="variable"><name>d_sig_pilot</name></member>
+    <member refid="classgr_1_1fullduplex_1_1packet__encap_1a4f6f7234fb6eb916cab375cc55f3a97c" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1packet__encap2" kind="class"><name>gr::fullduplex::packet_encap2</name>
+    <member refid="classgr_1_1fullduplex_1_1packet__encap2_1ae9e4a104bddbe3713bd1193df09b342e" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1fullduplex_1_1packet__encap2_1ad6cdef5cc6602478fbe50e5f796455d1" kind="variable"><name>d_sig_pilot_duplicates</name></member>
+    <member refid="classgr_1_1fullduplex_1_1packet__encap2_1afb25fd13614baabc7db56c72da92296d" kind="variable"><name>d_sig_pilot</name></member>
+    <member refid="classgr_1_1fullduplex_1_1packet__encap2_1a88521f7f15ce0637f08fdb16417ee355" kind="variable"><name>d_mutex</name></member>
+    <member refid="classgr_1_1fullduplex_1_1packet__encap2_1a784b767118a3f3df3ae77d0ce73b85cb" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1packet__encap__impl" kind="class"><name>gr::fullduplex::packet_encap_impl</name>
+    <member refid="classgr_1_1fullduplex_1_1packet__encap__impl_1a70afca806cb8a4013f08fdb1b5664c79" kind="variable"><name>d_sig_pilot_pos</name></member>
+    <member refid="classgr_1_1fullduplex_1_1packet__encap__impl_1ae5a1e07dad3d35b48b86dd13ba3e7e67" kind="variable"><name>d_pad_front</name></member>
+    <member refid="classgr_1_1fullduplex_1_1packet__encap__impl_1a44dbd864bcc42af8fa39a9a1354833e4" kind="variable"><name>d_pad</name></member>
+    <member refid="classgr_1_1fullduplex_1_1packet__encap__impl_1ae56cd6df003c3b7fa49bd2b70a6a2fda" kind="variable"><name>d_sig_pilot_len</name></member>
+    <member refid="classgr_1_1fullduplex_1_1packet__encap__impl_1a0de66cfdfe36b4f3872277173e15d825" kind="function"><name>packet_encap_impl</name></member>
+    <member refid="classgr_1_1fullduplex_1_1packet__encap__impl_1a6293121f2559ccbcd16c5201d2699962" kind="function"><name>~packet_encap_impl</name></member>
+    <member refid="classgr_1_1fullduplex_1_1packet__encap__impl_1ac502d8d17686f6c07ecfb0d640343dce" kind="function"><name>work</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1residual__si__vis" kind="class"><name>gr::fullduplex::residual_si_vis</name>
+    <member refid="classgr_1_1fullduplex_1_1residual__si__vis_1a73e0a2aab1644b83a88d754a2846b731" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1fullduplex_1_1residual__si__vis_1a280ac59422883fecea28032286e36598" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1fullduplex_1_1residual__si__vis_1a6cedac03d85853102fabbfea47470804" kind="function"><name>setVals</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1residual__si__vis__impl" kind="class"><name>gr::fullduplex::residual_si_vis_impl</name>
+    <member refid="classgr_1_1fullduplex_1_1residual__si__vis__impl_1ac4ca6ee3bfb07232856dbe0f216baa03" kind="variable"><name>m_real</name></member>
+    <member refid="classgr_1_1fullduplex_1_1residual__si__vis__impl_1a3a9d413846a59f4a021f17a2df501551" kind="variable"><name>m_imag</name></member>
+    <member refid="classgr_1_1fullduplex_1_1residual__si__vis__impl_1ae4fa6030165804afe9d5f83f14b7ce43" kind="function"><name>residual_si_vis_impl</name></member>
+    <member refid="classgr_1_1fullduplex_1_1residual__si__vis__impl_1aa021b8dc8bd2702a44a6065c2c82da52" kind="function"><name>~residual_si_vis_impl</name></member>
+    <member refid="classgr_1_1fullduplex_1_1residual__si__vis__impl_1ad51f8339b453182a8c673f61c3af1901" kind="function"><name>setVals</name></member>
+    <member refid="classgr_1_1fullduplex_1_1residual__si__vis__impl_1a8432ffc71bbf8d1b3a6f130047d37654" kind="function"><name>work</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1snr__calc" kind="class"><name>gr::fullduplex::snr_calc</name>
+    <member refid="classgr_1_1fullduplex_1_1snr__calc_1a2aeb4bb573ffa6d7ab4eba012667e425" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1fullduplex_1_1snr__calc_1acddc0f87d4baf3308974a2ad71bb983f" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1fullduplex_1_1snr__calc_1a589dc1e1a42992f5f99dd905bdc36ce2" kind="function"><name>set_delay_tx2rx</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1snr__calc__impl" kind="class"><name>gr::fullduplex::snr_calc_impl</name>
+    <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1a4529d21418e0a65b3c1f7fcb7f419a21" kind="variable"><name>d_delay_tx2rx</name></member>
+    <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1af3c5bf19119549bfdd2ad1456381d20f" kind="variable"><name>d_pad_front</name></member>
+    <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1a29f7c52a1f91f44a0c276ca2c69e103c" kind="variable"><name>d_data_symbols</name></member>
+    <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1aa822f7bd721ed533633c1667baa8eb10" kind="variable"><name>d_symbol_len</name></member>
+    <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1a75d19797578b1a8d91b9f041c33333d4" kind="variable"><name>d_CP_len</name></member>
+    <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1aad88a8a923252ebe829aec53882038ba" kind="variable"><name>d_noise_start_idx</name></member>
+    <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1a245589a6f116fa44991b651c07a33a1b" kind="variable"><name>d_noise_length</name></member>
+    <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1a826abef7d5f5d1363a8f760b7ea7e1e5" kind="variable"><name>d_noise_t</name></member>
+    <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1a2292779221fea05bebb732504a9ebd83" kind="variable"><name>d_noise_f</name></member>
+    <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1a65171d79366997c3900a93a965711c8e" kind="variable"><name>d_pkt_t</name></member>
+    <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1a6cd1faa30b9412adb804f005603e2bbf" kind="variable"><name>d_pkt_f</name></member>
+    <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1a470d339e7f31ace699771fad3b366576" kind="variable"><name>d_noise_p</name></member>
+    <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1a39474cbae32feac409e19a2f656690e6" kind="variable"><name>d_pkt_p</name></member>
+    <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1accb94afc359136c4c7e6ab8b10178f0c" kind="variable"><name>d_mutex</name></member>
+    <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1a1d5bf7ed4a7c830386c8f6fe4a75c78a" kind="function"><name>calculate_output_stream_length</name></member>
+    <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1aeb80d4adac99139a5234227b0017efae" kind="function"><name>set_delay_tx2rx</name></member>
+    <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1a5eecf113d05e763454c4a6f32990fd5f" kind="function"><name>compute_fft_power</name></member>
+    <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1a8a1c5b7a1118692b9eacf26ebe61dc2d" kind="function"><name>snr_calc_impl</name></member>
+    <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1a34ba69d169cb55f53052008f21edd91f" kind="function"><name>~snr_calc_impl</name></member>
+    <member refid="classgr_1_1fullduplex_1_1snr__calc__impl_1a822a63008bb25e0d58e31323d2a40973" kind="function"><name>work</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1sub20__init" kind="class"><name>gr::fullduplex::sub20_init</name>
+    <member refid="classgr_1_1fullduplex_1_1sub20__init_1acf57c6c57c357c0a7dbeb47a3c545b0d" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1fullduplex_1_1sub20__init_1a3354e04bc39c43dcb3640976bf574a66" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1fullduplex_1_1sub20__init_1a936a463cdee7ea4d7afeb26f992bb423" kind="function"><name>set_atten_code</name></member>
+    <member refid="classgr_1_1fullduplex_1_1sub20__init_1a653a016d8a74ac2cc2856b2dc40e1ffc" kind="function"><name>set_phase_code</name></member>
+  </compound>
+  <compound refid="classgr_1_1fullduplex_1_1sub20__init__impl" kind="class"><name>gr::fullduplex::sub20_init_impl</name>
+    <member refid="classgr_1_1fullduplex_1_1sub20__init__impl_1ac1521b63e05946ac4b78f85c3603b062" kind="variable"><name>my_sub20</name></member>
+    <member refid="classgr_1_1fullduplex_1_1sub20__init__impl_1a8e84372c837ed9e1854664ba56fa0ecf" kind="variable"><name>d_atten_code</name></member>
+    <member refid="classgr_1_1fullduplex_1_1sub20__init__impl_1a0fbfdfd53b50bcf92fa0ca421ae1500b" kind="variable"><name>d_phase_code</name></member>
+    <member refid="classgr_1_1fullduplex_1_1sub20__init__impl_1a460668cae183e8e32147754a190b2d3f" kind="function"><name>sub20_init_impl</name></member>
+    <member refid="classgr_1_1fullduplex_1_1sub20__init__impl_1ab249e2b8f52fc560a956b67a83c57761" kind="function"><name>~sub20_init_impl</name></member>
+    <member refid="classgr_1_1fullduplex_1_1sub20__init__impl_1aae112281b1a516d587e82c2f16c22447" kind="function"><name>sub20_init_find_dev</name></member>
+    <member refid="classgr_1_1fullduplex_1_1sub20__init__impl_1a7da989e508813f37893a71b82e36c06e" kind="function"><name>set_atten_code</name></member>
+    <member refid="classgr_1_1fullduplex_1_1sub20__init__impl_1a03d5552a861a3db588c6b8eb2ac5ef80" kind="function"><name>set_phase_code</name></member>
+    <member refid="classgr_1_1fullduplex_1_1sub20__init__impl_1a5fc1a8e70546408d594487c8b0e1433a" kind="function"><name>set_tuner</name></member>
+    <member refid="classgr_1_1fullduplex_1_1sub20__init__impl_1a085701d7232106f8af81fd3a08dbc3a2" kind="function"><name>forecast</name></member>
+    <member refid="classgr_1_1fullduplex_1_1sub20__init__impl_1a0a2d8f06830db2e5d0636b9e406bef99" kind="function"><name>general_work</name></member>
+  </compound>
+  <compound refid="structsub__cfg__vpd" kind="struct"><name>sub_cfg_vpd</name>
+    <member refid="structsub__cfg__vpd_1af64374ffcb4254c3704200f10909e657" kind="variable"><name>lcd_w</name></member>
+    <member refid="structsub__cfg__vpd_1ab80a6e7eea60c9ada9c273a1c820f8e6" kind="variable"><name>lcd_h</name></member>
+    <member refid="structsub__cfg__vpd_1a06a43df77c78c6af61f79814f647ba4b" kind="variable"><name>serial</name></member>
+    <member refid="structsub__cfg__vpd_1a6c78ee87a42963765f69f0d47fa66f78" kind="variable"><name>buttons</name></member>
+    <member refid="structsub__cfg__vpd_1ab110fa7b3b0eefd0efec560d4dec8596" kind="variable"><name>ir_car</name></member>
+  </compound>
+  <compound refid="structsub__i2c__hs__xfer" kind="struct"><name>sub_i2c_hs_xfer</name>
+    <member refid="structsub__i2c__hs__xfer_1af7651bfc192d5ece8cc0b8d945ff7892" kind="variable"><name>sa</name></member>
+    <member refid="structsub__i2c__hs__xfer_1a637598868dbff9a5a043a731ebc6fc71" kind="variable"><name>r_w</name></member>
+    <member refid="structsub__i2c__hs__xfer_1ac51bb183de4286ee6e9ada2b362fbe3a" kind="variable"><name>sz</name></member>
+    <member refid="structsub__i2c__hs__xfer_1a03f61cabaaef9e0b06eded216a694d4f" kind="variable"><name>act_sz</name></member>
+    <member refid="structsub__i2c__hs__xfer_1a0ce57af2b456e8c9c0f52f5aa685b774" kind="variable"><name>data</name></member>
+    <member refid="structsub__i2c__hs__xfer_1a471b3ccc88655ab4703a43ca181710e3" kind="variable"><name>status</name></member>
+  </compound>
+  <compound refid="unionsub__mdio__frame" kind="union"><name>sub_mdio_frame</name>
+    <member refid="unionsub__mdio__frame_1a20fc055731c7e6c3f0bd0ff284f29ff5" kind="variable"><name>op</name></member>
+    <member refid="unionsub__mdio__frame_1a10fe8f0cdb9cd013bfa5733d1ee451df" kind="variable"><name>phyad</name></member>
+    <member refid="unionsub__mdio__frame_1af4281434e98daf2634c1c3dbf0fabea0" kind="variable"><name>regad</name></member>
+    <member refid="unionsub__mdio__frame_1a4d9849573833ba33491c97352bb3c937" kind="variable"><name>data</name></member>
+    <member refid="unionsub__mdio__frame_1a81d214b0db764efb1cad821f16b802e6" kind="variable"><name>clause22</name></member>
+    <member refid="unionsub__mdio__frame_1a71ab48aa71ec8a0b5b9775de00d0308a" kind="variable"><name>prtad</name></member>
+    <member refid="unionsub__mdio__frame_1a95b5ad67d7d67889ff954e91316192c8" kind="variable"><name>devad</name></member>
+    <member refid="unionsub__mdio__frame_1a657760c95803d067f1ee39280f5fd8d0" kind="variable"><name>clause45</name></member>
+  </compound>
+  <compound refid="structsub__version" kind="struct"><name>sub_version</name>
+    <member refid="structsub__version_1ac4064fb756fd0314edae36501ca26225" kind="variable"><name>major</name></member>
+    <member refid="structsub__version_1a83db4f21eb9822eafd2823da27e2732f" kind="variable"><name>minor</name></member>
+    <member refid="structsub__version_1a227e8410ade75ed74301d5301d15a25d" kind="variable"><name>micro</name></member>
+    <member refid="structsub__version_1a12e0e167356d23458b5831b7abe27d58" kind="variable"><name>nano</name></member>
+    <member refid="structsub__version_1aa98cf709043bb5c95ab8002a93dce3e5" kind="variable"><name>dll</name></member>
+    <member refid="structsub__version_1a7bc5e4c8bf7614b5fa8d1d8f218ecdfc" kind="variable"><name>driver</name></member>
+    <member refid="structsub__version_1a403519748196494accab825069982a6c" kind="variable"><name>boot</name></member>
+    <member refid="structsub__version_1a3266720abba64dc3dca73d2ced28dbc6" kind="variable"><name>sub_device</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1fullduplex" kind="namespace"><name>gr::fullduplex</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1afa055ea697e5ed562d2ffdf0a70b6718" kind="define"><name>FULLDUPLEX_API</name></member>
+  </compound>
+  <compound refid="async__divide_8h" kind="file"><name>async_divide.h</name>
+  </compound>
+  <compound refid="async__divide__impl_8h" kind="file"><name>async_divide_impl.h</name>
+  </compound>
+  <compound refid="compute__ofdm__prr_8h" kind="file"><name>compute_ofdm_prr.h</name>
+  </compound>
+  <compound refid="compute__ofdm__prr__impl_8h" kind="file"><name>compute_ofdm_prr_impl.h</name>
+  </compound>
+  <compound refid="count__packets_8h" kind="file"><name>count_packets.h</name>
+  </compound>
+  <compound refid="count__packets__impl_8h" kind="file"><name>count_packets_impl.h</name>
+  </compound>
+  <compound refid="digital__sic_8h" kind="file"><name>digital_sic.h</name>
+  </compound>
+  <compound refid="digital__sic__impl_8h" kind="file"><name>digital_sic_impl.h</name>
+    <member refid="digital__sic__impl_8h_1ae20477c92d1ff822d703da8069fafb0c" kind="function"><name>sig_toeplitz</name></member>
+    <member refid="digital__sic__impl_8h_1a3b5584fc1eb50e6b2561cb0af1d1db79" kind="function"><name>si_chnl_est</name></member>
+  </compound>
+  <compound refid="fde__config_8h" kind="file"><name>fde_config.h</name>
+  </compound>
+  <compound refid="fde__config__impl_8h" kind="file"><name>fde_config_impl.h</name>
+  </compound>
+  <compound refid="group__defs_8dox" kind="file"><name>group_defs.dox</name>
+  </compound>
+  <compound refid="libsub_8h" kind="file"><name>libsub.h</name>
+    <member refid="libsub_8h_1ab088d03dc4aa788a62360d30fc257c95" kind="define"><name>SUB_ERRORS</name></member>
+    <member refid="libsub_8h_1ab39589d2b130e8e25b8b615e9035ff86" kind="define"><name>DEF_SUB_ERROR</name></member>
+    <member refid="libsub_8h_1a597718e59a8fc9c4d4ab63f5a34e28b1" kind="define"><name>ETIMEDOUT</name></member>
+    <member refid="libsub_8h_1a12437fbace49764803ce4edb1d6c9fdf" kind="define"><name>__SUB_DECL__</name></member>
+    <member refid="libsub_8h_1ae9c5a06b4a9a640798142857dbf2c7d0" kind="define"><name>I2C_GCE</name></member>
+    <member refid="libsub_8h_1aa314cf7ad54bb5b7aac40e022704c3bb" kind="define"><name>I2C_DISABLE</name></member>
+    <member refid="libsub_8h_1a4b051c58b05a43e3d0d8e67c3db3a11d" kind="define"><name>I2C_MA_HI</name></member>
+    <member refid="libsub_8h_1a28af8c7de938e6e909d1bd8b828fe9c6" kind="define"><name>BB_I2C_FAST_P</name></member>
+    <member refid="libsub_8h_1aa48938364d67d359ff3871af374cfc45" kind="define"><name>BB_I2C_FAST</name></member>
+    <member refid="libsub_8h_1a4eb1c8c23644021d35ad560c17026355" kind="define"><name>BB_I2C_STD</name></member>
+    <member refid="libsub_8h_1a27537db92d0837cc77baa0d99b8cac48" kind="define"><name>SPI_ENABLE</name></member>
+    <member refid="libsub_8h_1afbedf03a58e1ff48761a4b8ac5546394" kind="define"><name>SPI_CPOL_RISE</name></member>
+    <member refid="libsub_8h_1ae66a261a968f5fa9d7462b2aba121f50" kind="define"><name>SPI_CPOL_FALL</name></member>
+    <member refid="libsub_8h_1aaff7708d4da9560473983ce4e154dec1" kind="define"><name>SPI_SMPL_SETUP</name></member>
+    <member refid="libsub_8h_1a163c0439da1332da5f1edc6f83fab52b" kind="define"><name>SPI_SETUP_SMPL</name></member>
+    <member refid="libsub_8h_1a943af7f8a98cf5a3f2107ed593215a4b" kind="define"><name>SPI_SLAVE</name></member>
+    <member refid="libsub_8h_1a8d194446c8ac9f3c878ead3c9382c9e4" kind="define"><name>SPI_LSB_FIRST</name></member>
+    <member refid="libsub_8h_1a701fce0a1e220262d9912911e87c9e00" kind="define"><name>SPI_MSB_FIRST</name></member>
+    <member refid="libsub_8h_1a3f578abec86dcd0376230b59e9719eca" kind="define"><name>SPI_CLK_8MHZ</name></member>
+    <member refid="libsub_8h_1afc650fd51392e61599be56b3c9ca99f2" kind="define"><name>SPI_CLK_4MHZ</name></member>
+    <member refid="libsub_8h_1a16141a1b1771ebc512e3ded8e77ab434" kind="define"><name>SPI_CLK_2MHZ</name></member>
+    <member refid="libsub_8h_1aa7b706560df3e54181c616c8296b097d" kind="define"><name>SPI_CLK_1MHZ</name></member>
+    <member refid="libsub_8h_1a540749b3cd993628cd717ad7da27d88e" kind="define"><name>SPI_CLK_500KHZ</name></member>
+    <member refid="libsub_8h_1a773dcbe07a7a3994b52787c0698e54d9" kind="define"><name>SPI_CLK_250KHZ</name></member>
+    <member refid="libsub_8h_1a831e2a0b341d969c6acd70888b07868e" kind="define"><name>SPI_CLK_125KHZ</name></member>
+    <member refid="libsub_8h_1a1ee974c4516bdb5e97abf86f6636f8db" kind="define"><name>SPI_CLK_LOW</name></member>
+    <member refid="libsub_8h_1a9571a4f7f5bb05583a0e1c1a0e449b8f" kind="define"><name>SPI_CLK_HZ</name></member>
+    <member refid="libsub_8h_1abaa2698384282ab3b39114b60ed4a98b" kind="define"><name>SS_CONF</name></member>
+    <member refid="libsub_8h_1a4aeaad6d7749a0b22c72f83c59e82cdf" kind="define"><name>SS_H</name></member>
+    <member refid="libsub_8h_1af772b3021c9f55bbc5e8017afc6ab198" kind="define"><name>SS_HL</name></member>
+    <member refid="libsub_8h_1a105bd4bac76690be707fc3fa0faea06a" kind="define"><name>SS_HHL</name></member>
+    <member refid="libsub_8h_1a4e6c38e15957289c8516d6b09943639b" kind="define"><name>SS_HHHL</name></member>
+    <member refid="libsub_8h_1a3fc72bf53ccd839ebb8d6bcc46c0c309" kind="define"><name>SS_HHHHL</name></member>
+    <member refid="libsub_8h_1a724888f001c16c676c767403ace2ca72" kind="define"><name>SS_HI</name></member>
+    <member refid="libsub_8h_1ab1e3db96bfb9a4885572e9fd132fe249" kind="define"><name>SS_L</name></member>
+    <member refid="libsub_8h_1aac1b628cff7a4e6430f8a1e0cc42422f" kind="define"><name>SS_LH</name></member>
+    <member refid="libsub_8h_1a5a4f8d24d46a615387138e86abfca020" kind="define"><name>SS_LLH</name></member>
+    <member refid="libsub_8h_1a410831663550aa873ffa8ccf0f4e3818" kind="define"><name>SS_LLLH</name></member>
+    <member refid="libsub_8h_1a4c5b23395329467909a3fc2c16751f75" kind="define"><name>SS_LLLLH</name></member>
+    <member refid="libsub_8h_1a147dd5e36830d2eb5c2d7347ec2ee962" kind="define"><name>SS_LO</name></member>
+    <member refid="libsub_8h_1aeed29e9bae9a55004702d0c1faccd5d9" kind="define"><name>SS_HiZ</name></member>
+    <member refid="libsub_8h_1ab9833a30db97666207c37f56144e6dfc" kind="define"><name>SUB_MDIO22</name></member>
+    <member refid="libsub_8h_1a0ee3ee87504f8445b32101071d154375" kind="define"><name>SUB_MDIO22_READ</name></member>
+    <member refid="libsub_8h_1a706496e0adc260a8f892378b5b8d791f" kind="define"><name>SUB_MDIO22_WRITE</name></member>
+    <member refid="libsub_8h_1a4fe78c2656e733e680e5f39c88423ada" kind="define"><name>SUB_MDIO45_ADDR</name></member>
+    <member refid="libsub_8h_1a8ca6d76a2d74e993146807a5ca516abf" kind="define"><name>SUB_MDIO45_WRITE</name></member>
+    <member refid="libsub_8h_1ae124785e94084aa33ed45c070c24408a" kind="define"><name>SUB_MDIO45_PRIA</name></member>
+    <member refid="libsub_8h_1a977ebfb429c2cea00e409c89fc30669c" kind="define"><name>SUB_MDIO45_READ</name></member>
+    <member refid="libsub_8h_1a86c8c279b0c943796e6ca00fc985e490" kind="define"><name>SUB_CFP_MSA</name></member>
+    <member refid="libsub_8h_1a99e65b7115361bee5bba085377ad2ea0" kind="define"><name>FPWM_ENABLE</name></member>
+    <member refid="libsub_8h_1af2278ba2685457b294182937178757bd" kind="define"><name>FPWM_EN0</name></member>
+    <member refid="libsub_8h_1a4ff8e220965d0f8dfd65bae40df2f5e9" kind="define"><name>FPWM_EN1</name></member>
+    <member refid="libsub_8h_1a162280a37fb2ffce9033b4544a760658" kind="define"><name>FPWM_EN2</name></member>
+    <member refid="libsub_8h_1af0f7ac4025d1623cda58f7656fcffade" kind="define"><name>ADC_ENABLE</name></member>
+    <member refid="libsub_8h_1ace17af43b64b290289a2d7477cc45c0b" kind="define"><name>ADC_REF_VCC</name></member>
+    <member refid="libsub_8h_1a13a892f461d00a29d15a55f536123f05" kind="define"><name>ADC_REF_AREF</name></member>
+    <member refid="libsub_8h_1a589996e2f998b288ce765acfddb8fd21" kind="define"><name>ADC_REF_2_56</name></member>
+    <member refid="libsub_8h_1a54253ee26e7850bc6fc6565927062211" kind="define"><name>RS_RX_ENABLE</name></member>
+    <member refid="libsub_8h_1a0e577929fe11949e14de97063c63b775" kind="define"><name>RS_TX_ENABLE</name></member>
+    <member refid="libsub_8h_1a74378e4ece9a2076a57edecee20453ef" kind="define"><name>RS_CHAR_5</name></member>
+    <member refid="libsub_8h_1a82be041afebfc27df7f2fc9b9ce92dd3" kind="define"><name>RS_CHAR_6</name></member>
+    <member refid="libsub_8h_1a810a55f47e50ad2434b12ebf6ab20d2c" kind="define"><name>RS_CHAR_7</name></member>
+    <member refid="libsub_8h_1afe35ee04ab902a78b65c01338b7c12b5" kind="define"><name>RS_CHAR_8</name></member>
+    <member refid="libsub_8h_1a96ee61ac972ff01b98118b3e33455450" kind="define"><name>RS_CHAR_9</name></member>
+    <member refid="libsub_8h_1ab00abbe7515cf3b72e242dca2341e43a" kind="define"><name>RS_PARITY_NONE</name></member>
+    <member refid="libsub_8h_1a47861412aa49e4c8b93e1cc94c7066e1" kind="define"><name>RS_PARITY_EVEN</name></member>
+    <member refid="libsub_8h_1a6dddf9c57015868ea0a589192c73a670" kind="define"><name>RS_PARITY_ODD</name></member>
+    <member refid="libsub_8h_1a05f9eadf6b8ab1f35d7e241cb4d27017" kind="define"><name>RS_STOP_1</name></member>
+    <member refid="libsub_8h_1a2f64b514675fa432a289696b20653e99" kind="define"><name>RS_STOP_2</name></member>
+    <member refid="libsub_8h_1ac94b34201a9bd519010fce33c7f086a7" kind="define"><name>RS_RX_BEFORE_TX</name></member>
+    <member refid="libsub_8h_1a4a303738ef9a885f7dc1befce098b5c5" kind="define"><name>RS_RX_AFTER_TX</name></member>
+    <member refid="libsub_8h_1a820dbcc0c4dee8424d4a9aec2e10d58f" kind="define"><name>IR_UART_MODE</name></member>
+    <member refid="libsub_8h_1a61ef0f867e0a8382d8e18f82c3b170eb" kind="define"><name>IR_ROW_MODE</name></member>
+    <member refid="libsub_8h_1a4d93af71d395fbcac0ea70f164d64682" kind="define"><name>FIFO_SELECT_SPI</name></member>
+    <member refid="libsub_8h_1a74109ad0bc78f999c55dca64876e4dff" kind="define"><name>FIFO_SELECT_UART</name></member>
+    <member refid="libsub_8h_1aa060305d690ab88f55988e9aeddf4520" kind="define"><name>FIFO_SELECT_I2C</name></member>
+    <member refid="libsub_8h_1a0cc7c221c7a384fde4c5bee5a7d095a2" kind="define"><name>FIFO_CLEAR</name></member>
+    <member refid="libsub_8h_1accac2a32670572f28f409b116c7c113a" kind="define"><name>FIFO_READ_FULL</name></member>
+    <member refid="libsub_8h_1a9d6fe9af5b4af0d8b0b1b35390fe97d6" kind="define"><name>CNTR_EN</name></member>
+    <member refid="libsub_8h_1ad13b0d625d3718dc2106b062277e53a9" kind="define"><name>CNTR_CLR</name></member>
+    <member refid="libsub_8h_1ae3978263affb5ddf81da421dad17b5f6" kind="define"><name>CNTR_16MHZ</name></member>
+    <member refid="libsub_8h_1ab60ad15406d7956a4a665154a1bf3210" kind="define"><name>CNTR_2MHZ</name></member>
+    <member refid="libsub_8h_1a72c61908df0c298809f6835240d37d29" kind="define"><name>CNTR_250KHZ</name></member>
+    <member refid="libsub_8h_1a80d6cca412c6baa96387c5fd4c2ab36b" kind="define"><name>CNTR_62500HZ</name></member>
+    <member refid="libsub_8h_1a5b7da850853a8b9b64161856bf8f5cfa" kind="define"><name>CNTR_15625HZ</name></member>
+    <member refid="libsub_8h_1a7c770c72eda57d173de7a953390cac56" kind="define"><name>CNTR_FEDGE</name></member>
+    <member refid="libsub_8h_1ab674d078a4eaf208cc47136855ff0563" kind="define"><name>CNTR_REDGE</name></member>
+    <member refid="libsub_8h_1a91ddb3dd90dc776e2dfb3d434b353cb5" kind="define"><name>SUB_BOOT_MODE</name></member>
+    <member refid="libsub_8h_1a06fc87d81c62e9abb8790b6e5713c55b" kind="enum"><name>@0</name></member>
+    <member refid="libsub_8h_1a06fc87d81c62e9abb8790b6e5713c55ba70950d67e6653719fed3a3a5f7dc7e3e" kind="enumvalue"><name>SUB_LASTERROR</name></member>
+    <member refid="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7" kind="enum"><name>@1</name></member>
+    <member refid="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a3ef00fae524b5b1f0cd775a7b9cd8629" kind="enumvalue"><name>ADC_S0</name></member>
+    <member refid="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a5dd3b1a4eb7f2baec590a5d84cde85f6" kind="enumvalue"><name>ADC_S1</name></member>
+    <member refid="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a7f9f15db343eb0509b71cf9b84f4fd24" kind="enumvalue"><name>ADC_S2</name></member>
+    <member refid="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7af9cdceb53f9177cf0527a35b89ff093f" kind="enumvalue"><name>ADC_S3</name></member>
+    <member refid="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a48c3db6e0ef0090804b6242fc9e6283b" kind="enumvalue"><name>ADC_S4</name></member>
+    <member refid="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a14940181e1bb273919959f50e39816cf" kind="enumvalue"><name>ADC_S5</name></member>
+    <member refid="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a2cb8391b366e98badd276c5ad1728dcc" kind="enumvalue"><name>ADC_S6</name></member>
+    <member refid="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a139e5882f93ea2484c0708e8138c02a8" kind="enumvalue"><name>ADC_S7</name></member>
+    <member refid="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7aa16b910d263cacf206eaf9cf5ef0e16f" kind="enumvalue"><name>ADC_D10_10X</name></member>
+    <member refid="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7ae163b21fd8fc2bbef0ee1bba6a66f538" kind="enumvalue"><name>ADC_D10_200X</name></member>
+    <member refid="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a6d8e7618ef0e08360bd2878425f6de55" kind="enumvalue"><name>ADC_D32_10X</name></member>
+    <member refid="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7aa581a0dd007b3e8931c837cc7fd19327" kind="enumvalue"><name>ADC_D32_200X</name></member>
+    <member refid="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a469df891deb9d5e29308089ed85c7644" kind="enumvalue"><name>ADC_D01</name></member>
+    <member refid="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a8391c17f12a864bcaff9d393c68526a9" kind="enumvalue"><name>ADC_D21</name></member>
+    <member refid="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a222d0b0d2268e46ac5264ba940c2d350" kind="enumvalue"><name>ADC_D31</name></member>
+    <member refid="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a9ecb087dc9cccb5a08e2c051d26bdfc6" kind="enumvalue"><name>ADC_D41</name></member>
+    <member refid="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a76ae77c43fb7554c07bb95243a34bfe8" kind="enumvalue"><name>ADC_D51</name></member>
+    <member refid="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a22ddc85de61ec791796a8323ff92c638" kind="enumvalue"><name>ADC_D61</name></member>
+    <member refid="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7af15ab00ac3633cbbce3190bedf5e3505" kind="enumvalue"><name>ADC_D71</name></member>
+    <member refid="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7ae6c8fb56bb741f9d53ccb785eecd355f" kind="enumvalue"><name>ADC_D02</name></member>
+    <member refid="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a17b420deecea84f4cce845d1fa794f34" kind="enumvalue"><name>ADC_D12</name></member>
+    <member refid="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a4a7792465fd252505a6cf5e50af51402" kind="enumvalue"><name>ADC_D32</name></member>
+    <member refid="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7ad086563c6e9094e1df260a824799a7b3" kind="enumvalue"><name>ADC_D42</name></member>
+    <member refid="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a853b61ac436f0a3e6bd2387b9b8ef4a1" kind="enumvalue"><name>ADC_D52</name></member>
+    <member refid="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a87a4c1e0e91b7f500ec4fc54d986fe1b" kind="enumvalue"><name>ADC_1_1V</name></member>
+    <member refid="libsub_8h_1adf764cbdea00d65edcd07bb9953ad2b7a312faa4c6a59f1bce770536f299b2679" kind="enumvalue"><name>ADC_GND</name></member>
+    <member refid="libsub_8h_1aba6eddb272c798d3b265e7ac98eaff46" kind="typedef"><name>sub_int32_t</name></member>
+    <member refid="libsub_8h_1aa52b7203ab94fe2dad43a34b1db3b553" kind="typedef"><name>sub_device</name></member>
+    <member refid="libsub_8h_1a10acda8dda7253878108a0514d29d86e" kind="typedef"><name>sub_handle</name></member>
+    <member refid="libsub_8h_1a963fd01b563d75889d3d30f6ff801854" kind="variable"><name>sub_errno</name></member>
+    <member refid="libsub_8h_1a5991c016d33e85cf0c298d9a7924fd5b" kind="variable"><name>sub_i2c_status</name></member>
+    <member refid="libsub_8h_1ac09735ee8b4d1120eca4a9782506be52" kind="function"><name>sub_get_mode</name></member>
+    <member refid="libsub_8h_1a872095aa3049589e454d88943df16b5a" kind="function"><name>sub_reset</name></member>
+    <member refid="libsub_8h_1a62aaeee4613490110e53dd8ac6114d96" kind="function"><name>sub_find_devices</name></member>
+    <member refid="libsub_8h_1a0bf03fd21a23b8e11f9089ad56671ed0" kind="function"><name>sub_open</name></member>
+    <member refid="libsub_8h_1a88616b932d051db87454ae1cae3101a3" kind="function"><name>sub_close</name></member>
+    <member refid="libsub_8h_1a3819c45b6556df68f46a8089bb5d38e3" kind="function"><name>sub_get_version</name></member>
+    <member refid="libsub_8h_1adc65b7aed0793da70121ebfbe7b7355e" kind="function"><name>sub_get_cfg_vpd</name></member>
+    <member refid="libsub_8h_1aacced0b5e920feda192fa8a358886c0e" kind="function"><name>sub_i2c_freq</name></member>
+    <member refid="libsub_8h_1ac6064814c631ceaa3c29819b5dcfa23b" kind="function"><name>sub_i2c_config</name></member>
+    <member refid="libsub_8h_1a6ceca4548800db67ff81a24672455f33" kind="function"><name>sub_i2c_start</name></member>
+    <member refid="libsub_8h_1afb6ad3d438ddb5f7b4f47e4aa3632dda" kind="function"><name>sub_i2c_stop</name></member>
+    <member refid="libsub_8h_1afd1957f5eb6eeb8a71602e5ba2ca4925" kind="function"><name>sub_i2c_scan</name></member>
+    <member refid="libsub_8h_1a900393d63ff210cf7ad63bd1bc6422ed" kind="function"><name>sub_i2c_read</name></member>
+    <member refid="libsub_8h_1a78d603af8b0b257a50a9b0d2ecbd091c" kind="function"><name>sub_i2c_write</name></member>
+    <member refid="libsub_8h_1a5b7c6311ddac20dd150811c04e0914e5" kind="function"><name>sub_i2c_hs_rw</name></member>
+    <member refid="libsub_8h_1a19c553656ae0e7ec0101ff8109d32c9c" kind="function"><name>sub_spi_config</name></member>
+    <member refid="libsub_8h_1ad016d6fa8b7f1e5ae9b22c556ca05da5" kind="function"><name>sub_spi_transfer</name></member>
+    <member refid="libsub_8h_1a014a2968f922200963ff83299be4f778" kind="function"><name>sub_sdio_transfer</name></member>
+    <member refid="libsub_8h_1a6c01c6a47775fe6b10cb9d63872550fd" kind="function"><name>sub_spi_transfer_ess</name></member>
+    <member refid="libsub_8h_1acc98cb096ff1b8ffc4915f6fe848daea" kind="function"><name>sub_mdio22</name></member>
+    <member refid="libsub_8h_1af9472af63e1b194be9692b7975521629" kind="function"><name>sub_mdio45</name></member>
+    <member refid="libsub_8h_1a2465b5be9b00756a32a4f0ee030383b4" kind="function"><name>sub_mdio_xfer</name></member>
+    <member refid="libsub_8h_1a34aff60c5a02a06ef87cc9199ba42a8c" kind="function"><name>sub_mdio_xfer_ex</name></member>
+    <member refid="libsub_8h_1add847e5790682275280ed820a3d1ada1" kind="function"><name>sub_gpio_config</name></member>
+    <member refid="libsub_8h_1ae87765213734ee5c7322b50b472d8502" kind="function"><name>sub_gpio_read</name></member>
+    <member refid="libsub_8h_1aa8853b947b9cd02a54210a301a52f5e9" kind="function"><name>sub_gpio_write</name></member>
+    <member refid="libsub_8h_1a3140b8764461d5a380c4e995d4b6179f" kind="function"><name>sub_gpiob_config</name></member>
+    <member refid="libsub_8h_1a26d13da8872f11f3eee4c092806c5b67" kind="function"><name>sub_gpiob_read</name></member>
+    <member refid="libsub_8h_1abe4e89be93c0851402ea2bba076c06a0" kind="function"><name>sub_gpiob_write</name></member>
+    <member refid="libsub_8h_1a1ba0f42e44b90ddfee3600630171470c" kind="function"><name>sub_edge_config</name></member>
+    <member refid="libsub_8h_1ad9d6440cea314bcdec57eec7aedee119" kind="function"><name>sub_edge_read</name></member>
+    <member refid="libsub_8h_1ab5a84bd7812cf38f61a582b72727499c" kind="function"><name>sub_fpwm_config</name></member>
+    <member refid="libsub_8h_1a97cbaa927f8fcd72f1685fcf5ed701b4" kind="function"><name>sub_fpwm_set</name></member>
+    <member refid="libsub_8h_1ad389e02c60abbdeb0fc7a8ca3433f19d" kind="function"><name>sub_pwm_config</name></member>
+    <member refid="libsub_8h_1abced653c86311d613febbba8461e798c" kind="function"><name>sub_pwm_set</name></member>
+    <member refid="libsub_8h_1a944cc0ae4dfbfd38f31fb4afa6dd9482" kind="function"><name>sub_adc_config</name></member>
+    <member refid="libsub_8h_1a0e0829868eb957db1afc1d48f592782f" kind="function"><name>sub_adc_single</name></member>
+    <member refid="libsub_8h_1af65d0044456584052924a9007322c35a" kind="function"><name>sub_adc_read</name></member>
+    <member refid="libsub_8h_1ae2624a28f12bcd80953caa6c528c619e" kind="function"><name>sub_lcd_write</name></member>
+    <member refid="libsub_8h_1a572258e33a9f97f57ae1d94cc928be15" kind="function"><name>sub_rs_set_config</name></member>
+    <member refid="libsub_8h_1a2ccd759a97cc5edac240f4dcf758f55f" kind="function"><name>sub_rs_get_config</name></member>
+    <member refid="libsub_8h_1a2b1c0bf3f40e4a8aa064f1028bc03c9d" kind="function"><name>sub_rs_timing</name></member>
+    <member refid="libsub_8h_1a0c66c0804e5a9e5af08fa9e334aa524b" kind="function"><name>sub_rs_xfer</name></member>
+    <member refid="libsub_8h_1a90ddca64bad0ab0dd9c450955d77aba6" kind="function"><name>sub_bb_i2c_config</name></member>
+    <member refid="libsub_8h_1aacb5fb8c435333c65f29800db5f9e857" kind="function"><name>sub_bb_i2c_scan</name></member>
+    <member refid="libsub_8h_1a43b49c3a7e6e744b1b527ae981ab0536" kind="function"><name>sub_bb_i2c_read</name></member>
+    <member refid="libsub_8h_1a21b13058e3f695e55158d136a041b1da" kind="function"><name>sub_bb_i2c_write</name></member>
+    <member refid="libsub_8h_1a38871c050adada9973c6d0b7c414922d" kind="function"><name>sub_eep_read</name></member>
+    <member refid="libsub_8h_1a5c8a8cf93ef1bffcbf92fdfc00666ae0" kind="function"><name>sub_eep_write</name></member>
+    <member refid="libsub_8h_1a8f89a42a17fd29c964188aae3cfd792b" kind="function"><name>sub_ir_config</name></member>
+    <member refid="libsub_8h_1ae6bba88ef35619a8e8124a5e7107fd9d" kind="function"><name>sub_ir_tx</name></member>
+    <member refid="libsub_8h_1a769703b7aaa1d874573c21ee0c07f0fd" kind="function"><name>sub_fifo_write</name></member>
+    <member refid="libsub_8h_1ab977021f40a947d16beb1910db910e3c" kind="function"><name>sub_fifo_read</name></member>
+    <member refid="libsub_8h_1aee9dd026d4a5525c559c6b3eb866420a" kind="function"><name>sub_fifo_config</name></member>
+    <member refid="libsub_8h_1a1d92aee18fdfeb889e822754f68e5a94" kind="function"><name>usb_transaction</name></member>
+    <member refid="libsub_8h_1a89d08ddd70acb2cc9a367960ddb8cc85" kind="function"><name>sub_control_request</name></member>
+    <member refid="libsub_8h_1a5446b57fb1e7cdde9cadeeef45789e6f" kind="function"><name>sub_get_serial_number</name></member>
+    <member refid="libsub_8h_1aca2ea60afd2f69b930be72896becef31" kind="function"><name>sub_get_product_id</name></member>
+    <member refid="libsub_8h_1acfe81523e05f15c5c8d7ecae9a19c58c" kind="function"><name>sub_strerror</name></member>
+    <member refid="libsub_8h_1aabe2b14dbac97d8b01e9489aedf1950e" kind="function"><name>sub_get_errno</name></member>
+    <member refid="libsub_8h_1a252ce0c5698bb01f00424046e204d068" kind="function"><name>sub_get_i2c_status</name></member>
+  </compound>
+  <compound refid="main__page_8dox" kind="file"><name>main_page.dox</name>
+  </compound>
+  <compound refid="ofdm__constellation_8h" kind="file"><name>ofdm_constellation.h</name>
+  </compound>
+  <compound refid="ofdm__constellation__impl_8h" kind="file"><name>ofdm_constellation_impl.h</name>
+  </compound>
+  <compound refid="packet__decap_8h" kind="file"><name>packet_decap.h</name>
+  </compound>
+  <compound refid="packet__decap__impl_8h" kind="file"><name>packet_decap_impl.h</name>
+  </compound>
+  <compound refid="packet__encap_8h" kind="file"><name>packet_encap.h</name>
+  </compound>
+  <compound refid="packet__encap2_8h" kind="file"><name>packet_encap2.h</name>
+  </compound>
+  <compound refid="packet__encap__impl_8h" kind="file"><name>packet_encap_impl.h</name>
+  </compound>
+  <compound refid="parse__stream__sync_8h" kind="file"><name>parse_stream_sync.h</name>
+  </compound>
+  <compound refid="parse__stream__sync__impl_8h" kind="file"><name>parse_stream_sync_impl.h</name>
+  </compound>
+  <compound refid="residual__si__vis_8h" kind="file"><name>residual_si_vis.h</name>
+  </compound>
+  <compound refid="residual__si__vis__impl_8h" kind="file"><name>residual_si_vis_impl.h</name>
+  </compound>
+  <compound refid="snr__calc_8h" kind="file"><name>snr_calc.h</name>
+  </compound>
+  <compound refid="snr__calc__impl_8h" kind="file"><name>snr_calc_impl.h</name>
+  </compound>
+  <compound refid="sub20__init_8h" kind="file"><name>sub20_init.h</name>
+  </compound>
+  <compound refid="sub20__init__impl_8h" kind="file"><name>sub20_init_impl.h</name>
+  </compound>
+  <compound refid="group__block" kind="group"><name>block</name>
+  </compound>
+  <compound refid="dir_fc8b0e648888754833d2066bd46cb9b3" kind="dir"><name>fullduplex</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir"><name>lib</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>
