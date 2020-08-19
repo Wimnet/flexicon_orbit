@@ -1,7 +1,7 @@
 # Open-Access Full-Duplex Wireless in the ORBIT and COSMOS Testbeds
 This GitHub repository contains the source code and experiment files for the [Full-Duplex (FD) tutorial located on the COSMOS/ORBIT Wiki](https://wiki.cosmos-lab.org/wiki/Tutorials/Wireless/FullDuplex).
 
-The tutorial consists of three demo experiments which run through GNU Radio on the integrated 1st-generation (Gen-1) *narrowband* and 2nd-generation (Gen-2) *wideband* FD radios. Each experiment is accessible at `gr-fullduplex/experiments`. While these demo experiments are designed to be run on the ORBIT and COSMOS testbeds, we provide them here so that they may be used as a basis for other experimentation with FD wireless. 
+The tutorial consists of three demo experiments which run through GNU Radio on the integrated 1st-generation (Gen-1) *narrowband* and 2nd-generation (Gen-2) *wideband* FD radios. Each experiment is accessible at `./experiments`. While these demo experiments are designed to be run on the ORBIT and COSMOS testbeds, we provide them here so that they may be used as a basis for other experimentation with FD wireless. 
 
 We will update this repository with more full-duplex source code and examples as they are developed.
 
@@ -18,7 +18,7 @@ We greatly appreciate that you cite the above papers if you use the hardware. Pl
 ### The Gen-1 Narrowband Frequency-Flat Amplitude- and Phase-based RF Canceller Box
 Please refer to our [WiNTECH'20 paper](https://wimnet.ee.columbia.edu/wp-content/uploads/2020/08/wintech2020_orbit_cosmos_fullduplex_integration.pdf) for details on the design and integration of the Gen-1 RF Canceller Box in the ORBIT testbed.
 
-### The Gen-2 Narrowband Frequency-Domain Equalization-based RF Canceller Box
+### The Gen-2 Wideband Frequency-Domain Equalization (FDE)-based RF Canceller Box
 Please refer to our [WiNTECH'20 paper](https://wimnet.ee.columbia.edu/wp-content/uploads/2020/08/wintech2020_orbit_cosmos_fullduplex_integration.pdf) for details on the integration of the Gen-2 RF Canceller Box in the COSMOS testbed. Our [MobiCom'19 paper](https://wimnet.ee.columbia.edu/wp-content/uploads/2018/12/FDE_MobiCom19.pdf) provides an in-depth evaluation of the Gen-2 hardware.
 
 ### Universal Software Radio Peripheral (USRP) 
