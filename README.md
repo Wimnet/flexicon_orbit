@@ -12,7 +12,7 @@ For further information on the integrated Gen-1 and Gen-2 radios, please see the
 
 *Tingjun Chen, Mahmood Baraani Dastjerdi, Jin Zhou, Harish Krishnaswamy, and Gil Zussman, “Wideband Full-Duplex Wireless via Frequency-Domain Equalization: Design and Experimentation,” in Proc. ACM MobiCom'19, Oct. 2019.* [[download](https://wimnet.ee.columbia.edu/wp-content/uploads/2018/12/FDE_MobiCom19.pdf)]
 
-We greatly appreciate that you cite the above papers if you use the hardware. Please email Tingjun Chen (tingjun [at] ee.columbia.edu) or Manav Kohli (mpk2138 [at] columbia.edu) if you use (or plan to use) the full-duplex node or if you have any questions.
+We greatly appreciate that you cite the above papers if you use the hardware or software. Please email Tingjun Chen (tingjun [at] ee.columbia.edu) or Manav Kohli (mpk2138 [at] columbia.edu) if you use (or plan to use) the full-duplex node or if you have any questions.
 
 ## Hardware
 ### The Gen-1 Narrowband Frequency-Flat Amplitude- and Phase-based RF Canceller Box
