@@ -47,6 +47,8 @@ The three outputs are as follows:
 * **Middle**: The OFDM packets after digital SIC.
 * **Bottom**: The digital SIC filter taps. 
 
+The Digital SIC block will remove the paddings added by the FD Packet Encap2 block.
+
 ### FDE Config
 This block is used to control the Gen-2 canceller PCB using the [SUB-20](http://www.xdimax.com/sub20/sub20.html) API. It accepts a total of 15 parameters, one for the SUB-20's serial number and 14 parameters representing the 14 configurable components on the Gen-2 canceller PCB and antenna tuner combined. These are described below:
 * **FDE Board**: For the radio addressed by `192.168.30.3`, use `552D`. For the radio addressed by `192.168.30.4`, use `5647`.
@@ -69,4 +71,22 @@ This block performs the same purpose as the FDE Config block, but as it is for t
 We also have OOT modules developed for other functionality relating to, but not directly involved in our FD methods. 
 
 ### SNR Calculator
-This measures the SNR of each individual OFDM packet. It accepts the following 
+This measures the SNR of each individual OFDM packet. It accepts the following parameters:
+* **Debug**: If set to `True`, outputs debug information to the GNU Radio console.
+* **Delay Tx2Rx**: defines the delay of the Rx samples with respect to the Tx samples. The optimal value is dependent on the bandwidth. With a bandwidth of 10 MHz, `40` should be used.
+* **Pad Front**: defines the length of the zero padding before the OFDM packet starts. The value here must be determined by the experimenter and is dependent on the data entering the block. For example, if the paddings from FD Packet Encap2 have been removed, then this will *not* be the same value as used in the FD Packet Encap2 block.
+* **Data Symbols**: how many symbols make up the entire OFDM packet. This includes sync words 1&2, the SIG field, and all data symbols. This will need to be computed by the experimenter - in the example experiments the value used is `6`.
+* **Noise Start Index** - The value here depends on the paddings used for each packet. It is usually set to zero, but might need to be determined by the experimenter  through investigating the complex valued data entering this block.
+* **Noise Length** - How many noise samples to use for computing the noise power. This can be determined by the experimenter as well. Care must be taken to not use too large of a number so that packet samples are not included in the noise.
+
+### OFDM Constellation
+This performs a basic phase correction on the input OFDM packets and outputs constellation points. The output of this block must be fed into a QT GUI Constellation  Sink. It also outputs the measured EVM of each packet. The following parameters are accepted:
+* **Debug**: If set to `True`, outputs debug information to the GNU Radio console.
+* **Delay Tx2Rx**: defines the delay of the Rx samples with respect to the Tx samples. This value may not be the same as used in the Digital SIC block.
+* **Pad Front**: defines the length of the zero padding before the OFDM packet starts. The value here must be determined by the experimenter and is dependent on the data entering the block. For example, if the paddings from FD Packet Encap2 have been removed, then this will *not* be the same value as used in the FD Packet Encap2 block.
+* **Frame Length**: defines how long the OFDM packet is, in samples. This is the same as used in the Digital SIC block.
+
+### Miscellaneous 
+There are two other modules used in our example flowgraphs. The first, Packet Count, is used to count how many packets pass through it. It outputs the current count in two ways - as a floating point and also as a message. Outputting as a message allows multiple packet count blocks to be used asnychronously.
+
+The second is the Async Divide - this takes two message format inputs (generally floating point numbers) and performs a division. The output only updates when either of the two inputs update, and enforces no timing requirement on the inputs. Therefore, this can be used to perform division of numbers which are asynchronous.
