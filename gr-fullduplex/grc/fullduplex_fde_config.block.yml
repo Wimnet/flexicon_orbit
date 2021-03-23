@@ -1,0 +1,86 @@
+id: fullduplex_fde_config
+label: FDE Config
+category: '[FULLDUPLEX]'
+
+templates:
+  imports: import fullduplex
+  make: fullduplex.fde_config(${init_cap_addr}, ${init_cap_val}, ${sn_val})
+  callbacks: 
+    - set_att(0, ${att_0_val})
+    - set_att(1, ${att_1_val})
+    - set_att(2, ${att_2_val})
+    - set_dac(0, ${dac_0_val})
+    - set_dac(1, ${dac_1_val})
+    - set_dac(2, ${dac_2_val})
+    - set_cf_cap(0, ${cf_0_val})
+    - set_cf_cap(1, ${cf_1_val})
+    - set_qf_cap(0, ${qf_0_val})
+    - set_qf_cap(1, ${qf_1_val})
+    - set_tuner_cap(0, ${tuner_cap_0_val})
+    - set_tuner_cap(1, ${tuner_cap_1_val})
+    - set_tuner_cap(2, ${tuner_cap_2_val})
+    - set_all(${att_0_val}, ${att_1_val}, ${att_2_val}, ${cf_0_val}, ${cf_1_val}, ${qf_0_val}, ${qf_1_val}, ${dac_0_val}, ${dac_1_val}, ${dac_2_val}, ${canc_path_val}, ${tuner_cap_0_val}, ${tuner_cap_1_val}, ${tuner_cap_2_val})
+    - fde_config_find_dev(${sn_val})
+  
+
+#  Make one 'parameters' list entry for every parameter you want settable from the GUI.
+#     Keys include:
+#     * id (makes the value accessible as \${keyname, e.g. in the make entry)
+#     * label (label shown in the GUI)
+#     * dtype (e.g. int, float, complex, byte, short, xxx_vector, ...)
+parameters:
+- id: sn_val
+  label: FDE board
+  dtype: string
+- id: canc_path_val
+  label: Canceller Path Val
+  dtype: int
+- id: att_0_val
+  label: Attenuator 0
+  dtype: int
+- id: att_1_val
+  label: Attenuator 1
+  dtype: int
+- id: att_2_val
+  label: Attenuator 2
+  dtype: int
+- id: dac_0_val
+  label: DAC 0
+  dtype: int
+- id: dac_1_val
+  label: DAC 1
+  dtype: int
+- id: dac_2_val
+  label: DAC 2
+  dtype: int
+- id: cf_0_val
+  label: CF 0
+  dtype: int
+- id: cf_1_val
+  label: CF 1
+  dtype: int
+- id: qf_0_val
+  label: QF 0
+  dtype: int
+- id: qf_1_val
+  label: QF 1
+  dtype: int
+- id: init_cap_addr
+  label: Init Cap Addr
+  dtype: int
+- id: init_cap_val
+  label: Init Cap Val
+  dtype: int
+- id: tuner_cap_0_val
+  label: Tuner Cap 0 Val
+  dtype: int
+- id: tuner_cap_1_val
+  label: Tuner Cap 1 Val
+  dtype: int
+- id: tuner_cap_2_val
+  label: Tuner Cap 2 Val
+  dtype: int
+  
+#  'file_format' specifies the version of the GRC yml format used in the file
+#  and should usually not be changed.
+file_format: 1

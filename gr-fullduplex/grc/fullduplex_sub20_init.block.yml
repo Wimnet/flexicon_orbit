@@ -1,0 +1,27 @@
+id: fullduplex_sub20_init
+label: Gen-1 Config
+category: '[FULLDUPLEX]'
+
+templates:
+  imports: import fullduplex
+  make: fullduplex.sub20_init($atten_code, $phase_code)
+  callbacks:
+    - set_atten_code($atten_code)
+    - set_phase_code($phase_code)
+
+#  Make one 'parameters' list entry for every parameter you want settable from the GUI.
+#     Keys include:
+#     * id (makes the value accessible as \$keyname, e.g. in the make entry)
+#     * label (label shown in the GUI)
+#     * dtype (e.g. int, float, complex, byte, short, xxx_vector, ...)
+parameters:
+- id: atten_code
+  label: Attenuator Code
+  dtype: int
+- id: phase_code
+  label: Phase Code
+  dtype: int
+
+#  'file_format' specifies the version of the GRC yml format used in the file
+#  and should usually not be changed.
+file_format: 1

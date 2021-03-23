@@ -1,0 +1,84 @@
+id: fullduplex_aloha_control
+label: aloha_control
+category: '[FULLDUPLEX]'
+
+templates:
+  imports: import fullduplex
+  make: fullduplex.aloha_control(${trans_prob}, ${radio}, ${pad_front}, ${pad_tail}, ${offset}, ${sig_pilot_pos}, ${premultiplier}, ${sync_word}, ${debug}, ${record})
+  callbacks:
+    - set_record(${record})
+    - set_offset(${offset})
+
+#  Make one 'parameters' list entry for every parameter you want settable from the GUI.
+#     Keys include:
+#     * id (makes the value accessible as \$keyname, e.g. in the make entry)
+#     * label (label shown in the GUI)
+#     * dtype (e.g. int, float, complex, byte, short, xxx_vector, ...)
+parameters:
+- id: trans_prob
+  label: p(Transmission)
+  dtype: float
+  default: 0.5
+- id: radio
+  label: Radio 
+  dtype: int
+  default: 0
+- id: debug
+  label: Debug
+  dtype: bool
+  default: False
+- id: pad_front
+  label: Pad Front
+  dtype: int
+  default: 0
+- id: pad_tail
+  label: Pad Tail
+  dtype: int
+  default: 0
+- id: offset
+  label: Padding offset
+  dtype: int
+  default: 0
+- id: sig_pilot_pos
+  label: Pilot Pos
+  dtype: int
+  default: 0
+- id: premultiplier
+  label: Premultiplier
+  dtype: float
+  default: 1
+- id: sync_word
+  label: Pilot Symbols
+  dtype: enum
+  default: 0
+  options: ["0", "1", "2", "3", "4", "5"]
+  option_labels: [WiFi LTS, OFDM Sync Word 1, OFDM Sync Word 2, Symmetric OFDM Sync Word, QPSK, Zero]
+- id: record
+  label: Record packets
+  dtype: bool
+  default: False
+
+#  Make one 'inputs' list entry per input and one 'outputs' list entry per output.
+#  Keys include:
+#      * label (an identifier for the GUI)
+#      * domain (optional - stream or message. Default is stream)
+#      * dtype (e.g. int, float, complex, byte, short, xxx_vector, ...)
+#      * vlen (optional - data stream vector length. Default is 1)
+#      * optional (optional - set to 1 for optional inputs. Default is 0)
+inputs:
+- label: in
+  domain: stream
+  dtype: complex
+  vlen: 1
+  optional: 0
+
+outputs:
+- label: out
+  domain: stream
+  dtype: complex
+  vlen: 1
+  optional: 0
+
+#  'file_format' specifies the version of the GRC yml format used in the file
+#  and should usually not be changed.
+file_format: 1
