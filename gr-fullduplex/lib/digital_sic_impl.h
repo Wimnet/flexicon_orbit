@@ -124,6 +124,8 @@ namespace gr {
 
 			void set_delay_tx2rx(int delay_tx2rx);
 
+      void set_pad_front(int pad_front) { d_pad_front = pad_front; }
+
       // Where all the action really happens
       // void forecast (int noutput_items, gr_vector_int &ninput_items_required);
 

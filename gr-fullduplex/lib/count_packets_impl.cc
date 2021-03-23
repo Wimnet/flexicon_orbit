@@ -41,12 +41,12 @@ namespace gr {
     count_packets_impl::count_packets_impl(bool debug)
       : gr::tagged_stream_block("count_packets",
               gr::io_signature::make(1, 1, sizeof(char)),
-              gr::io_signature::make(1, 1, sizeof(float)), "packet_len"),
+              gr::io_signature::make(0, 0, 0), "packet_len"),
               d_debug(debug),
               d_count(0.0)
               
     {
-      message_port_register_out(pmt::mp("out_msg"));
+      message_port_register_out(pmt::mp("out"));
     }
 
     /*
@@ -59,8 +59,7 @@ namespace gr {
     int
     count_packets_impl::calculate_output_stream_length(const gr_vector_int &ninput_items)
     {
-      int noutput_items = 8;
-      return noutput_items ;
+      return 0 ;
     }
 
     int
@@ -91,9 +90,9 @@ namespace gr {
       // make message
       pmt::pmt_t str = pmt::string_to_symbol("num");
       pmt::pmt_t count = pmt::from_double(d_count);
-      message_port_pub(pmt::mp("out_msg"), pmt::cons(str, count));
+      message_port_pub(pmt::mp("out"), pmt::cons(str, count));
 
-      return noutput_items;
+      return 0;
     }
 
   } /* namespace fullduplex */

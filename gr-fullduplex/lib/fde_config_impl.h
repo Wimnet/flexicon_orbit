@@ -18,7 +18,7 @@
  * Boston, MA 02110-1301, USA.
  */
 
-#include <libsub.h>
+#include "libsub.h"
 
 #ifndef INCLUDED_FULLDUPLEX_FDE_CONFIG_IMPL_H
 #define INCLUDED_FULLDUPLEX_FDE_CONFIG_IMPL_H
