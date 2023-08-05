@@ -1,3 +1,5 @@
+# Please see the [flexicon_cosmos](https://github.com/Wimnet/flexicon_cosmos/) repository for code used on the COSMOS full-duplex testbed!
+
 # Open-Access Full-Duplex Wireless in the ORBIT and COSMOS Testbeds
 This GitHub repository contains the hardware designs, source code, and experiment files for the [FlexICoN](https://flexicon.ee.columbia.edu) [Gen-1](https://flexicon.ee.columbia.edu/gen-1-open-access) and [Gen-2](https://flexicon.ee.columbia.edu/gen-2-open-access) full-duplex (FD) radios integrated in the ORBIT and COSMOS testbeds. For a tutorial on using these FD radios, please see the [FD tutorial located on the COSMOS/ORBIT Wiki](https://wiki.cosmos-lab.org/wiki/Tutorials/Wireless/FullDuplex).
 
